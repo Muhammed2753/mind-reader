@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Spider-Man",
+        "male": true,
+        "human": true,
+        "superhero": true
+    },
+    {
+        "name": "Wonder Woman",
+        "male": false,
+        "human": true,
+        "superhero": true
+    },
+    {
+        "name": "Optimus Prime",
+        "male": true,
+        "human": false,
+        "superhero": false
+    }
+]

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mind Reader - Answer</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
+    .result { font-size: 22px; margin-top: 20px; }
+    input { padding: 10px; width: 60%; margin-top: 20px; }
+    button { padding: 10px 20px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>I think I know the answer!</h1>
+  <p class="result">My guess: <b>{{ guess }}</b></p>
+  <p>Confidence: {{ confidence }}%</p>
+
+  <form method="post">
+    <p>Was I wrong? Teach me the right answer:</p>
+    <input type="text" name="real_answer" placeholder="Enter correct answer here" required>
+    <button type="submit">Save</button>
+  </form>
+
+  <br>
+   <form action="{{ url_for('start') }}" method="post" style="margin-top:10px;">
+    <button type="submit">Play Again</button>
+  </form>
+</body>
+</html>

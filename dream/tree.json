@@ -1,0 +1,5116 @@
+{
+  "0": {
+    "text": "Is it a living being?",
+    "is_leaf": false,
+    "yes": "1",
+    "no": "512"
+  },
+  "1": {
+    "text": "Person Q1",
+    "is_leaf": false,
+    "yes": "2",
+    "no": "257"
+  },
+  "2": {
+    "text": "Person Q2",
+    "is_leaf": false,
+    "yes": "3",
+    "no": "130"
+  },
+  "3": {
+    "text": "Person Q3",
+    "is_leaf": false,
+    "yes": "4",
+    "no": "67"
+  },
+  "4": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "5",
+    "no": "36"
+  },
+  "5": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "6",
+    "no": "21"
+  },
+  "6": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "7",
+    "no": "14"
+  },
+  "7": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "8",
+    "no": "11"
+  },
+  "8": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "9",
+    "no": "10"
+  },
+  "9": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "10": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "11": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "12",
+    "no": "13"
+  },
+  "12": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "13": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "14": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "15",
+    "no": "18"
+  },
+  "15": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "16",
+    "no": "17"
+  },
+  "16": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "17": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "18": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "19",
+    "no": "20"
+  },
+  "19": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "20": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "21": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "22",
+    "no": "29"
+  },
+  "22": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "23",
+    "no": "26"
+  },
+  "23": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "24",
+    "no": "25"
+  },
+  "24": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "25": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "26": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "27",
+    "no": "28"
+  },
+  "27": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "28": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "29": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "30",
+    "no": "33"
+  },
+  "30": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "31",
+    "no": "32"
+  },
+  "31": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "32": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "33": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "34",
+    "no": "35"
+  },
+  "34": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "35": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "36": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "37",
+    "no": "52"
+  },
+  "37": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "38",
+    "no": "45"
+  },
+  "38": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "39",
+    "no": "42"
+  },
+  "39": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "40",
+    "no": "41"
+  },
+  "40": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "41": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "42": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "43",
+    "no": "44"
+  },
+  "43": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "44": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "45": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "46",
+    "no": "49"
+  },
+  "46": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "47",
+    "no": "48"
+  },
+  "47": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "48": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "49": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "50",
+    "no": "51"
+  },
+  "50": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "51": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "52": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "53",
+    "no": "60"
+  },
+  "53": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "54",
+    "no": "57"
+  },
+  "54": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "55",
+    "no": "56"
+  },
+  "55": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "56": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "57": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "58",
+    "no": "59"
+  },
+  "58": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "59": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "60": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "61",
+    "no": "64"
+  },
+  "61": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "62",
+    "no": "63"
+  },
+  "62": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "63": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "64": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "65",
+    "no": "66"
+  },
+  "65": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "66": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "67": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "68",
+    "no": "99"
+  },
+  "68": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "69",
+    "no": "84"
+  },
+  "69": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "70",
+    "no": "77"
+  },
+  "70": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "71",
+    "no": "74"
+  },
+  "71": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "72",
+    "no": "73"
+  },
+  "72": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "73": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "74": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "75",
+    "no": "76"
+  },
+  "75": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "76": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "77": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "78",
+    "no": "81"
+  },
+  "78": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "79",
+    "no": "80"
+  },
+  "79": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "80": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "81": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "82",
+    "no": "83"
+  },
+  "82": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "83": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "84": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "85",
+    "no": "92"
+  },
+  "85": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "86",
+    "no": "89"
+  },
+  "86": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "87",
+    "no": "88"
+  },
+  "87": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "88": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "89": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "90",
+    "no": "91"
+  },
+  "90": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "91": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "92": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "93",
+    "no": "96"
+  },
+  "93": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "94",
+    "no": "95"
+  },
+  "94": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "95": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "96": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "97",
+    "no": "98"
+  },
+  "97": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "98": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "99": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "100",
+    "no": "115"
+  },
+  "100": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "101",
+    "no": "108"
+  },
+  "101": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "102",
+    "no": "105"
+  },
+  "102": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "103",
+    "no": "104"
+  },
+  "103": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "104": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "105": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "106",
+    "no": "107"
+  },
+  "106": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "107": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "108": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "109",
+    "no": "112"
+  },
+  "109": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "110",
+    "no": "111"
+  },
+  "110": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "111": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "112": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "113",
+    "no": "114"
+  },
+  "113": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "114": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "115": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "116",
+    "no": "123"
+  },
+  "116": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "117",
+    "no": "120"
+  },
+  "117": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "118",
+    "no": "119"
+  },
+  "118": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "119": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "120": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "121",
+    "no": "122"
+  },
+  "121": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "122": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "123": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "124",
+    "no": "127"
+  },
+  "124": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "125",
+    "no": "126"
+  },
+  "125": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "126": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "127": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "128",
+    "no": "129"
+  },
+  "128": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "129": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "130": {
+    "text": "Person Q3",
+    "is_leaf": false,
+    "yes": "131",
+    "no": "194"
+  },
+  "131": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "132",
+    "no": "163"
+  },
+  "132": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "133",
+    "no": "148"
+  },
+  "133": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "134",
+    "no": "141"
+  },
+  "134": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "135",
+    "no": "138"
+  },
+  "135": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "136",
+    "no": "137"
+  },
+  "136": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "137": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "138": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "139",
+    "no": "140"
+  },
+  "139": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "140": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "141": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "142",
+    "no": "145"
+  },
+  "142": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "143",
+    "no": "144"
+  },
+  "143": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "144": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "145": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "146",
+    "no": "147"
+  },
+  "146": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "147": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "148": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "149",
+    "no": "156"
+  },
+  "149": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "150",
+    "no": "153"
+  },
+  "150": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "151",
+    "no": "152"
+  },
+  "151": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "152": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "153": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "154",
+    "no": "155"
+  },
+  "154": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "155": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "156": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "157",
+    "no": "160"
+  },
+  "157": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "158",
+    "no": "159"
+  },
+  "158": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "159": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "160": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "161",
+    "no": "162"
+  },
+  "161": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "162": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "163": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "164",
+    "no": "179"
+  },
+  "164": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "165",
+    "no": "172"
+  },
+  "165": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "166",
+    "no": "169"
+  },
+  "166": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "167",
+    "no": "168"
+  },
+  "167": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "168": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "169": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "170",
+    "no": "171"
+  },
+  "170": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "171": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "172": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "173",
+    "no": "176"
+  },
+  "173": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "174",
+    "no": "175"
+  },
+  "174": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "175": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "176": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "177",
+    "no": "178"
+  },
+  "177": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "178": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "179": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "180",
+    "no": "187"
+  },
+  "180": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "181",
+    "no": "184"
+  },
+  "181": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "182",
+    "no": "183"
+  },
+  "182": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "183": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "184": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "185",
+    "no": "186"
+  },
+  "185": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "186": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "187": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "188",
+    "no": "191"
+  },
+  "188": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "189",
+    "no": "190"
+  },
+  "189": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "190": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "191": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "192",
+    "no": "193"
+  },
+  "192": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "193": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "194": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "195",
+    "no": "226"
+  },
+  "195": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "196",
+    "no": "211"
+  },
+  "196": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "197",
+    "no": "204"
+  },
+  "197": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "198",
+    "no": "201"
+  },
+  "198": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "199",
+    "no": "200"
+  },
+  "199": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "200": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "201": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "202",
+    "no": "203"
+  },
+  "202": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "203": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "204": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "205",
+    "no": "208"
+  },
+  "205": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "206",
+    "no": "207"
+  },
+  "206": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "207": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "208": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "209",
+    "no": "210"
+  },
+  "209": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "210": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "211": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "212",
+    "no": "219"
+  },
+  "212": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "213",
+    "no": "216"
+  },
+  "213": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "214",
+    "no": "215"
+  },
+  "214": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "215": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "216": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "217",
+    "no": "218"
+  },
+  "217": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "218": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "219": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "220",
+    "no": "223"
+  },
+  "220": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "221",
+    "no": "222"
+  },
+  "221": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "222": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "223": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "224",
+    "no": "225"
+  },
+  "224": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "225": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "226": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "227",
+    "no": "242"
+  },
+  "227": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "228",
+    "no": "235"
+  },
+  "228": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "229",
+    "no": "232"
+  },
+  "229": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "230",
+    "no": "231"
+  },
+  "230": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "231": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "232": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "233",
+    "no": "234"
+  },
+  "233": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "234": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "235": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "236",
+    "no": "239"
+  },
+  "236": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "237",
+    "no": "238"
+  },
+  "237": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "238": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "239": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "240",
+    "no": "241"
+  },
+  "240": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "241": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "242": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "243",
+    "no": "250"
+  },
+  "243": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "244",
+    "no": "247"
+  },
+  "244": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "245",
+    "no": "246"
+  },
+  "245": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "246": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "247": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "248",
+    "no": "249"
+  },
+  "248": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "249": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "250": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "251",
+    "no": "254"
+  },
+  "251": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "252",
+    "no": "253"
+  },
+  "252": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "253": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "254": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "255",
+    "no": "256"
+  },
+  "255": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "256": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "257": {
+    "text": "Person Q2",
+    "is_leaf": false,
+    "yes": "258",
+    "no": "385"
+  },
+  "258": {
+    "text": "Person Q3",
+    "is_leaf": false,
+    "yes": "259",
+    "no": "322"
+  },
+  "259": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "260",
+    "no": "291"
+  },
+  "260": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "261",
+    "no": "276"
+  },
+  "261": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "262",
+    "no": "269"
+  },
+  "262": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "263",
+    "no": "266"
+  },
+  "263": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "264",
+    "no": "265"
+  },
+  "264": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "265": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "266": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "267",
+    "no": "268"
+  },
+  "267": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "268": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "269": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "270",
+    "no": "273"
+  },
+  "270": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "271",
+    "no": "272"
+  },
+  "271": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "272": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "273": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "274",
+    "no": "275"
+  },
+  "274": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "275": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "276": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "277",
+    "no": "284"
+  },
+  "277": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "278",
+    "no": "281"
+  },
+  "278": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "279",
+    "no": "280"
+  },
+  "279": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "280": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "281": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "282",
+    "no": "283"
+  },
+  "282": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "283": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "284": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "285",
+    "no": "288"
+  },
+  "285": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "286",
+    "no": "287"
+  },
+  "286": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "287": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "288": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "289",
+    "no": "290"
+  },
+  "289": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "290": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "291": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "292",
+    "no": "307"
+  },
+  "292": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "293",
+    "no": "300"
+  },
+  "293": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "294",
+    "no": "297"
+  },
+  "294": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "295",
+    "no": "296"
+  },
+  "295": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "296": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "297": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "298",
+    "no": "299"
+  },
+  "298": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "299": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "300": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "301",
+    "no": "304"
+  },
+  "301": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "302",
+    "no": "303"
+  },
+  "302": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "303": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "304": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "305",
+    "no": "306"
+  },
+  "305": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "306": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "307": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "308",
+    "no": "315"
+  },
+  "308": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "309",
+    "no": "312"
+  },
+  "309": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "310",
+    "no": "311"
+  },
+  "310": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "311": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "312": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "313",
+    "no": "314"
+  },
+  "313": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "314": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "315": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "316",
+    "no": "319"
+  },
+  "316": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "317",
+    "no": "318"
+  },
+  "317": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "318": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "319": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "320",
+    "no": "321"
+  },
+  "320": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "321": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "322": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "323",
+    "no": "354"
+  },
+  "323": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "324",
+    "no": "339"
+  },
+  "324": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "325",
+    "no": "332"
+  },
+  "325": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "326",
+    "no": "329"
+  },
+  "326": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "327",
+    "no": "328"
+  },
+  "327": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "328": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "329": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "330",
+    "no": "331"
+  },
+  "330": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "331": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "332": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "333",
+    "no": "336"
+  },
+  "333": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "334",
+    "no": "335"
+  },
+  "334": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "335": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "336": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "337",
+    "no": "338"
+  },
+  "337": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "338": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "339": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "340",
+    "no": "347"
+  },
+  "340": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "341",
+    "no": "344"
+  },
+  "341": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "342",
+    "no": "343"
+  },
+  "342": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "343": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "344": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "345",
+    "no": "346"
+  },
+  "345": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "346": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "347": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "348",
+    "no": "351"
+  },
+  "348": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "349",
+    "no": "350"
+  },
+  "349": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "350": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "351": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "352",
+    "no": "353"
+  },
+  "352": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "353": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "354": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "355",
+    "no": "370"
+  },
+  "355": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "356",
+    "no": "363"
+  },
+  "356": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "357",
+    "no": "360"
+  },
+  "357": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "358",
+    "no": "359"
+  },
+  "358": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "359": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "360": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "361",
+    "no": "362"
+  },
+  "361": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "362": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "363": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "364",
+    "no": "367"
+  },
+  "364": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "365",
+    "no": "366"
+  },
+  "365": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "366": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "367": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "368",
+    "no": "369"
+  },
+  "368": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "369": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "370": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "371",
+    "no": "378"
+  },
+  "371": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "372",
+    "no": "375"
+  },
+  "372": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "373",
+    "no": "374"
+  },
+  "373": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "374": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "375": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "376",
+    "no": "377"
+  },
+  "376": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "377": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "378": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "379",
+    "no": "382"
+  },
+  "379": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "380",
+    "no": "381"
+  },
+  "380": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "381": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "382": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "383",
+    "no": "384"
+  },
+  "383": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "384": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "385": {
+    "text": "Person Q3",
+    "is_leaf": false,
+    "yes": "386",
+    "no": "449"
+  },
+  "386": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "387",
+    "no": "418"
+  },
+  "387": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "388",
+    "no": "403"
+  },
+  "388": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "389",
+    "no": "396"
+  },
+  "389": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "390",
+    "no": "393"
+  },
+  "390": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "391",
+    "no": "392"
+  },
+  "391": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "392": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "393": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "394",
+    "no": "395"
+  },
+  "394": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "395": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "396": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "397",
+    "no": "400"
+  },
+  "397": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "398",
+    "no": "399"
+  },
+  "398": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "399": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "400": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "401",
+    "no": "402"
+  },
+  "401": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "402": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "403": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "404",
+    "no": "411"
+  },
+  "404": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "405",
+    "no": "408"
+  },
+  "405": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "406",
+    "no": "407"
+  },
+  "406": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "407": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "408": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "409",
+    "no": "410"
+  },
+  "409": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "410": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "411": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "412",
+    "no": "415"
+  },
+  "412": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "413",
+    "no": "414"
+  },
+  "413": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "414": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "415": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "416",
+    "no": "417"
+  },
+  "416": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "417": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "418": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "419",
+    "no": "434"
+  },
+  "419": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "420",
+    "no": "427"
+  },
+  "420": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "421",
+    "no": "424"
+  },
+  "421": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "422",
+    "no": "423"
+  },
+  "422": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "423": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "424": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "425",
+    "no": "426"
+  },
+  "425": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "426": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "427": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "428",
+    "no": "431"
+  },
+  "428": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "429",
+    "no": "430"
+  },
+  "429": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "430": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "431": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "432",
+    "no": "433"
+  },
+  "432": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "433": {
+    "text": "Tiger",
+    "is_leaf": true
+  },
+  "434": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "435",
+    "no": "442"
+  },
+  "435": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "436",
+    "no": "439"
+  },
+  "436": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "437",
+    "no": "438"
+  },
+  "437": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "438": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "439": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "440",
+    "no": "441"
+  },
+  "440": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "441": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "442": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "443",
+    "no": "446"
+  },
+  "443": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "444",
+    "no": "445"
+  },
+  "444": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "445": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "446": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "447",
+    "no": "448"
+  },
+  "447": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "448": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "449": {
+    "text": "Person Q4",
+    "is_leaf": false,
+    "yes": "450",
+    "no": "481"
+  },
+  "450": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "451",
+    "no": "466"
+  },
+  "451": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "452",
+    "no": "459"
+  },
+  "452": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "453",
+    "no": "456"
+  },
+  "453": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "454",
+    "no": "455"
+  },
+  "454": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "455": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "456": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "457",
+    "no": "458"
+  },
+  "457": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "458": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "459": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "460",
+    "no": "463"
+  },
+  "460": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "461",
+    "no": "462"
+  },
+  "461": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "462": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "463": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "464",
+    "no": "465"
+  },
+  "464": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "465": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "466": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "467",
+    "no": "474"
+  },
+  "467": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "468",
+    "no": "471"
+  },
+  "468": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "469",
+    "no": "470"
+  },
+  "469": {
+    "text": "Dog",
+    "is_leaf": true
+  },
+  "470": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "471": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "472",
+    "no": "473"
+  },
+  "472": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "473": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "474": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "475",
+    "no": "478"
+  },
+  "475": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "476",
+    "no": "477"
+  },
+  "476": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "477": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "478": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "479",
+    "no": "480"
+  },
+  "479": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "480": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "481": {
+    "text": "Person Q5",
+    "is_leaf": false,
+    "yes": "482",
+    "no": "497"
+  },
+  "482": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "483",
+    "no": "490"
+  },
+  "483": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "484",
+    "no": "487"
+  },
+  "484": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "485",
+    "no": "486"
+  },
+  "485": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "486": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "487": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "488",
+    "no": "489"
+  },
+  "488": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "489": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "490": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "491",
+    "no": "494"
+  },
+  "491": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "492",
+    "no": "493"
+  },
+  "492": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "493": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "494": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "495",
+    "no": "496"
+  },
+  "495": {
+    "text": "Lion",
+    "is_leaf": true
+  },
+  "496": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "497": {
+    "text": "Person Q6",
+    "is_leaf": false,
+    "yes": "498",
+    "no": "505"
+  },
+  "498": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "499",
+    "no": "502"
+  },
+  "499": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "500",
+    "no": "501"
+  },
+  "500": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "501": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "502": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "503",
+    "no": "504"
+  },
+  "503": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "504": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "505": {
+    "text": "Person Q7",
+    "is_leaf": false,
+    "yes": "506",
+    "no": "509"
+  },
+  "506": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "507",
+    "no": "508"
+  },
+  "507": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "508": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "509": {
+    "text": "Person Q8",
+    "is_leaf": false,
+    "yes": "510",
+    "no": "511"
+  },
+  "510": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "511": {
+    "text": "Cat",
+    "is_leaf": true
+  },
+  "512": {
+    "text": "Object Q1",
+    "is_leaf": false,
+    "yes": "513",
+    "no": "768"
+  },
+  "513": {
+    "text": "Object Q2",
+    "is_leaf": false,
+    "yes": "514",
+    "no": "641"
+  },
+  "514": {
+    "text": "Object Q3",
+    "is_leaf": false,
+    "yes": "515",
+    "no": "578"
+  },
+  "515": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "516",
+    "no": "547"
+  },
+  "516": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "517",
+    "no": "532"
+  },
+  "517": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "518",
+    "no": "525"
+  },
+  "518": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "519",
+    "no": "522"
+  },
+  "519": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "520",
+    "no": "521"
+  },
+  "520": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "521": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "522": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "523",
+    "no": "524"
+  },
+  "523": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "524": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "525": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "526",
+    "no": "529"
+  },
+  "526": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "527",
+    "no": "528"
+  },
+  "527": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "528": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "529": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "530",
+    "no": "531"
+  },
+  "530": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "531": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "532": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "533",
+    "no": "540"
+  },
+  "533": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "534",
+    "no": "537"
+  },
+  "534": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "535",
+    "no": "536"
+  },
+  "535": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "536": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "537": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "538",
+    "no": "539"
+  },
+  "538": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "539": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "540": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "541",
+    "no": "544"
+  },
+  "541": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "542",
+    "no": "543"
+  },
+  "542": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "543": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "544": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "545",
+    "no": "546"
+  },
+  "545": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "546": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "547": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "548",
+    "no": "563"
+  },
+  "548": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "549",
+    "no": "556"
+  },
+  "549": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "550",
+    "no": "553"
+  },
+  "550": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "551",
+    "no": "552"
+  },
+  "551": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "552": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "553": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "554",
+    "no": "555"
+  },
+  "554": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "555": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "556": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "557",
+    "no": "560"
+  },
+  "557": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "558",
+    "no": "559"
+  },
+  "558": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "559": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "560": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "561",
+    "no": "562"
+  },
+  "561": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "562": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "563": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "564",
+    "no": "571"
+  },
+  "564": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "565",
+    "no": "568"
+  },
+  "565": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "566",
+    "no": "567"
+  },
+  "566": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "567": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "568": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "569",
+    "no": "570"
+  },
+  "569": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "570": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "571": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "572",
+    "no": "575"
+  },
+  "572": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "573",
+    "no": "574"
+  },
+  "573": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "574": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "575": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "576",
+    "no": "577"
+  },
+  "576": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "577": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "578": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "579",
+    "no": "610"
+  },
+  "579": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "580",
+    "no": "595"
+  },
+  "580": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "581",
+    "no": "588"
+  },
+  "581": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "582",
+    "no": "585"
+  },
+  "582": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "583",
+    "no": "584"
+  },
+  "583": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "584": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "585": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "586",
+    "no": "587"
+  },
+  "586": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "587": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "588": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "589",
+    "no": "592"
+  },
+  "589": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "590",
+    "no": "591"
+  },
+  "590": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "591": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "592": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "593",
+    "no": "594"
+  },
+  "593": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "594": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "595": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "596",
+    "no": "603"
+  },
+  "596": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "597",
+    "no": "600"
+  },
+  "597": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "598",
+    "no": "599"
+  },
+  "598": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "599": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "600": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "601",
+    "no": "602"
+  },
+  "601": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "602": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "603": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "604",
+    "no": "607"
+  },
+  "604": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "605",
+    "no": "606"
+  },
+  "605": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "606": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "607": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "608",
+    "no": "609"
+  },
+  "608": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "609": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "610": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "611",
+    "no": "626"
+  },
+  "611": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "612",
+    "no": "619"
+  },
+  "612": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "613",
+    "no": "616"
+  },
+  "613": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "614",
+    "no": "615"
+  },
+  "614": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "615": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "616": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "617",
+    "no": "618"
+  },
+  "617": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "618": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "619": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "620",
+    "no": "623"
+  },
+  "620": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "621",
+    "no": "622"
+  },
+  "621": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "622": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "623": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "624",
+    "no": "625"
+  },
+  "624": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "625": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "626": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "627",
+    "no": "634"
+  },
+  "627": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "628",
+    "no": "631"
+  },
+  "628": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "629",
+    "no": "630"
+  },
+  "629": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "630": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "631": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "632",
+    "no": "633"
+  },
+  "632": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "633": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "634": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "635",
+    "no": "638"
+  },
+  "635": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "636",
+    "no": "637"
+  },
+  "636": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "637": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "638": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "639",
+    "no": "640"
+  },
+  "639": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "640": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "641": {
+    "text": "Object Q3",
+    "is_leaf": false,
+    "yes": "642",
+    "no": "705"
+  },
+  "642": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "643",
+    "no": "674"
+  },
+  "643": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "644",
+    "no": "659"
+  },
+  "644": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "645",
+    "no": "652"
+  },
+  "645": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "646",
+    "no": "649"
+  },
+  "646": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "647",
+    "no": "648"
+  },
+  "647": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "648": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "649": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "650",
+    "no": "651"
+  },
+  "650": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "651": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "652": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "653",
+    "no": "656"
+  },
+  "653": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "654",
+    "no": "655"
+  },
+  "654": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "655": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "656": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "657",
+    "no": "658"
+  },
+  "657": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "658": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "659": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "660",
+    "no": "667"
+  },
+  "660": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "661",
+    "no": "664"
+  },
+  "661": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "662",
+    "no": "663"
+  },
+  "662": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "663": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "664": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "665",
+    "no": "666"
+  },
+  "665": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "666": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "667": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "668",
+    "no": "671"
+  },
+  "668": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "669",
+    "no": "670"
+  },
+  "669": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "670": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "671": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "672",
+    "no": "673"
+  },
+  "672": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "673": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "674": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "675",
+    "no": "690"
+  },
+  "675": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "676",
+    "no": "683"
+  },
+  "676": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "677",
+    "no": "680"
+  },
+  "677": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "678",
+    "no": "679"
+  },
+  "678": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "679": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "680": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "681",
+    "no": "682"
+  },
+  "681": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "682": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "683": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "684",
+    "no": "687"
+  },
+  "684": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "685",
+    "no": "686"
+  },
+  "685": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "686": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "687": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "688",
+    "no": "689"
+  },
+  "688": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "689": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "690": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "691",
+    "no": "698"
+  },
+  "691": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "692",
+    "no": "695"
+  },
+  "692": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "693",
+    "no": "694"
+  },
+  "693": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "694": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "695": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "696",
+    "no": "697"
+  },
+  "696": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "697": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "698": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "699",
+    "no": "702"
+  },
+  "699": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "700",
+    "no": "701"
+  },
+  "700": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "701": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "702": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "703",
+    "no": "704"
+  },
+  "703": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "704": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "705": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "706",
+    "no": "737"
+  },
+  "706": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "707",
+    "no": "722"
+  },
+  "707": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "708",
+    "no": "715"
+  },
+  "708": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "709",
+    "no": "712"
+  },
+  "709": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "710",
+    "no": "711"
+  },
+  "710": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "711": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "712": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "713",
+    "no": "714"
+  },
+  "713": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "714": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "715": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "716",
+    "no": "719"
+  },
+  "716": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "717",
+    "no": "718"
+  },
+  "717": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "718": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "719": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "720",
+    "no": "721"
+  },
+  "720": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "721": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "722": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "723",
+    "no": "730"
+  },
+  "723": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "724",
+    "no": "727"
+  },
+  "724": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "725",
+    "no": "726"
+  },
+  "725": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "726": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "727": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "728",
+    "no": "729"
+  },
+  "728": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "729": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "730": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "731",
+    "no": "734"
+  },
+  "731": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "732",
+    "no": "733"
+  },
+  "732": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "733": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "734": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "735",
+    "no": "736"
+  },
+  "735": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "736": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "737": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "738",
+    "no": "753"
+  },
+  "738": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "739",
+    "no": "746"
+  },
+  "739": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "740",
+    "no": "743"
+  },
+  "740": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "741",
+    "no": "742"
+  },
+  "741": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "742": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "743": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "744",
+    "no": "745"
+  },
+  "744": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "745": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "746": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "747",
+    "no": "750"
+  },
+  "747": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "748",
+    "no": "749"
+  },
+  "748": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "749": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "750": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "751",
+    "no": "752"
+  },
+  "751": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "752": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "753": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "754",
+    "no": "761"
+  },
+  "754": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "755",
+    "no": "758"
+  },
+  "755": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "756",
+    "no": "757"
+  },
+  "756": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "757": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "758": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "759",
+    "no": "760"
+  },
+  "759": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "760": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "761": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "762",
+    "no": "765"
+  },
+  "762": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "763",
+    "no": "764"
+  },
+  "763": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "764": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "765": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "766",
+    "no": "767"
+  },
+  "766": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "767": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "768": {
+    "text": "Object Q2",
+    "is_leaf": false,
+    "yes": "769",
+    "no": "896"
+  },
+  "769": {
+    "text": "Object Q3",
+    "is_leaf": false,
+    "yes": "770",
+    "no": "833"
+  },
+  "770": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "771",
+    "no": "802"
+  },
+  "771": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "772",
+    "no": "787"
+  },
+  "772": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "773",
+    "no": "780"
+  },
+  "773": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "774",
+    "no": "777"
+  },
+  "774": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "775",
+    "no": "776"
+  },
+  "775": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "776": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "777": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "778",
+    "no": "779"
+  },
+  "778": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "779": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "780": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "781",
+    "no": "784"
+  },
+  "781": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "782",
+    "no": "783"
+  },
+  "782": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "783": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "784": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "785",
+    "no": "786"
+  },
+  "785": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "786": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "787": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "788",
+    "no": "795"
+  },
+  "788": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "789",
+    "no": "792"
+  },
+  "789": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "790",
+    "no": "791"
+  },
+  "790": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "791": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "792": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "793",
+    "no": "794"
+  },
+  "793": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "794": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "795": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "796",
+    "no": "799"
+  },
+  "796": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "797",
+    "no": "798"
+  },
+  "797": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "798": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "799": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "800",
+    "no": "801"
+  },
+  "800": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "801": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "802": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "803",
+    "no": "818"
+  },
+  "803": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "804",
+    "no": "811"
+  },
+  "804": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "805",
+    "no": "808"
+  },
+  "805": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "806",
+    "no": "807"
+  },
+  "806": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "807": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "808": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "809",
+    "no": "810"
+  },
+  "809": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "810": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "811": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "812",
+    "no": "815"
+  },
+  "812": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "813",
+    "no": "814"
+  },
+  "813": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "814": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "815": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "816",
+    "no": "817"
+  },
+  "816": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "817": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "818": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "819",
+    "no": "826"
+  },
+  "819": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "820",
+    "no": "823"
+  },
+  "820": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "821",
+    "no": "822"
+  },
+  "821": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "822": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "823": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "824",
+    "no": "825"
+  },
+  "824": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "825": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "826": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "827",
+    "no": "830"
+  },
+  "827": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "828",
+    "no": "829"
+  },
+  "828": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "829": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "830": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "831",
+    "no": "832"
+  },
+  "831": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "832": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "833": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "834",
+    "no": "865"
+  },
+  "834": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "835",
+    "no": "850"
+  },
+  "835": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "836",
+    "no": "843"
+  },
+  "836": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "837",
+    "no": "840"
+  },
+  "837": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "838",
+    "no": "839"
+  },
+  "838": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "839": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "840": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "841",
+    "no": "842"
+  },
+  "841": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "842": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "843": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "844",
+    "no": "847"
+  },
+  "844": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "845",
+    "no": "846"
+  },
+  "845": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "846": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "847": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "848",
+    "no": "849"
+  },
+  "848": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "849": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "850": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "851",
+    "no": "858"
+  },
+  "851": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "852",
+    "no": "855"
+  },
+  "852": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "853",
+    "no": "854"
+  },
+  "853": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "854": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "855": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "856",
+    "no": "857"
+  },
+  "856": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "857": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "858": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "859",
+    "no": "862"
+  },
+  "859": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "860",
+    "no": "861"
+  },
+  "860": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "861": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "862": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "863",
+    "no": "864"
+  },
+  "863": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "864": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "865": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "866",
+    "no": "881"
+  },
+  "866": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "867",
+    "no": "874"
+  },
+  "867": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "868",
+    "no": "871"
+  },
+  "868": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "869",
+    "no": "870"
+  },
+  "869": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "870": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "871": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "872",
+    "no": "873"
+  },
+  "872": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "873": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "874": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "875",
+    "no": "878"
+  },
+  "875": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "876",
+    "no": "877"
+  },
+  "876": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "877": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "878": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "879",
+    "no": "880"
+  },
+  "879": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "880": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "881": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "882",
+    "no": "889"
+  },
+  "882": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "883",
+    "no": "886"
+  },
+  "883": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "884",
+    "no": "885"
+  },
+  "884": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "885": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "886": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "887",
+    "no": "888"
+  },
+  "887": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "888": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "889": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "890",
+    "no": "893"
+  },
+  "890": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "891",
+    "no": "892"
+  },
+  "891": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "892": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "893": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "894",
+    "no": "895"
+  },
+  "894": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "895": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "896": {
+    "text": "Object Q3",
+    "is_leaf": false,
+    "yes": "897",
+    "no": "960"
+  },
+  "897": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "898",
+    "no": "929"
+  },
+  "898": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "899",
+    "no": "914"
+  },
+  "899": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "900",
+    "no": "907"
+  },
+  "900": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "901",
+    "no": "904"
+  },
+  "901": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "902",
+    "no": "903"
+  },
+  "902": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "903": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "904": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "905",
+    "no": "906"
+  },
+  "905": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "906": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "907": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "908",
+    "no": "911"
+  },
+  "908": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "909",
+    "no": "910"
+  },
+  "909": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "910": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "911": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "912",
+    "no": "913"
+  },
+  "912": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "913": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "914": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "915",
+    "no": "922"
+  },
+  "915": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "916",
+    "no": "919"
+  },
+  "916": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "917",
+    "no": "918"
+  },
+  "917": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "918": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "919": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "920",
+    "no": "921"
+  },
+  "920": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "921": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "922": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "923",
+    "no": "926"
+  },
+  "923": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "924",
+    "no": "925"
+  },
+  "924": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "925": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "926": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "927",
+    "no": "928"
+  },
+  "927": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "928": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "929": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "930",
+    "no": "945"
+  },
+  "930": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "931",
+    "no": "938"
+  },
+  "931": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "932",
+    "no": "935"
+  },
+  "932": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "933",
+    "no": "934"
+  },
+  "933": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "934": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "935": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "936",
+    "no": "937"
+  },
+  "936": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "937": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "938": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "939",
+    "no": "942"
+  },
+  "939": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "940",
+    "no": "941"
+  },
+  "940": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "941": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "942": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "943",
+    "no": "944"
+  },
+  "943": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "944": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "945": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "946",
+    "no": "953"
+  },
+  "946": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "947",
+    "no": "950"
+  },
+  "947": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "948",
+    "no": "949"
+  },
+  "948": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "949": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "950": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "951",
+    "no": "952"
+  },
+  "951": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "952": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "953": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "954",
+    "no": "957"
+  },
+  "954": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "955",
+    "no": "956"
+  },
+  "955": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "956": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "957": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "958",
+    "no": "959"
+  },
+  "958": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "959": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "960": {
+    "text": "Object Q4",
+    "is_leaf": false,
+    "yes": "961",
+    "no": "992"
+  },
+  "961": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "962",
+    "no": "977"
+  },
+  "962": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "963",
+    "no": "970"
+  },
+  "963": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "964",
+    "no": "967"
+  },
+  "964": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "965",
+    "no": "966"
+  },
+  "965": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "966": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "967": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "968",
+    "no": "969"
+  },
+  "968": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "969": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "970": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "971",
+    "no": "974"
+  },
+  "971": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "972",
+    "no": "973"
+  },
+  "972": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "973": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "974": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "975",
+    "no": "976"
+  },
+  "975": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "976": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "977": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "978",
+    "no": "985"
+  },
+  "978": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "979",
+    "no": "982"
+  },
+  "979": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "980",
+    "no": "981"
+  },
+  "980": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "981": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "982": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "983",
+    "no": "984"
+  },
+  "983": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "984": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "985": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "986",
+    "no": "989"
+  },
+  "986": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "987",
+    "no": "988"
+  },
+  "987": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "988": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "989": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "990",
+    "no": "991"
+  },
+  "990": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "991": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "992": {
+    "text": "Object Q5",
+    "is_leaf": false,
+    "yes": "993",
+    "no": "1008"
+  },
+  "993": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "994",
+    "no": "1001"
+  },
+  "994": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "995",
+    "no": "998"
+  },
+  "995": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "996",
+    "no": "997"
+  },
+  "996": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "997": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "998": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "999",
+    "no": "1000"
+  },
+  "999": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "1000": {
+    "text": "Pen",
+    "is_leaf": true
+  },
+  "1001": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "1002",
+    "no": "1005"
+  },
+  "1002": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "1003",
+    "no": "1004"
+  },
+  "1003": {
+    "text": "Chair",
+    "is_leaf": true
+  },
+  "1004": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "1005": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "1006",
+    "no": "1007"
+  },
+  "1006": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "1007": {
+    "text": "Bottle",
+    "is_leaf": true
+  },
+  "1008": {
+    "text": "Object Q6",
+    "is_leaf": false,
+    "yes": "1009",
+    "no": "1016"
+  },
+  "1009": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "1010",
+    "no": "1013"
+  },
+  "1010": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "1011",
+    "no": "1012"
+  },
+  "1011": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "1012": {
+    "text": "Rock",
+    "is_leaf": true
+  },
+  "1013": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "1014",
+    "no": "1015"
+  },
+  "1014": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "1015": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "1016": {
+    "text": "Object Q7",
+    "is_leaf": false,
+    "yes": "1017",
+    "no": "1020"
+  },
+  "1017": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "1018",
+    "no": "1019"
+  },
+  "1018": {
+    "text": "Bicycle",
+    "is_leaf": true
+  },
+  "1019": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "1020": {
+    "text": "Object Q8",
+    "is_leaf": false,
+    "yes": "1021",
+    "no": "1022"
+  },
+  "1021": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "1022": {
+    "text": "Chair",
+    "is_leaf": true
+  }
+}

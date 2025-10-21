@@ -1,0 +1,156 @@
+{
+  "0": {
+    "text": "Is it a living being?",
+    "is_leaf": false,
+    "yes": "1",
+    "no": "16"
+  },
+  "1": {
+    "text": "Is the person male?",
+    "is_leaf": false,
+    "yes": "2",
+    "no": "15"
+  },
+  "2": {
+    "text": "Is the person alive?",
+    "is_leaf": false,
+    "yes": "3",
+    "no": "14"
+  },
+  "3": {
+    "text": "Is the person a footballer?",
+    "is_leaf": false,
+    "yes": "4",
+    "no": "13"
+  },
+  "4": {
+    "text": "Is the person a coach?",
+    "is_leaf": false,
+    "yes": "5",
+    "no": "12"
+  },
+  "5": {
+    "text": "Is the person a singer?",
+    "is_leaf": false,
+    "yes": "6",
+    "no": "11"
+  },
+  "6": {
+    "text": "Is the person an actor?",
+    "is_leaf": false,
+    "yes": "7",
+    "no": "10"
+  },
+  "7": {
+    "text": "Is the person a politician?",
+    "is_leaf": false,
+    "yes": "8",
+    "no": "9"
+  },
+  "8": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "9": {
+    "text": "Cristiano Ronaldo",
+    "is_leaf": true
+  },
+  "10": {
+    "text": "Taylor Swift",
+    "is_leaf": true
+  },
+  "11": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "12": {
+    "text": "Bill Gates",
+    "is_leaf": true
+  },
+  "13": {
+    "text": "Elon Musk",
+    "is_leaf": true
+  },
+  "14": {
+    "text": "Beyoncé",
+    "is_leaf": true
+  },
+  "15": {
+    "text": "Elephant",
+    "is_leaf": true
+  },
+  "16": {
+    "text": "Is it electronic?",
+    "is_leaf": false,
+    "yes": "17",
+    "no": "30"
+  },
+  "17": {
+    "text": "Is it used for transport?",
+    "is_leaf": false,
+    "yes": "18",
+    "no": "29"
+  },
+  "18": {
+    "text": "Is it used in sports?",
+    "is_leaf": false,
+    "yes": "19",
+    "no": "28"
+  },
+  "19": {
+    "text": "Can it fit in a pocket?",
+    "is_leaf": false,
+    "yes": "20",
+    "no": "27"
+  },
+  "20": {
+    "text": "Does it have wheels?",
+    "is_leaf": false,
+    "yes": "21",
+    "no": "26"
+  },
+  "21": {
+    "text": "Is it made of metal?",
+    "is_leaf": false,
+    "yes": "22",
+    "no": "25"
+  },
+  "22": {
+    "text": "Is it used daily?",
+    "is_leaf": false,
+    "yes": "23",
+    "no": "24"
+  },
+  "23": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "24": {
+    "text": "Glasses",
+    "is_leaf": true
+  },
+  "25": {
+    "text": "Book",
+    "is_leaf": true
+  },
+  "26": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "27": {
+    "text": "Car",
+    "is_leaf": true
+  },
+  "28": {
+    "text": "Smartphone",
+    "is_leaf": true
+  },
+  "29": {
+    "text": "Laptop",
+    "is_leaf": true
+  },
+  "30": {
+    "text": "Laptop",
+    "is_leaf": true
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mind Reader - Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            text-align: center;
+            color: #fff;
+            padding: 50px;
+        }
+        h1 { font-size: 3em; margin-bottom: 20px; }
+        a button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            background: #fff;
+            color: #56ab2f;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 I guessed it right!</h1>
+    <a href="{{ url_for('index') }}"><button>Play Again</button></a>
+</body>
+</html>

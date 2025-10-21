@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mind Reader - Question</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
+    .buttons { margin-top: 20px; }
+    button { margin: 10px; padding: 15px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; border: none; }
+    .yes { background-color: #4CAF50; color: white; }
+    .no { background-color: #f44336; color: white; }
+    .sometimes { background-color: #ffa500; color: white; }
+    .not-really { background-color: #9c27b0; color: white; }
+    .unknown { background-color: #607d8b; color: white; }
+    .undo { background-color: #000; color: white; margin-top: 20px; }
+    .progress { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h2>{{ question }}</h2>
+
+  <div class="buttons">
+    <form method="post">
+      <button name="answer" value="yes" class="yes">Yes</button>
+      <button name="answer" value="no" class="no">No</button>
+      <button name="answer" value="sometimes" class="sometimes">Sometimes</button>
+      <button name="answer" value="not really" class="not-really">Not Really</button>
+      <button name="answer" value="i don't know" class="unknown">I Don't Know</button>
+    </form>
+  </div>
+
+  <form action="{{ url_for('undo') }}" method="post">
+    <button class="undo">Undo Last</button>
+  </form>
+
+   {% if progress %}
+    <p>Confidence so far: {{ progress }}%</p>
+  {% endif %}
+</body>
+</html>

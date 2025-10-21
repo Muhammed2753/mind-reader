@@ -1,0 +1,234 @@
+{
+  "_wrong": [
+    "Is the person a goalkeeper?",
+    "Is the person Brazilian?",
+    "Is it something humans created?",
+    "Has the person won the Ballon d'Or?",
+    "Is the person a football manager?",
+    "Christiano ronaldo"
+  ],
+  "Christiano ronaldo": {
+    "Is it electronic?": {
+      "no": 1
+    },
+    "Does it live in Africa?": {
+      "no": 1
+    },
+    "Is the person an athlete?": {
+      "yes": 1
+    },
+    "Is it used in sports?": {
+      "no": 1
+    },
+    "Is the person a billionaire?": {
+      "yes": 1
+    },
+    "Is the person alive?": {
+      "yes": 1
+    },
+    "Is it wearable?": {
+      "no": 1
+    },
+    "Has the person won a World Cup?": {
+      "no": 1
+    },
+    "Is it used outdoors?": {
+      "no": 1
+    },
+    "Is the person a singer?": {
+      "no": 1
+    },
+    "Is the person a goalkeeper?": {
+      "no": 1
+    },
+    "Is the person from Asia?": {
+      "no": 1
+    },
+    "Is the person an MMA fighter?": {
+      "no": 1
+    },
+    "Is it from Asia?": {
+      "no": 1
+    },
+    "Does the person play in Serie A?": {
+      "no": 1
+    },
+    "Is the person over 50 years old?": {
+      "no": 1
+    },
+    "Is the person a striker?": {
+      "yes": 1
+    },
+    "Is the person a defender?": {
+      "no": 1
+    },
+    "Does the person play in Europe?": {
+      "no": 1
+    },
+    "Can it fit in a pocket?": {
+      "no": 1
+    },
+    "Is the person known for philanthropy?": {
+      "not really": 1
+    },
+    "Is it used for communication?": {
+      "no": 1
+    },
+    "Is it something you can buy in a store?": {
+      "no": 1
+    },
+    "Is it nocturnal?": {
+      "no": 1
+    },
+    "Is the person male?": {
+      "yes": 1
+    },
+    "Is it a mammal?": {
+      "yes": 1
+    },
+    "Does it have wheels?": {
+      "no": 1
+    },
+    "Is the person known for comedy?": {
+      "no": 1
+    },
+    "Is it commonly kept as a pet?": {
+      "no": 1
+    },
+    "Has the person ever been a president?": {
+      "no": 1
+    },
+    "Is the person associated with music?": {
+      "no": 1
+    },
+    "Is the person Argentine?": {
+      "no": 1
+    },
+    "Is the person in the NBA?": {
+      "no": 1
+    },
+    "Is the person in politics today?": {
+      "no": 1
+    },
+    "Does it have a screen?": {
+      "no": 1
+    },
+    "Is it an insect?": {
+      "no": 1
+    },
+    "Is the person known for technology?": {
+      "no": 1
+    },
+    "Does the person have millions of followers?": {
+      "yes": 1
+    },
+    "Is it something humans created?": {
+      "no": 1
+    },
+    "Is the person in the movie industry?": {
+      "no": 1
+    },
+    "Does it belong to nature?": {
+      "no": 1
+    },
+    "Is the person a wrestler?": {
+      "no": 1
+    },
+    "Is the person German?": {
+      "no": 1
+    },
+    "Is the person a midfielder?": {
+      "no": 1
+    },
+    "Is the person a coach?": {
+      "no": 1
+    },
+    "Is the person a social media influencer?": {
+      "no": 1
+    },
+    "Is it used for video?": {
+      "no": 1
+    },
+    "Has the person coached a team?": {
+      "no": 1
+    },
+    "Is the person an Olympic athlete?": {
+      "no": 1
+    },
+    "Does it need electricity?": {
+      "no": 1
+    },
+    "Is it a carnivore?": {
+      "no": 1
+    },
+    "Does it swim fast?": {
+      "no": 1
+    },
+    "Is the person a scientist?": {
+      "no": 1
+    },
+    "Has the person won a Grammy?": {
+      "no": 1
+    },
+    "Has the person appeared in movies?": {
+      "yes": 1
+    },
+    "Is the person older than 35?": {
+      "yes": 1
+    },
+    "Does it have fur?": {
+      "no": 1
+    },
+    "Is the person Portuguese?": {
+      "yes": 1
+    },
+    "Is the person a Formula 1 driver?": {
+      "no": 1
+    },
+    "Does the person play for a club?": {
+      "yes": 1
+    },
+    "Is it used in farming?": {
+      "yes": 1
+    },
+    "Is the person Nigerian?": {
+      "no": 1
+    },
+    "Does the person play in La Liga?": {
+      "no": 1
+    },
+    "Is it a domestic animal?": {
+      "no": 1
+    },
+    "Has the person won the Ballon d'Or?": {
+      "yes": 1
+    },
+    "Is the person in the music industry?": {
+      "no": 1
+    },
+    "Is the person a YouTuber?": {
+      "yes": 1
+    },
+    "Is the person an actor?": {
+      "no": 1
+    },
+    "Is the person Brazilian?": {
+      "no": 1
+    },
+    "Is the person American?": {
+      "no": 1
+    },
+    "Is the person a footballer?": {
+      "yes": 1
+    },
+    "Is the person from Europe?": {
+      "yes": 1
+    },
+    "Is it used daily?": {
+      "no": 1
+    },
+    "Is the person considered a legend?": {
+      "yes": 1
+    }
+  }
+}

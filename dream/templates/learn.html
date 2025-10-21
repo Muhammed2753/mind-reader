@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Teach Me</title></head>
+<body>
+  <h2>I couldn't guess it 😔 — help me learn</h2>
+
+  {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+
+  <form method="post">
+    <label>What were you thinking of? <input name="correct_answer" required></label><br><br>
+    <button type="submit">Teach</button>
+  </form>
+</body>
+</html>

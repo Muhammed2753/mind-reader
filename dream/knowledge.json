@@ -1,0 +1,8777 @@
+[
+  {
+    "name": "Rosalind Franklin",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Germany",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Germany",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Smith",
+    "type": "person",
+    "profession": "actor",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kylian Mbappé",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Jones",
+    "type": "person",
+    "profession": "politician",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Dwayne Johnson",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Osei",
+    "type": "person",
+    "profession": "chef",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Nguyen",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Kenya",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Ibrahim",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Brad Pitt",
+    "type": "person",
+    "profession": "actor",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Khaby Lame",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zlatan Ibrahimović",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Spain",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "Spain",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Genevieve Nnaji",
+    "type": "person",
+    "profession": "actor",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Virgil van Dijk",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Will Smith",
+    "type": "person",
+    "profession": "actor",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Michael Jackson",
+    "type": "person",
+    "profession": "musician",
+    "country": "UK",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "musician",
+      "UK",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Kebede",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Mensah",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bill Gates",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Ibrahim",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Balogun",
+    "type": "person",
+    "profession": "chef",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Hernandez",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hulk Hogan",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "wrestler",
+      "USA",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sia",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Gonzalez",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Mensah",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pat Mensah",
+    "type": "person",
+    "profession": "comedian",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Scarlett Johansson",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Garcia",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Kenya",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Brown",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Anderson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Martin",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Gonzalez",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Jackson",
+    "type": "person",
+    "profession": "actor",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Lopez",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Idris Elba",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lee Martinez",
+    "type": "person",
+    "profession": "actor",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Miller",
+    "type": "person",
+    "profession": "politician",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Miller",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Williams",
+    "type": "person",
+    "profession": "scientist",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Garcia",
+    "type": "person",
+    "profession": "politician",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Addison Rae",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Garcia",
+    "type": "person",
+    "profession": "businessman",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Roman Reigns",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Anderson",
+    "type": "person",
+    "profession": "actor",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Davis",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sam Okafor",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Balogun",
+    "type": "person",
+    "profession": "chef",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "chef",
+      "Argentina",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Johnson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Anderson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pat Wilson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Edinson Cavani",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Jones",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "India",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Gonzalez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Johnson",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Taylor",
+    "type": "person",
+    "profession": "musician",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Heung-min Son",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cameron Jackson",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Kebede",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Abebe",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Davido",
+    "type": "person",
+    "profession": "musician",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Phil Foden",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alan Turing",
+    "type": "person",
+    "profession": "scientist",
+    "country": "France",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "France",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Martinez",
+    "type": "person",
+    "profession": "actor",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bruno Mars",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jeff Bezos",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jude Bellingham",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Hernandez",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Markiplier",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Nguyen",
+    "type": "person",
+    "profession": "actor",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Rio Ferdinand",
+    "type": "person",
+    "profession": "footballer",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Balogun",
+    "type": "person",
+    "profession": "footballer",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Smith",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Meryl Streep",
+    "type": "person",
+    "profession": "actor",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "actor",
+      "Nigeria",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mateo Thomas",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chinelo Brown",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lee Thompson",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Lopez",
+    "type": "person",
+    "profession": "influencer",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Wilson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Balogun",
+    "type": "person",
+    "profession": "actor",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emmanuel Macron",
+    "type": "person",
+    "profession": "politician",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luka Modrić",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Davis",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Thompson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Jones",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Hernandez",
+    "type": "person",
+    "profession": "musician",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Balogun",
+    "type": "person",
+    "profession": "chef",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "George W. Bush",
+    "type": "person",
+    "profession": "politician",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Johnson",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Brown",
+    "type": "person",
+    "profession": "musician",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mercy Johnson",
+    "type": "person",
+    "profession": "actor",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ramsey Nouah",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alex Kebede",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Xavi Hernández",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Gonzalez",
+    "type": "person",
+    "profession": "chef",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Osei",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Johnson",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Adeyemi",
+    "type": "person",
+    "profession": "actor",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Angel Di Maria",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Okafor",
+    "type": "person",
+    "profession": "chef",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Davis",
+    "type": "person",
+    "profession": "businessman",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Casey Miller",
+    "type": "person",
+    "profession": "politician",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Wilson",
+    "type": "person",
+    "profession": "comedian",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Nikola Tesla",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Italy",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Italy",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Osei",
+    "type": "person",
+    "profession": "actor",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Smith",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Wilson",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Charli D'Amelio",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Adeyemi",
+    "type": "person",
+    "profession": "scientist",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Martin",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Williams",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Isaac Newton",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Portugal",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Smith",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "musician",
+      "Germany",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Lopez",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Triple H",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Gonzalez",
+    "type": "person",
+    "profession": "chef",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Miller",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "VanossGaming",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Moore",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ellen DeGeneres",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Logan Paul",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andrés Iniesta",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Jones",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Hemsworth",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drake",
+    "type": "person",
+    "profession": "musician",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pele",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "Argentina",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sam Nguyen",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Nguyen",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Maradona",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "Argentina",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Jones",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kanye West",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Taylor",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Hernandez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jacksepticeye",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Williams",
+    "type": "person",
+    "profession": "politician",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Amina Nguyen",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Brown",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Martin",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Brown",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Moore",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mohamed Salah",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Anderson",
+    "type": "person",
+    "profession": "actor",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Lopez",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cardi B",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sadio Mané",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Ramos",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Jackson",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Wayne Rooney",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Morgan Ibrahim",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lee Nguyen",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Balogun",
+    "type": "person",
+    "profession": "politician",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Jackson",
+    "type": "person",
+    "profession": "actor",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ninja",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Moore",
+    "type": "person",
+    "profession": "politician",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Adele",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alex Osei",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Osei",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Wilson",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kylie Jenner",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Franz Beckenbauer",
+    "type": "person",
+    "profession": "footballer",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Angela Merkel",
+    "type": "person",
+    "profession": "politician",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Miller",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Canada",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "Canada",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Thierry Henry",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Elvis Presley",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "musician",
+      "Spain",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Paolo Maldini",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Martin",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "India",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Garcia",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Thomas",
+    "type": "person",
+    "profession": "actor",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tems",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Oluwaseun",
+    "type": "person",
+    "profession": "musician",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Dixie D'Amelio",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Garcia",
+    "type": "person",
+    "profession": "businessman",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Kebede",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Taylor",
+    "type": "person",
+    "profession": "chef",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Miller",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Keanu Reeves",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lionel Messi",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "Argentina",
+      "legend"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Lionel_Messi_20180626.jpg"
+  },
+  {
+    "name": "Cameron Okafor",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Madonna",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "musician",
+      "Germany",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Dude Perfect",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Jones",
+    "type": "person",
+    "profession": "politician",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Gareth Bale",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Taylor",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Oluwaseun",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Beyoncé",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Morgan Jackson",
+    "type": "person",
+    "profession": "musician",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Ibrahim",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Taylor",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Abebe",
+    "type": "person",
+    "profession": "musician",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Smosh",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Taylor",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Nate",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Elon Musk",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg"
+  },
+  {
+    "name": "Sergio Anderson",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Roberto Carlos",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bob Marley",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "musician",
+      "Spain",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Neymar Jr",
+    "type": "person",
+    "profession": "footballer",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Stephen Hawking",
+    "type": "person",
+    "profession": "scientist",
+    "country": "UK",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "UK",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Okafor",
+    "type": "person",
+    "profession": "musician",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Brown",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Hernandez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Moore",
+    "type": "person",
+    "profession": "musician",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Jericho",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alex Gonzalez",
+    "type": "person",
+    "profession": "politician",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Williams",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emeka Smith",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Hernandez",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Jackson",
+    "type": "person",
+    "profession": "musician",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Oprah Winfrey",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Moore",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Nguyen",
+    "type": "person",
+    "profession": "actor",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Smith",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Smith",
+    "type": "person",
+    "profession": "chef",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Kebede",
+    "type": "person",
+    "profession": "scientist",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Loren Gray",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Wizkid",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Smith",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Gonzalez",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emma Watson",
+    "type": "person",
+    "profession": "actor",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Richard Feynman",
+    "type": "person",
+    "profession": "scientist",
+    "country": "France",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "France",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Ibrahim",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Martin",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Wilson",
+    "type": "person",
+    "profession": "politician",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lee Williams",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Spain",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Spain",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Nicki Minaj",
+    "type": "person",
+    "profession": "musician",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Nguyen",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Casey Hernandez",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Okafor",
+    "type": "person",
+    "profession": "comedian",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ciro Immobile",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Ibrahim",
+    "type": "person",
+    "profession": "musician",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Jones",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "Argentina",
+      "legend"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+  },
+  {
+    "name": "Jordan Adeyemi",
+    "type": "person",
+    "profession": "scientist",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Charles Darwin",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Argentina",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pat Johnson",
+    "type": "person",
+    "profession": "musician",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Ibrahim",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Gal Gadot",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Thomas",
+    "type": "person",
+    "profession": "comedian",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Kebede",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "KSI",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bella Poarch",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Robert Lewandowski",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Adeyemi",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Adeola Garcia",
+    "type": "person",
+    "profession": "chef",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Lopez",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Abebe",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Wilson",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Martin",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Taylor",
+    "type": "person",
+    "profession": "actor",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Miller",
+    "type": "person",
+    "profession": "businessman",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Moore",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mark Zuckerberg",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cameron Thompson",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Kebede",
+    "type": "person",
+    "profession": "musician",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Davis",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Smith",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Nguyen",
+    "type": "person",
+    "profession": "chef",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jennifer Lawrence",
+    "type": "person",
+    "profession": "actor",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Brown",
+    "type": "person",
+    "profession": "chef",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "The Undertaker",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "wrestler",
+      "USA",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Boris Johnson",
+    "type": "person",
+    "profession": "politician",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "John Cena",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jay-Z",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Smith",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jeffree Star",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Jackson",
+    "type": "person",
+    "profession": "footballer",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ada Lovelace",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Nigeria",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Blake Garcia",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Margaret Thatcher",
+    "type": "person",
+    "profession": "politician",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Martinez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Anderson",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Okonkwo",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Kenya",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Thomas",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Eden Osei",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Davis",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "MrBeast",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/MrBeast_at_VidCon_2022.jpg"
+  },
+  {
+    "name": "Devon Anderson",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Ibrahim",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Spain",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "comedian",
+      "Spain",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Okafor",
+    "type": "person",
+    "profession": "musician",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Balogun",
+    "type": "person",
+    "profession": "actor",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Joe Biden",
+    "type": "person",
+    "profession": "politician",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Angelina Jolie",
+    "type": "person",
+    "profession": "actor",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Winston Churchill",
+    "type": "person",
+    "profession": "politician",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "politician",
+      "Portugal",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Galileo Galilei",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Spain",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Spain",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Taylor",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Erling Haaland",
+    "type": "person",
+    "profession": "footballer",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Abraham Lincoln",
+    "type": "person",
+    "profession": "politician",
+    "country": "UK",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "politician",
+      "UK",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Eden Williams",
+    "type": "person",
+    "profession": "politician",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tom Hanks",
+    "type": "person",
+    "profession": "actor",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emeka Williams",
+    "type": "person",
+    "profession": "chef",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Casey Anderson",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Johnny Depp",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "NigaHiga",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Smith",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Martinez",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Thomas",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "influencer",
+      "Nigeria",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Williams",
+    "type": "person",
+    "profession": "musician",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Eminem",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Wilson",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Mensah",
+    "type": "person",
+    "profession": "politician",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Spencer Polanco Knight",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Gonzalez",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Okonkwo",
+    "type": "person",
+    "profession": "musician",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antoine Griezmann",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Trent Alexander-Arnold",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Brown",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Rey Mysterio",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Adeyemi",
+    "type": "person",
+    "profession": "comedian",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "James Charles",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Morgan Moore",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Anderson",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Martinez",
+    "type": "person",
+    "profession": "scientist",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Shakira",
+    "type": "person",
+    "profession": "musician",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Mensah",
+    "type": "person",
+    "profession": "influencer",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Gonzalez",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mateo Anderson",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Oluwaseun",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Natalie Portman",
+    "type": "person",
+    "profession": "actor",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Denzel Washington",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Evans",
+    "type": "person",
+    "profession": "actor",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Davis",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Kebede",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Blake Jackson",
+    "type": "person",
+    "profession": "musician",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Brock Lesnar",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Gonzalez",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Jackson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zendaya",
+    "type": "person",
+    "profession": "actor",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Justin Trudeau",
+    "type": "person",
+    "profession": "politician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Jackson",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chinelo Moore",
+    "type": "person",
+    "profession": "scientist",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Taylor",
+    "type": "person",
+    "profession": "musician",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Adeola Lopez",
+    "type": "person",
+    "profession": "musician",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Moore",
+    "type": "person",
+    "profession": "politician",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sam Thomas",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chinelo Miller",
+    "type": "person",
+    "profession": "actor",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alex Thomas",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Nelson Mandela",
+    "type": "person",
+    "profession": "politician",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "politician",
+      "Brazil",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Wilson",
+    "type": "person",
+    "profession": "businessman",
+    "country": "India",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kwame Garcia",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Osei",
+    "type": "person",
+    "profession": "actor",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Oluwaseun",
+    "type": "person",
+    "profession": "musician",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mateo Jones",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Ibrahim",
+    "type": "person",
+    "profession": "actor",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Okonkwo",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Okonkwo",
+    "type": "person",
+    "profession": "politician",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "The Weeknd",
+    "type": "person",
+    "profession": "musician",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Billie Eilish",
+    "type": "person",
+    "profession": "musician",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Eden Abebe",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kamala Harris",
+    "type": "person",
+    "profession": "politician",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Burna Boy",
+    "type": "person",
+    "profession": "musician",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cameron Williams",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Jackson",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fatima Mensah",
+    "type": "person",
+    "profession": "chef",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Baby Ariel",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Nguyen",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "India",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Hernandez",
+    "type": "person",
+    "profession": "chef",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Thompson",
+    "type": "person",
+    "profession": "chef",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "type": "person",
+    "profession": "actor",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Martin",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Garcia",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marie Curie",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Nigeria",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Thomas",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emeka Johnson",
+    "type": "person",
+    "profession": "chef",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Gonzalez",
+    "type": "person",
+    "profession": "musician",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ifeanyi Johnson",
+    "type": "person",
+    "profession": "chef",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emeka Martinez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pete Edochie",
+    "type": "person",
+    "profession": "actor",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Nguyen",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Casey Moore",
+    "type": "person",
+    "profession": "actor",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Gerard Piqué",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Roberto Baggio",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Martin",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Emeka Davis",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Martinez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Samuel L. Jackson",
+    "type": "person",
+    "profession": "actor",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Martinez",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Balogun",
+    "type": "person",
+    "profession": "politician",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ryan Higa",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Rivaldo",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Gonzalez",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ariana Grande",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ronaldinho",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "footballer",
+      "USA",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Kebede",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jadon Sancho",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Moore",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Taylor",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Italy",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mateo Garcia",
+    "type": "person",
+    "profession": "comedian",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Brown",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Williams",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Amina Hernandez",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Adeyemi",
+    "type": "person",
+    "profession": "chef",
+    "country": "India",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Gonzalez",
+    "type": "person",
+    "profession": "politician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Thomas",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Moore",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Garcia",
+    "type": "person",
+    "profession": "musician",
+    "country": "France",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Adeola Davis",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Adeola Jones",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sam Martinez",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Devon Taylor",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Gordon Ramsay",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skyler Moore",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Karim Benzema",
+    "type": "person",
+    "profession": "footballer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Davis",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carlos Jackson",
+    "type": "person",
+    "profession": "footballer",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Miller",
+    "type": "person",
+    "profession": "actor",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Casey Gonzalez",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Davis",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Oluwaseun",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tom Cruise",
+    "type": "person",
+    "profession": "actor",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Abebe",
+    "type": "person",
+    "profession": "politician",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Garcia",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Argentina",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Osei",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Donald Trump",
+    "type": "person",
+    "profession": "politician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alex Thompson",
+    "type": "person",
+    "profession": "musician",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chris Davis",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Stone Cold Steve Austin",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Jones",
+    "type": "person",
+    "profession": "footballer",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ngozi Lopez",
+    "type": "person",
+    "profession": "comedian",
+    "country": "India",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jordan Kebede",
+    "type": "person",
+    "profession": "chef",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sergio Balogun",
+    "type": "person",
+    "profession": "chef",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Okonkwo",
+    "type": "person",
+    "profession": "musician",
+    "country": "Ghana",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Garcia",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Okafor",
+    "type": "person",
+    "profession": "businessman",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ibrahim Lopez",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marcus Rashford",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Paul Pogba",
+    "type": "person",
+    "profession": "footballer",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Nigella Lawson",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lilly Singh",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Barack Obama",
+    "type": "person",
+    "profession": "politician",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Nigeria"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg"
+  },
+  {
+    "name": "Kendrick Johnson",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Okafor",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "David Beckham",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zainab Jones",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": true,
+    "traits": [
+      "tiktoker",
+      "Portugal",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Morgan Garcia",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Rihanna",
+    "type": "person",
+    "profession": "musician",
+    "country": "Portugal",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Martinez",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Marco Moore",
+    "type": "person",
+    "profession": "scientist",
+    "country": "India",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "India"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Thompson",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Balogun",
+    "type": "person",
+    "profession": "musician",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kim Kardashian",
+    "type": "person",
+    "profession": "influencer",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kofi Taylor",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Davis",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kylian Mbappé Jr",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Nguyen",
+    "type": "person",
+    "profession": "actor",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "actor",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Carey",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Omotola Jalade",
+    "type": "person",
+    "profession": "actor",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Gonzalez",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Kenya",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Kenya"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Williams",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Japan",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "influencer",
+      "Japan",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Adeyemi",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Vladimir Putin",
+    "type": "person",
+    "profession": "politician",
+    "country": "Germany",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Johnson",
+    "type": "person",
+    "profession": "influencer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "influencer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Morgan Freeman",
+    "type": "person",
+    "profession": "actor",
+    "country": "Nigeria",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "actor",
+      "Nigeria",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cameron Wilson",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Australia",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Suárez",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chadwick Boseman",
+    "type": "person",
+    "profession": "actor",
+    "country": "France",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "actor",
+      "France"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Seth Rollins",
+    "type": "person",
+    "profession": "wrestler",
+    "country": "USA",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "wrestler",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Okafor",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Wilson",
+    "type": "person",
+    "profession": "musician",
+    "country": "UK",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Corey Okafor",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hassan Okonkwo",
+    "type": "person",
+    "profession": "chef",
+    "country": "Japan",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Adeyemi",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Swift",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jamie Johnson",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Nigeria",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Nigeria"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tunde Mensah",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Taylor Balogun",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Harry Kane",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Argentina",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Argentina"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Diego Kebede",
+    "type": "person",
+    "profession": "chef",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chinelo Ibrahim",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Japan",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Japan"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kendrick Lamar",
+    "type": "person",
+    "profession": "musician",
+    "country": "Portugal",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Portugal"
+    ],
+    "image": ""
+  },
+  {
+    "name": "PewDiePie",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "USA"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/PewDiePie_%282016%29.jpg"
+  },
+  {
+    "name": "Emeka Thompson",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Brazil",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Brazil"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Riley Taylor",
+    "type": "person",
+    "profession": "comedian",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Drew Johnson",
+    "type": "person",
+    "profession": "politician",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "politician",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alex Moore",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Avery Adeyemi",
+    "type": "person",
+    "profession": "chef",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ed Sheeran",
+    "type": "person",
+    "profession": "musician",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chinelo Abebe",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Ghana",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Ghana"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Moore",
+    "type": "person",
+    "profession": "chef",
+    "country": "Australia",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Australia"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sam Osei",
+    "type": "person",
+    "profession": "youtuber",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "youtuber",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Luis Anderson",
+    "type": "person",
+    "profession": "chef",
+    "country": "Germany",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "chef",
+      "Germany"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Leonardo DiCaprio",
+    "type": "person",
+    "profession": "actor",
+    "country": "Italy",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "actor",
+      "Italy",
+      "legend"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Andre Anderson",
+    "type": "person",
+    "profession": "businessman",
+    "country": "Canada",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "businessman",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "N'Golo Kanté",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Italy",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Italy"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Blake Davis",
+    "type": "person",
+    "profession": "footballer",
+    "country": "Spain",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "footballer",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Antonio Ibrahim",
+    "type": "person",
+    "profession": "comedian",
+    "country": "UK",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "comedian",
+      "UK"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Jennifer Lopez",
+    "type": "person",
+    "profession": "musician",
+    "country": "Spain",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "musician",
+      "Spain"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zach King",
+    "type": "person",
+    "profession": "tiktoker",
+    "country": "USA",
+    "gender": "female",
+    "legend": false,
+    "traits": [
+      "tiktoker",
+      "USA"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Blake Okonkwo",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Canada",
+    "gender": "male",
+    "legend": false,
+    "traits": [
+      "scientist",
+      "Canada"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Albert Einstein",
+    "type": "person",
+    "profession": "scientist",
+    "country": "Italy",
+    "gender": "male",
+    "legend": true,
+    "traits": [
+      "scientist",
+      "Italy",
+      "legend"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg"
+  },
+  {
+    "name": "Species 78",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species78"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 8",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional8"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 118",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object118"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 35",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional35"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 34",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object34"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 108",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species108"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pikachu",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "pikachu"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 128",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional128"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Table",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "table"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 3",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species3"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 133",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object133"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Laptop",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "laptop"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 5",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional5"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Panda",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "panda"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Link",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "link"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Whale",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": true,
+    "wild": true,
+    "traits": [
+      "whale"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 110",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional110"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 98",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional98"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 123",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species123"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Parrot",
+    "type": "animal",
+    "pet": true,
+    "flies": true,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "parrot"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Shark",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": true,
+    "wild": true,
+    "traits": [
+      "shark"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 101",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional101"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Dog",
+    "type": "animal",
+    "pet": true,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "dog"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 104",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional104"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Microwave",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "microwave"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 38",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional38"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 107",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional107"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 19",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object19"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 60",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species60"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 46",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object46"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 124",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object124"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Watch",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "watch"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 96",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species96"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 65",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional65"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pig",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "pig"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 18",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species18"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 119",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional119"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 100",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object100"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Smartphone",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "smartphone"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 83",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional83"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Wallet",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "wallet"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 91",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object91"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 121",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object121"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 12",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species12"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sofa",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "sofa"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 84",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species84"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 33",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species33"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 67",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object67"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fox",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "fox"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Batman",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "batman"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 75",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species75"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 102",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species102"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 80",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional80"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 115",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object115"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 95",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional95"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 9",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species9"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 24",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species24"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lara Croft",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "lara",
+      "croft"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 14",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional14"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 131",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional131"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 45",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species45"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Koala",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "koala"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Eagle",
+    "type": "animal",
+    "pet": false,
+    "flies": true,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "eagle"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 28",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object28"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Camera",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "camera"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Television",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "television"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Iron Man",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "iron",
+      "man"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 29",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional29"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Alligator",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "alligator"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Turtle",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "turtle"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Zebra",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "zebra"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 77",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional77"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 87",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species87"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Duck",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "duck"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 132",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species132"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 99",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species99"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 136",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object136"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 16",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object16"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Horse",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "horse"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 53",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional53"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Penguin",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "penguin"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 113",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional113"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 106",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object106"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 66",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species66"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 134",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional134"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bicycle",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": true,
+    "daily_use": false,
+    "traits": [
+      "bicycle"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Captain America",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "captain",
+      "america"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 4",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object4"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 127",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object127"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 41",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional41"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 72",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species72"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 63",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species63"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 22",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object22"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Hippo",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "hippo"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chicken",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "chicken"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 50",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional50"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 103",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object103"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 27",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species27"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 122",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional122"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tiger",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "tiger"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Chair",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "chair"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cow",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "cow"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Rabbit",
+    "type": "animal",
+    "pet": true,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "rabbit"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 17",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional17"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sheep",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "sheep"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Elephant",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "elephant"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 120",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species120"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 23",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional23"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 44",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional44"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Spoon",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "spoon"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 30",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species30"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 92",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional92"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Superman",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "superman"
+    ],
+    "image": ""
+  },
+  {
+    "name": "SpongeBob SquarePants",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "spongebob",
+      "squarepants"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cup",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "cup"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Motorcycle",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": true,
+    "daily_use": false,
+    "traits": [
+      "motorcycle"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Giraffe",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "giraffe"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 69",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species69"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Router",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "router"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lion",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "lion"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mug",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "mug"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 13",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object13"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 114",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species114"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Naruto Uzumaki",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "naruto",
+      "uzumaki"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 74",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional74"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Kangaroo",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "kangaroo"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fork",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "fork"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 116",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional116"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Boat",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": true,
+    "daily_use": false,
+    "traits": [
+      "boat"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 88",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object88"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 58",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object58"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 2",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional2"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 10",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object10"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 21",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species21"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 68",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional68"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 31",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object31"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 37",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object37"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 97",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object97"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 20",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional20"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 48",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species48"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 126",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species126"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Crocodile",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "crocodile"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 54",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species54"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 93",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species93"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 76",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object76"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bed",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "bed"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 52",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object52"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Car",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": true,
+    "daily_use": false,
+    "traits": [
+      "car"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 71",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional71"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 125",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional125"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 42",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species42"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 130",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object130"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Backpack",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "backpack"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 15",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species15"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 79",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object79"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 39",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species39"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 129",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species129"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 11",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional11"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 86",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional86"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 55",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object55"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 26",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional26"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 59",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional59"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 47",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional47"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Goat",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "goat"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 49",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object49"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 117",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species117"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 25",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object25"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 1",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object1"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mario",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "mario"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 64",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object64"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 109",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object109"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Cat",
+    "type": "animal",
+    "pet": true,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "cat"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 81",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species81"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 40",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object40"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 36",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species36"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tablet",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "tablet"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Refrigerator",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "refrigerator"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 73",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object73"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 135",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species135"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 112",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object112"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 43",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object43"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 61",
+    "type": "object",
+    "electronic": true,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object61"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 89",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional89"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 7",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object7"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Speaker",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "speaker"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 90",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species90"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Spider-Man",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "spider-man"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg"
+  },
+  {
+    "name": "Luigi",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "luigi"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Key",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "key"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Master Chief",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "master",
+      "chief"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Printer",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "printer"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 32",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional32"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Knife",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "knife"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 57",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species57"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 94",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object94"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 56",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional56"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Book",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "book"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 82",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object82"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 111",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species111"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Pen",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "pen"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fictional 62",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "fictional62"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Goldfish",
+    "type": "animal",
+    "pet": true,
+    "flies": false,
+    "water": false,
+    "wild": false,
+    "traits": [
+      "goldfish"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 105",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species105"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 85",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "object85"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Headphones",
+    "type": "object",
+    "electronic": true,
+    "portable": false,
+    "vehicle": false,
+    "daily_use": false,
+    "traits": [
+      "headphones"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Goku",
+    "type": "fictional",
+    "fictional": true,
+    "traits": [
+      "goku"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Dolphin",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": true,
+    "wild": true,
+    "traits": [
+      "dolphin"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 6",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species6"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Object 70",
+    "type": "object",
+    "electronic": false,
+    "portable": true,
+    "vehicle": false,
+    "daily_use": true,
+    "traits": [
+      "object70"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Species 51",
+    "type": "animal",
+    "pet": false,
+    "flies": false,
+    "water": false,
+    "wild": true,
+    "traits": [
+      "species51"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Airplane",
+    "type": "object",
+    "electronic": false,
+    "portable": false,
+    "vehicle": true,
+    "daily_use": false,
+    "traits": [
+      "airplane"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ruben amorim",
+    "question": null,
+    "answer": null
+  },
+  {
+    "name": "Jose Mourinho ",
+    "question": null,
+    "answer": null
+  },
+  {
+    "name": "Oliver Glasner",
+    "question": null,
+    "answer": null
+  },
+  {
+    "name": "Arne Slot",
+    "question": null,
+    "answer": null
+  }
+]

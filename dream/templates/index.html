@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mind Reader - Start</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color:blue; }
+    button {
+      padding: 20px 40px; font-size: 18px;
+      border: none; border-radius: 8px;
+      background-color: #4CAF50; color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Mind Reader!</h1>
+  <p>Think of a character. I’ll try to guess it!</p>
+  <form action="{{ url_for('start') }}" method="post">
+    <button type="submit">Start Game</button>
+  </form>
+</body>
+</html>
