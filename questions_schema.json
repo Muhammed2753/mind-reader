@@ -1,0 +1,79 @@
+{
+  "global": [
+    "Are you thinking of yourself?",
+    "Are you thinking of a family member (parent, sibling, child, etc.)?",
+    "Is this person real or fictional?",
+    "Is this person alive today?",
+    "Is this person famous worldwide?"
+  ],
+  "fictional": {
+    "superhero": [
+      "Does this character have superpowers?",
+      "Is this character from Marvel Comics?",
+      "Is this character from DC Comics?",
+      "Does this character wear a mask or costume?",
+      "Is this character a villain?"
+    ],
+    "book": [
+      "Is this character from a novel?",
+      "Was this character created before 1950?",
+      "Is this character British?",
+      "Does this character solve crimes or mysteries?",
+      "Is this character a wizard or uses magic?"
+    ],
+    "movie_tv": [
+      "Is this character from a movie?",
+      "Is this character from a TV series?",
+      "Is this character animated (not live-action)?",
+      "Has this character been played by multiple actors?",
+      "Is this character from a Disney production?"
+    ]
+  },
+  "real": {
+    "athlete": {
+      "football_soccer": [
+        "Does this person play soccer (football)?",
+        "Has this player won the Ballon d'Or?",
+        "Does this player currently play in Europe?",
+        "Is this player from South America?"
+      ],
+      "basketball": [
+        "Does this person play basketball?",
+        "Has this player won an NBA championship?",
+        "Is this player American?"
+      ],
+      "tennis": [
+        "Does this person play tennis?",
+        "Has this player won Wimbledon?",
+        "Is this player male?"
+      ]
+    },
+    "celebrity": {
+      "musician": [
+        "Is this person a singer or musician?",
+        "Has this person won a Grammy Award?",
+        "Is this person also an actor?"
+      ],
+      "actor": [
+        "Is this person primarily an actor?",
+        "Has this person won an Academy Award (Oscar)?",
+        "Is this person from Hollywood?"
+      ],
+      "influencer": [
+        "Is this person famous mainly on social media?",
+        "Does this person have over 10 million followers?"
+      ]
+    },
+    "historical": [
+      "Was this person a world leader?",
+      "Did this person live before 1900?",
+      "Is this person known for scientific discoveries?"
+    ],
+    "family_or_self": [
+      "Is this person your parent?",
+      "Is this person your sibling?",
+      "Do you live with this person?",
+      "Does this person work in healthcare?"
+    ]
+  }
+}

@@ -7,6 +7,7 @@
     .result { font-size: 22px; margin-top: 20px; }
     input { padding: 10px; width: 60%; margin-top: 20px; }
     button { padding: 10px 20px; margin-top: 10px; }
+    background-color { green}
   </style>
 </head>
 <body>
@@ -24,5 +25,20 @@
    <form action="{{ url_for('start') }}" method="post" style="margin-top:10px;">
     <button type="submit">Play Again</button>
   </form>
+  <!-- In answer.html -->
+{% if not done %}
+  <img src="{{ image_url }}" alt="{{ guess }}" width="150" height="150" style="object-fit: cover; border-radius: 8px;">
+  <h2>🤔 I think it's <u>{{ guess }}</u>!</h2>
+  <p>Confidence: <strong>{{ confidence }}%</strong></p>
+
+  {% if ask_confirm %}
+    <form method="POST">
+      <button type="submit" name="feedback" value="yes">✅ Yes! You got it!</button>
+      <button type="submit" name="feedback" value="no">❌ No, it's someone else</button>
+    </form>
+  {% endif %}
+{% else %}
+  <h2>{{ message }}</h2>
+{% endif %}
 </body>
 </html>
