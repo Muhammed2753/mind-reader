@@ -29,7 +29,9 @@
       "Was this player born in Germany?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a goalkeeper?": "yes",
-      "Is this player playing for Manchester City?": "yes"
+      "Is this player playing for Manchester City?": "yes",
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -53,7 +55,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -65,7 +68,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -77,7 +81,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -92,17 +97,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Vitor Reis": {
-    "answers": {
-      "Is this person a football player?": "yes",
-      "Is this player from South America?": "yes",
-      "Was this player born in Brazil?": "yes",
-      "Is this player under 23 years old?": "yes",
-      "Does this player play as a center defender?": "yes",
-      "Is this player playing for Manchester City?": "yes"
-    },
-    "image_url": "/static/images/default.png"
-  },
+
   "Joško Gvardiol": {
     "answers": {
       "Is this person a football player?": "yes",
@@ -110,7 +105,9 @@
       "Was this player born in Croatia?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
-      "Is this player playing for Manchester City?": "yes"
+      "Is this player playing for Manchester City?": "yes",
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -122,7 +119,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -144,7 +142,9 @@
       "Was this player born in England?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a right defender?": "yes",
-      "Is this player playing for Manchester City?": "yes"
+      "Is this player playing for Manchester City?": "yes",
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -155,7 +155,9 @@
       "Was this player born in Portugal?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center midfielder?": "yes",
-      "Is this player playing for Manchester City?": "yes"
+      "Is this player playing for Manchester City?": "yes",
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -167,7 +169,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a defensive midfielder?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -179,8 +182,11 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a defensive midfielder?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the Ballon D'or?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the Ballon d'Or?": "yes",
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes",
+      "Has this player won the UEFA European Championship?": "yes",
+      "Has this player won the UEFA Nations League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -192,7 +198,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a right midfielder?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -204,7 +211,8 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a midfielder?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -216,7 +224,9 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a right winger?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes",
+      "Has this player won the Premier League Golden Boot?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -272,7 +282,10 @@
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a striker?": "yes",
       "Is this player playing for Manchester City?": "yes",
-      "Has this player won the UEFA Champions League?": "yes"
+      "Has this player won the UEFA Champions League?": "yes",
+      "Has this player won the Premier League?": "yes",
+      "Has this player won the Premier League Golden Boot?": "yes",
+      "Has this player won the European Golden Shoe?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -317,6 +330,20 @@
       "Is this player under 23 years old?": "yes",
       "Does this player play as a midfielder?": "yes",
       "Is this player playing for Manchester City?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pep Guardiola": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in the Premier League?": "yes",
+      "Has this manager managed Manchester City?": "yes",
+      "Is this manager currently active?": "yes",
+      "Has this manager won the UEFA Champions League?": "yes",
+      "Has this manager won the Premier League?": "yes",
+      "Has this manager won La Liga?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -482,7 +509,8 @@
       "Was this player born in Brazil?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a defensive midfielder?": "yes",
-      "Is this player playing for Manchester United?": "yes"
+      "Is this player playing for Manchester United?": "yes",
+      "Has this player won the UEFA Champions League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -664,7 +692,19 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Kepa Arrizabalaga":{
+  "Ruben Amorim":{
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Portugal?": "yes",
+      "Has this manager managed in the Premier League?": "yes",
+      "Has this manager managed Manchester United?": "yes",
+      "Is this manager currently active?": "yes",
+      "Has this manager won the Liga Portugal?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Kepa Arrizabalaga": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -675,7 +715,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "David Raya":{
+  "David Raya": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -687,7 +727,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Riccardo Calafiori":{
+  "Riccardo Calafiori": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -698,7 +738,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Gabreil Maghales":{
+  "Gabriel Magalhães": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -709,7 +749,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Piero Hincapie":{
+  "Piero Hincapié": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -720,7 +760,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Myles Lewis-Skelly":{
+  "Myles Lewis-Skelly": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -731,7 +771,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Cristian Mosquera":{
+  "Cristian Mosquera": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -742,7 +782,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "William Saliba":{
+  "William Saliba": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -753,7 +793,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Jurrien Timber":{
+  "Jurrien Timber": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -764,7 +804,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Ben White":{
+  "Ben White": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -775,7 +815,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Max Dowman":{
+  "Max Dowman": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -808,7 +848,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Christian Norgaard": {
+  "Christian Nørgaard": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -819,7 +859,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-    "Viktor Gyökeres": {
+  "Viktor Gyökeres": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -852,7 +892,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Martin Zubimendi": {
+  "Martín Zubimendi": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -863,7 +903,6 @@
     },
     "image_url": "/static/images/default.png"
   },
-
   "Kai Havertz": {
     "answers": {
       "Is this person a football player?": "yes",
@@ -930,7 +969,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Dennis William": {
+  "Dennis Williams": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -941,7 +980,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Petrovic Djordje": {
+  "Petrović Đorđe": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -963,7 +1002,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Araujo Julian": {
+  "Araújo Julián": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -974,7 +1013,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Diakite Bafode": {
+  "Diakitè Bafodé": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Africa?": "yes",
@@ -996,7 +1035,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Jimenez Alejandro": {
+  "Jiménez Alejandro": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -1007,7 +1046,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Milosavljevic Veljko": {
+  "Milošavljević Veljko": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -1018,7 +1057,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Senesi Marcos": {
+  "Šenčić Marcos": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -1040,10 +1079,10 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Soler Julio": {
+  "Solér Julio": {
     "answers": {
       "Is this person a football player?": "yes",
-      "Is this player from Europe?": "yes",
+      "Is this player from South America?": "yes",
       "Was this player born in Argentina?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a right wing back?": "yes",
@@ -1062,7 +1101,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "William Harold": {
+  "Williams Harold": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -1249,7 +1288,6 @@
     },
     "image_url": "/static/images/default.png"
   },
-  
   "Austin Brandon": {
     "answers": {
       "Is this person a football player?": "yes",
@@ -1272,7 +1310,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Kinsky Antonin": {
+  "Kinsky Antonín": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -1503,7 +1541,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Palhinha Joao": {
+  "Palhinha João": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -1679,7 +1717,6 @@
     },
     "image_url": "/static/images/default.png"
   },
-
   "Moore Simon": {
     "answers": {
       "Is this person a football player?": "yes",
@@ -2043,7 +2080,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Traore Bertrand": {
+  "Traoré Bertrand": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Africa?": "yes",
@@ -2109,7 +2146,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Pecsi Armin": {
+  "Pečsi Armin": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2120,7 +2157,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Woodman Frederick": {
+  "Woodman Freddie": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2153,7 +2190,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Gomez Joe": {
+  "Gómez Joe": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2164,7 +2201,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Kerkez Milos": {
+  "Kerkez Miloš": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2175,7 +2212,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Konate Ibrahima": {
+  "Konaté Ibrahima": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2252,7 +2289,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Frimpong Jeremie": {
+  "Frimpong Jérémie": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2483,7 +2520,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Martinez Emiliano": {
+  "Martínez Emiliano": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -2549,7 +2586,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Garcia Andres": {
+  "García Andrés": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2571,7 +2608,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Lindelof Victor": {
+  "Lindelöf Victor": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2604,7 +2641,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Mosquera Yeimar Jesus": {
+  "Mosquera Yeimar Jesús": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -2670,7 +2707,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Buendia Emiliano": {
+  "Buendía Emiliano": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -2857,7 +2894,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Jorgensen Filip": {
+  "Jørgensen Filip": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2879,7 +2916,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Sanchez Robert": {
+  "Sánchez Robert": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -2923,7 +2960,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Radiashile Benoit": {
+  "Radiashvili Benoit": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -3044,7 +3081,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Caicedo Moises": {
+  "Caicedo Moisés": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -3055,7 +3092,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Essugo Dario": {
+  "Essugo Dário": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -3066,7 +3103,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Fernandez Enzo": {
+  "Fernández Enzo": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -3198,7 +3235,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Joao Pedro": {
+  "João Pedro": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -3242,7 +3279,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Benitez Walter": {
+  "Benítez Walter": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -3264,7 +3301,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Matthews Remi": {
+  "Matthews Rémi": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -3374,7 +3411,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Munoz Daniel": {
+  "Muñoz Daniel": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -3550,7 +3587,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Pino Yeremy": {
+  "Piño Yeremy": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -3605,7 +3642,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Kelleher Caoimhin": {
+  "Kelleher Caoimhín": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -3616,7 +3653,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Valdimarsson Hakon Rafn": {
+  "Valdimarsson Hákon Rafn": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -3715,7 +3752,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Carvalho Fabio": {
+  "Carvalho Fábio": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -4078,7 +4115,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Schar Fabian": {
+  "Šćar Fabian": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -4122,7 +4159,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Bruno Guimaraes": {
+  "Bruno Guimarães": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -4199,7 +4236,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Tonali Sandro": {
+  "Tonalı Sandro": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -4485,7 +4522,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Gomez Diego": {
+  "Gómez Diego": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -4650,7 +4687,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Hurzeler Fabian": {
+  "Hürzeler Fabian": {
     "answers": {
       "Is this person a football manager?": "yes",
       "Is this manager from Europe?": "yes",
@@ -4760,7 +4797,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Mykolenko Vitali": {
+  "Mykolenko Vitaliy": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -5706,7 +5743,6 @@
     },
     "image_url": "/static/images/default.png"
   },
-  
   "Lecomte Benjamin": {
     "answers": {
       "Is this person a football player?": "yes",
@@ -5927,7 +5963,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Jimenez Raul": {
+  "Jiménez Raúl": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from South America?": "yes",
@@ -5949,7 +5985,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Kusi Asare Jonah": {
+  "Kusi-Asare Jonah": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -5982,7 +6018,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Traore Adama": {
+  "Traoré Adama": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -6334,7 +6370,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Nuno Espirito Santos": {
+  "Nuno Espírito Santo": {
     "answers": {
       "Is this person a football manager?": "yes",
       "Is this manager from Europe?": "yes",
@@ -6367,7 +6403,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Sa Jose": {
+  "Sá José": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -6642,7 +6678,6 @@
     },
     "image_url": "/static/images/default.png"
   },
-  
   "Courtois Thibaut": {
     "answers": {
       "Is this person a football player?": "yes",
@@ -6918,7 +6953,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Tchouameni Aurelien": {
+  "Tchouameni Aurélien": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -9363,14 +9398,19 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Simon Unai": {
+  "Unai Simón": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a goalkeeper?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player represented Spain in the FIFA World Cup?": "yes",
+      "Has this player represented Spain in the UEFA European Championship?": "yes",
+      "Has this player won the UEFA Nations League?": "yes",
+      "Has this player made over 200 appearances for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9385,25 +9425,29 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Alvarez Yeray": {
+  "Álvarez Yeray": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player been capped for the Spain senior national team?": "yes",
+      "Has this player made over 200 appearances for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
-  "Areso Jesus": {
+  "Areso Jesús": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
       "Was this player born in Spain?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a right defender?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9414,7 +9458,9 @@
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a left wing back?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player made over 200 appearances for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9447,18 +9493,21 @@
       "Was this player born in France?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a center defender?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player represented France in the UEFA European Championship?": "yes",
+      "Has this player won the UEFA Nations League?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
-  "Lekue Inigo": {
+  "Lekue Iñigo": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a right wing back?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9506,7 +9555,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Gomez Unai": {
+  "Gómez Unai": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -9539,7 +9588,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Perez Adrian": {
+  "Pérez Adrián": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -9550,7 +9599,7 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Prados Diaz Benat": {
+  "Prados Díaz Beñat": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -9561,14 +9610,16 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Ruiz de Galarreta Inigo": {
+  "Ruiz de Galarreta Iñigo": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a defensive midfielder?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player made over 200 appearances for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9579,11 +9630,15 @@
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as an attacking midfielder?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player been capped for the Spain senior national team?": "yes",
+      "Has this player won the Supercopa de España?": "yes",
+      "Has this player been named in La Liga Team of the Season?": "yes",
+      "Has this player scored over 50 goals for Athletic Club?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
-  "Sanchez Ibon": {
+  "Sánchez Ibon": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -9601,22 +9656,25 @@
       "Was this player born in Spain?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a defensive midfielder?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player made over 200 appearances for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
-  "Berenguer Alex": {
+  "Berenguer Álex": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
       "Was this player born in Spain?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a forward?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
-  "Bujan Endika": {
+  "Buján Endika": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Europe?": "yes",
@@ -9634,7 +9692,8 @@
       "Was this player born in Spain?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a forward?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9656,7 +9715,9 @@
       "Was this player born in Morocco?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a forward?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player represented Morocco at youth level?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9671,14 +9732,18 @@
     },
     "image_url": "/static/images/default.png"
   },
-  "Williams Inaki": {
+  "Williams Iñaki": {
     "answers": {
       "Is this person a football player?": "yes",
       "Is this player from Africa?": "yes",
       "Was this player born in Ghana?": "yes",
       "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a forward?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player represented their country in a FIFA World Cup?": "yes",
+      "Has this player made over 300 career appearances?": "yes",
+      "Has this player scored over 50 goals for Athletic Club?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9689,7 +9754,9 @@
       "Was this player born in Spain?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a forward?": "yes",
-      "Is this player playing for Athletic Club?": "yes"
+      "Is this player playing for Athletic Club?": "yes",
+      "Has this player represented Spain at youth level (U21 or above)?": "yes",
+      "Has this player won the Supercopa de España?": "yes"
     },
     "image_url": "/static/images/default.png"
   },
@@ -9700,11 +9767,4312 @@
       "Was this manager born in Spain?": "yes",
       "Has this manager managed in La Liga?": "yes",
       "Has this manager managed Athletic Club?": "yes",
+      "Is this manager currently active?": "yes",
+      "Has this manager won La Liga as a manager?": "yes",
+      "Has this manager won the Copa del Rey as a manager?": "yes",
+      "Has this manager won the Supercopa de España as a manager?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+
+  "Benito Jorge": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ferrer Diego": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Letacek Jiri": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Czech Republic?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Medenica Djordjije": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Czech Republic?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Soria David": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Getafe?": "yes",
+      "Has this player won the golden glove?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abqar Abdel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Morocco?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Bekhoucha Ismael": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Morocco?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Davinchi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Djene": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Togo?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alcantara Alberto Risco": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Arambarri Mauro": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Uruguay?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Iglesias Sanchez Juan Antonio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Javier Munoz": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Borja Mayoral": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Enes Unal": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Turkey?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mata Jaime": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Portillo Juanmi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rodriguez Cristhian": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Colombia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Getafe?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Jose Bordalas": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Getafe?": "yes",
       "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Fernandez Alvaro": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Flores Alberto": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Nyland Orjan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Norway?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Romero Rafael": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vlachodimos Odysseas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Greece?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Azpilicueta Cesar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cardoso Fabio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Portugal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Carmona Jose Angel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Castrin": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Marcao": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Brazil?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Martinez Ramon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Nianzou Tanguy": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Oso": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Salas Kike": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sanchez Juanlu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Suazo Gabriel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Chile?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Agoume Lucien": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Altozano Edu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Bueno Sebastian Manuel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Collado Alberto": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gudelj Nemanja": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Serbia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Januzaj Adnan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Belgium?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mendy Batista": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rivera Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sow Djibril": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Switzerland?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vargas Ruben": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Switzerland?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Adams Akor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Nigeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Costa Alex": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ejuke Chidera": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Nigeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gonzalez Alfonso": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Peque": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Romero Isaac": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sanchez Alexis": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Chile?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sierra Miguel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sevilla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Almeyda Matias": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from South America?": "yes",
+      "Was this manager born in Argentina?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Sevilla?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Fernandez Raul": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Montero Ruben": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sivera Antonio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Swiderski Gregoire": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Canada?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ballestero Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Diarra Moussa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Mali?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Garces Facundo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Jonny Otto": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Maras Nikola": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Serbia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pacheco Jon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Parada Victor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Tenaglia Nahuel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Yusi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Morocco?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alena Carles": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Blanco Antonio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Calebe": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Brazil?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Guevara Ander": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Guridi Jon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ibanez Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pinillos Wilson Lander": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Protesoni Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Uruguay?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Suarez Denis": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Boye Lucas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Diaz Mariano": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Dominican Republic?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Martinez Toni": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Morcillo Diego": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rebbach Abderrahmane": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vicente Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Alaves?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Coudet Eduardo": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from South America?": "yes",
+      "Was this manager born in Argentina?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Alaves?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Radu Ionut": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Romania?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vidal Girona Marc Vicente": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Villar Ivan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Aidoo Joseph": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alonso Marcos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Carreira Sergio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Dominguez Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lago Yoel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mingueza Oscar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ristic Mihailo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Serbia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rodriguez Javier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rueda Javier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Starfelt Carl": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Sweden?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Beltran Fran": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Fernandez Manuel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gonzalez Hugo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moriba Ilaix": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Guinea?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rodriguez Damian": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Roman Miguel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sotelo Hugo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alvarez Hugo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Aspas Iago": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cervi Franco": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Duran Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "El Abdellaoui Jones": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Morocco?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Iglesias Borja": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Jutgla Ferran": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Swedberg Williot": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Sweden?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Zaragoza Bryan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Celta Vigo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Giraldez Claudio": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Celta Vigo?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cunat Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Primo Alejandro": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Romero Cayetano": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ruiz Adria": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 18 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ryan Mathew": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Oceania?": "yes",
+      "Was this player born in Australia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cabello Jorge": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cortina Borja": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Dela": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left wing back?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Elgezabal Udondo Unai": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Krug Martin": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Paraguay?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Matturro Alan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Uruguay?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moreno Matias": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Perez Nacho": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sanchez Manu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Toljan Jeremy": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Germany?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left wing back?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Varela Pampin Diego": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Arriaga Kervin": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Honduras?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Martinez Andres Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center midfielder?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Morales Jose": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as an attacking midfielder?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Olasagasti Jon Ander": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right winger?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ruiz Joan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vencedor Unai": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center midfielder?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alvarez Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Brugue Roger": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Espi Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left winger?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Etta Eyong": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Cameroon?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right winger?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Garcia Victor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Koyalipou Goduine": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Central African Republic?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Losada Iker": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Romero Ivan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left winger?": "yes",
+      "Is this player playing for Levante?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Calero Julian": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Levante?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+
+  "Bergstrom Lucas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Sweden?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cuellar Ivan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Roman Leo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Kumbulla Marash": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Albania?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lato Toni": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lopez David": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Maffeo Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moisa Johan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Hungary?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Morey Bauza Mateu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Olaizola Javier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Raillo Antonio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Salhi Iliesse": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left wing back?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Valjent Martin": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Slovakia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Darder Sergi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mascarell Omar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Germany?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Morlanes Manu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rodriguez Dani": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Samu Costa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Portugal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sanchez Antonio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Torre Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Asano Takuma": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Asia?": "yes",
+      "Was this player born in Japan?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Domenech Marc": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Joseph Mateo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Llabres Javier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right winger?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Muriqi Vedat": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Kosovo?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Prats Abdon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Virgili Jan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left winger?": "yes",
+      "Is this player playing for Mallorca?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Arrasate Jagoba": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Mallorca?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Arana Egoitz": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Folgado Theo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Fraga Aitor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Marrero Unai": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Remiro Alex": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Aramburu Jon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Colombia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Beitia Luken": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Caleta-Car Duje": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Croatia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Elustondo Aritz": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Martin Jon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Odriozola Alvaro": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ruperez Inaki": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Zubeldia Igor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gorrotxategi Jon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Goti Lopez Mikel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Herrera Yangel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Colombia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lebarbier Alex": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Marin Pablo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mendez Brais": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Soler Carlos": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sucic Luka": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Croatia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Turrientes Benat": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Zakharyan Arsen": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Russia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Barrenetxea Ander": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Dadie Izagirre Alberto": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Diaz Daniel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gomez Sergio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Guedes Goncalo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Portugal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Karrikaburu Jon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Kubo Takefusa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Asia?": "yes",
+      "Was this player born in Japan?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Marchal Alex": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mariezkurrena Arkaitz": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Oskarsson Orri": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Iceland?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Oyarzabal Mikel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sadiq Umar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Nigeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Sociedad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Francisco Sergio": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Real Sociedad?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abril Vicent": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Agirrezabala Julen": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Dimitrievski Stole": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in North Macedonia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rivero Cristian": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Comert Eray": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Switzerland?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Copete Jose": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Correia Thierry": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Portugal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Diakhaby Mouctar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Guinea?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Foulquier Dimitri": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gaya Jose": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Panach Alejandro": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rubio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Tarrega Cesar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vazquez Jesus": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left wing back?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Almeida Andre": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Portugal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Guerra Javi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as an attacking midfielder?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Navarro Javier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Nunez Lucas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pepelu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Santamaria Baptiste": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center midfielder?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Beltran Lucas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Blazquez Aimar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Danjuma Arnaut": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Netherlands?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Duro Hugo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Fernandez Victor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lopez Diego": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Otorbi David": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Raba Dani": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ramazani Largie": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Belgium?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rioja Luis": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Valencia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Corberan Carlos": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Valencia?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Escandell Aaron": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moldovan Horatiu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Romania?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Narvaez Miguel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ahijado Lucas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alhassane Rahim": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Guinea?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Bailly Eric": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ivory Coast?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Calvo Dani": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Carmo David": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Costas David": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Falay Omar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lopez Javi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Luengo Oier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Marco Esteban": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left wing back?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vidal Nacho": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cazorla Santi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Colombatto Santiago": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Dendoncker Leander": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Belgium?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Domingues Brandon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ejaria Oviemuno": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in England?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ilic Luka": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Serbia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pereda Cheli": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Reina Alberto": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sibo Kwasi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Brekalo Josip": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Croatia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Chaira Ilyas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Morocco?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Fores Alex": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gueye Lamine": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Hassan Haissem": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rondon Salomon": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Venezuela?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vinas Federico": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Uruguay?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Real Oviedo?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Carrion Luis": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "no",
+      "Has this manager managed Real Oviedo?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Andreev Aleksandar": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Bulgaria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gazzaniga Paulo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Argentina?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Juan Carlos Martin": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Krapyvtsov Vladyslav": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Ukraine?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Livakovic Dominik": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Croatia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Arnau Pol": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Blind Daley": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Netherlands?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Frances Alejandro": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Jordana Gilbert": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "David Lopez ": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Martinez Arnau": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moreno Alex": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rincon Hugo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Salguero Antonio": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right wing back?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vitor Reis": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Brazil?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Asprilla Yaser": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Colombia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Kouroma Lass": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Guinea?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lemar Thomas": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in France?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Martin Ivan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ounahi Azzedine": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Morocco?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Roca Joel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Solis Romero Jhon Elmer": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Colombia?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Tsygankov Viktor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Ukraine?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as an attacking midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Witsel Axel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Belgium?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "van de Beek Donny": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Netherlands?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ba Papa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gil Bryan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Portu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ruiz Abel": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sarasa Javier": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Stuani Cristhian": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from South America?": "yes",
+      "Was this player born in Uruguay?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Vanat Vladyslav": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Ukraine?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Girona?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Michel": {
+    "answers": {
+      "Is this person a football manager?": "yes",
+      "Is this manager from Europe?": "yes",
+      "Was this manager born in Spain?": "yes",
+      "Has this manager managed in La Liga?": "yes",
+      "Has this manager managed Girona?": "yes",
+      "Is this manager currently active?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abderrahmane Meziane": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a winger?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Billel Dib": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mokhtar Benmoussa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player over 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelkarim Zouari": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  
+  "Reda Halaïmia": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sofiane Khedeiria": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Oussama Darfalou": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Aymen Mahious": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ibrahim Bekakchi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lamine Abid": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelkrim Zouari": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Oussama Benmiloud": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed Islam Belhadj": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abderrahmane Boubekeur": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Zineddine Belaïd": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Salim Boukhanchouche": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for USM Alger?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed Amine Bouziane": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for USM Khenchela?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelkider Salhi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for USM Khenchela?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Yacine Slatni": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for USM Khenchela?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  " Baïteche Karim": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for NC Magra?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed  Belhadj": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for NC Magra?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mammeri Abdelkarim": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for NC Magra?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sid  Aouedj": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for ASO Chlef?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed Amine Hamzaoui": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a winger?": "yes",
+      "Is this player playing for ASO Chlef?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Oussama Chita": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for ES Sétif?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelmoumene Djabou": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as an attacking midfielder?": "yes",
+      "Is this player playing for ES Sétif?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  
+  "Rachid Nadji": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for ES Sétif?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Hamza Koudri": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for USM El Harrach?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelkader Ghorab": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for USM El Harrach?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mehdi Boudjemaa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for USM El Harrach?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+
+  
+  "Mohamed Amine Aouad": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for RC Arbaâ?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Yacine Bezzaz": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a winger?": "yes",
+      "Is this player playing for WA Tlemcen?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  
+  "Karim Baïteche": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for OM Arzew?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelkrim Mammeri": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a striker?": "yes",
+      "Is this player playing for OM Arzew?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed Réda Halaïmia": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for US Biskra?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Walid Ouabdi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a winger?": "yes",
+      "Is this player playing for US Biskra?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Gora Tall": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a left defender?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mouhamed Mbaye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Boubacar Diop": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a center defender?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Elhadji Malick Ndiaye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a right defender?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+
+  "Cheikh Tidiane Diop": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defensive midfielder?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moussa Ndiaye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Alioune Ndour": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as an attacking midfielder?": "yes",
+      "Is this player playing for Génération Foot?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdelrahman Rashdan": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for ENPPI?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ahmed Nader": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Ceramica Cleopatra?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Karim El-Maghrabi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Pharco?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ahmed El-Sayed": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for National Bank?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed Sobhi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Tala'ea El Gaish?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ahmed Abdelhamid": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Smouha?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ahmed El-Ashry": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Ghazl El Mahalla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mohamed El-Beltagy": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Egypt?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Baladiyat El Mahalla?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Bechir Ben Saïd": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Tunisia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Espérance de Tunis?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Moez Ben Cherifia": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Tunisia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Club Africain?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Aymen Mathlouthi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Tunisia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Étoile du Sahel?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Bilel Ifa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Tunisia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for CS Sfaxien?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Rami Jridi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Tunisia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for US Monastir?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Chamseddine Rahmani": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for CR Belouizdad?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Sid Ahmed Aouedj": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Algeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for ASO Chlef?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pape Gueye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Génération Foot?": "no"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdoulaye Seck": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for ASC Diaraf?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mouhamed Diop": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Teungueth FC?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Cheikh N'Diaye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Casa Sports?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Pape Sarr": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for ASC Jaraaf?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mamadou Fall": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Dakar UC?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ibrahima Sow": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Niarry Tally?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Mamadou Sow": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Guédiawaye FC?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lamine Faye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Senegal?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Mbour Petite-Côte?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ousmane Camara": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Guinea?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Linguère?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Lawrence Juma": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defender?": "yes",
+      "Is this player playing for Gor Mahia?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Patson Mwansa": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Zambia?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for AFC Leopards?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Eric Omondi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Nairobi City Stars?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "John Oyemba": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Tusker FC?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+   "Masoud Juma": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Sofapaka?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Duke Udi": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Nigeria?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defender?": "yes",
+      "Is this player playing for Bandari FC?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Geoffrey Ochieng": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Nzoia Sugar?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Brian Mandela": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defender?": "yes",
+      "Is this player playing for Kakamega Homeboyz?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Peter Opiyo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Kenya?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Ulinzi Stars?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ibrahim Danlad": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a goalkeeper?": "yes",
+      "Is this player playing for Asante Kotoko?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Daniel Afriyie": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Hearts of Oak?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Yaw Annor": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a winger?": "yes",
+      "Is this player playing for Aduana Stars?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Joseph Addo": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a defender?": "yes",
+      "Is this player playing for Medeama SC?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Kelvin Boateng": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Legon Cities?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Emmanuel Boakye Owusu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for Bechem United?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Abdul Fatawu": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a winger?": "yes",
+      "Is this player playing for King Faisal Babes?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Kwame Opoku": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
+      "Does this player play as a forward?": "yes",
+      "Is this player playing for Elmina Sharks?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Ibrahim Samed": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a midfielder?": "yes",
+      "Is this player playing for WAFA?": "yes"
+    },
+    "image_url": "/static/images/default.png"
+  },
+  "Samuel Boakye": {
+    "answers": {
+      "Is this person a football player?": "yes",
+      "Is this player from Africa?": "yes",
+      "Was this player born in Ghana?": "yes",
+      "Is this player under 23 years old?": "yes",
+      "Does this player play as a defender?": "yes",
+      "Is this player playing for Accra Great Olympics?": "yes"
     },
     "image_url": "/static/images/default.png"
   }
 
-  
 
 }
