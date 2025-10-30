@@ -9676,7 +9676,7 @@
       "Is this person a football player?": "yes",
       "Is this player from Africa?": "yes",
       "Was this player born in Ghana?": "yes",
-      "Is this player under 23 years old?": "yes",
+      "Is this player between 23 and 35 years old?": "yes",
       "Does this player play as a forward?": "yes",
       "Is this player playing for Athletic Club?": "yes"
     },
@@ -9685,8 +9685,8 @@
   "Williams Nico": {
     "answers": {
       "Is this person a football player?": "yes",
-      "Is this player from Africa?": "yes",
-      "Was this player born in Ghana?": "yes",
+      "Is this player from Europe?": "yes",
+      "Was this player born in Spain?": "yes",
       "Is this player under 23 years old?": "yes",
       "Does this player play as a forward?": "yes",
       "Is this player playing for Athletic Club?": "yes"

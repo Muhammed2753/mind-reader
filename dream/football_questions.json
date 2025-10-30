@@ -817,6 +817,7 @@
     "Does this player play as a left winger?",
     "Does this player play as a right winger?",
     "Does this player play as a forward?",
+    "Does this player play as a forward?",
     "Does this player play as a center forward?"
   ],
   "player_age": [
