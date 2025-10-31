@@ -1,218 +1,157 @@
 import os
 import json
-import random
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 app.secret_key = "football_mind_reader_2025"
 
-# File paths
-CHARACTERS_PATH = "football_characters.json"
-QUESTIONS_SCHEMA_PATH = "football_questions.json"
-KNOW_PATH = "knowledge_db.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CHARACTERS_PATH = os.path.join(BASE_DIR, "football_characters.json")
+QUESTIONS_SCHEMA_PATH = os.path.join(BASE_DIR, "football_questions.json")
+KNOW_PATH = os.path.join(BASE_DIR, "knowledge_db.json")
 
 # Ensure static/images exists
-os.makedirs("static/images", exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, "static", "images"), exist_ok=True)
 for img in ["default.png", "unknown.png"]:
-    path = os.path.join("static", "images", img)
+    path = os.path.join(BASE_DIR, "static", "images", img)
     if not os.path.exists(path):
         with open(path, "w") as f:
             f.write("")
 
 
+# -----------------------------
+# Utility functions
+# -----------------------------
 def load_json_file(path, default):
     if not os.path.exists(path):
-        print(f"⚠️ Warning: {path} not found. Using default.")
         return default
     try:
         with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            return data if isinstance(data, dict) else default
-    except json.JSONDecodeError as e:
-        print(f"❌ Error decoding {path}: {e}")
-        return default
-    except Exception as e:
-        print(f"❌ Unexpected error loading {path}: {e}")
+            return json.load(f)
+    except:
         return default
 
 
-def save_user_know():
-    with open(KNOW_PATH, "w", encoding="utf-8") as f:
-        json.dump(USER_KNOW, f, indent=2, ensure_ascii=False)
-
-
-# Load data
-BASE_CHARACTERS = load_json_file(CHARACTERS_PATH, {})
-USER_KNOW = load_json_file(KNOW_PATH, {})
-ALL_CHARACTERS = {**BASE_CHARACTERS, **USER_KNOW}
-
-# Load questions schema once at startup
-QUESTIONS_SCHEMA = load_json_file(QUESTIONS_SCHEMA_PATH, {})
-
-# Validate critical schema
-if not QUESTIONS_SCHEMA.get("role"):
-    print("❗ CRITICAL: 'role' questions missing in football_questions.json!")
-    QUESTIONS_SCHEMA["role"] = [
-        "Is this person a football player?",
-        "Is this person a football manager?",
-        "Is this person a football club owner or executive?"
-    ]
+def save_json_file(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def normalize_answer(raw):
-    if not raw:
-        return "i don't know"
-    s = raw.strip().lower()
+    s = raw.strip().lower() if raw else ""
     if s in ("idk", "i don't know", "dont know", "don't know", "unknown"):
         return "i don't know"
     if s in ("yes", "y", "yeah", "yep", "sure"):
         return "yes"
     if s in ("no", "n", "nope", "nah"):
         return "no"
-    if s in ("sometimes", "maybe", "occasionally"):
+    if s in ("sometimes", "maybe", "occasionally", "not really"):
         return "sometimes"
     return "i don't know"
 
 
-def get_role_from_answers(answers_dict):
-    if answers_dict.get("Is this person a football player?") == "yes":
-        return "player"
-    if answers_dict.get("Is this person a football manager?") == "yes":
-        return "manager"
-    if answers_dict.get("Is this person a football club owner or executive?") == "yes":
-        return "owner"
-    return None
-
-
-def get_continent_from_answers(answers_dict, role="player"):
-    prefix = "Is this player from " if role == "player" else "Is this manager from "
-    for continent in ["Europe", "South America", "Africa", "Asia", "North America"]:
-        if answers_dict.get(f"{prefix}{continent}?") == "yes":
-            return continent
-    return None
-
-
-def get_league_from_answers(answers_dict, role="player"):
-    prefix = "Is this player playing in " if role == "player" else "Has this manager managed in "
-    leagues = [
-        "Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1",
-        "MLS", "Liga MX", "J-League", "Brasileirão (Brazil)"
-    ]
-    for league in leagues:
-        q = f"{prefix}{league}?"
-        if answers_dict.get(q) == "yes":
-            return league
-    return None
-
-
-def get_next_question(answers_list, asked_set):
+# -----------------------------
+# Question flow logic
+# -----------------------------
+def get_next_question(answers_list, asked_set, questions_schema):
     answers_dict = dict(answers_list)
-    role = get_role_from_answers(answers_dict)
 
-    # === STEP 1: ROLE ===
+    # --- Role ---
+    role = None
+    for q in questions_schema.get("role", []):
+        if answers_dict.get(q) == "yes":
+            if "player" in q:
+                role = "player"
+            elif "manager" in q:
+                role = "manager"
+            elif "owner" in q:
+                role = "owner"
+            break
     if not role:
-        role_questions = QUESTIONS_SCHEMA.get("role", [])
-        for q in role_questions:
-            if q not in asked_set:
-                return q
-        return None  # All roles rejected
-
-    # === STEP 2: CONTINENT ===
-    continent = get_continent_from_answers(answers_dict, role)
-    if not continent:
-        key = f"{role}_continent"
-        continent_questions = QUESTIONS_SCHEMA.get(key, [])
-        for q in continent_questions:
+        for q in questions_schema.get("role", []):
             if q not in asked_set:
                 return q
         return None
 
-    # === STEP 3: COUNTRY ===
-    country_key = f"{role}_country_{continent.lower()}"
-    country_questions = QUESTIONS_SCHEMA.get(country_key, [])
-    for q in country_questions:
+    # --- Continent ---
+    continent = None
+    for q in questions_schema.get(f"{role}_continent", []):
+        if answers_dict.get(q) == "yes":
+            continent = q.split("from ")[1].rstrip("?").lower()
+            break
+    if not continent:
+        for q in questions_schema.get(f"{role}_continent", []):
+            if q not in asked_set:
+                return q
+        return None
+
+    # --- Country ---
+    country_key = f"{role}_country_born_{continent}" if role == "manager" else f"{role}_country_{continent}"
+    for q in questions_schema.get(country_key, []):
         if q not in asked_set:
             return q
 
-    # === STEP 4: LEAGUE ===
-    league = get_league_from_answers(answers_dict, role)
-    if not league:
-        league_key = f"{role}_league_{continent.lower()}"
-        league_questions = QUESTIONS_SCHEMA.get(league_key, [])
-        for q in league_questions:
-            if q not in asked_set:
-                return q
-        return None
+    # --- League ---
+    league_key = f"{role}_league_{continent}"
+    for q in questions_schema.get(league_key, []):
+        if q not in asked_set:
+            return q
 
-    # === STEP 5: CLUB ===
-    league_to_club = {
-        "Premier League": "premier_league",
-        "La Liga": "laliga",
-        "Serie A": "serie_a",
-        "Bundesliga": "bundesliga",
-        "Ligue 1": "ligue_1",
-        "MLS": "mls",
-        "Liga MX": "liga_mx",
-        "J-League": "j_league",
-        "Brasileirão (Brazil)": "brasileirao"
-    }
-    club_group = league_to_club.get(league)
-    if club_group:
-        club_key = f"{role}_club_{club_group}"
-        club_questions = QUESTIONS_SCHEMA.get(club_key, [])
-        for q in club_questions:
-            if q not in asked_set:
-                return q
+    # --- Club ---
+    league_questions = questions_schema.get(league_key, [])
+    for q in league_questions:
+        if answers_dict.get(q) == "yes":
+            if "Premier League" in q:
+                club_key = f"{role}_club_premier_league"
+            elif "La Liga" in q:
+                club_key = f"{role}_club_laliga"
+            elif "Serie A" in q:
+                club_key = f"{role}_club_serie_a"
+            elif "Bundesliga" in q:
+                club_key = f"{role}_club_bundesliga"
+            elif "Ligue 1" in q:
+                club_key = f"{role}_club_ligue_1"
+            else:
+                club_key = None
+            if club_key:
+                for cq in questions_schema.get(club_key, []):
+                    if cq not in asked_set:
+                        return cq
+            break
 
-    # === STEP 6: FINAL ATTRIBUTES ===
+    # --- Position, Age, Honors ---
     final_groups = {
-        "player": ["player_position", "player_age", "player_status", "player_honors", "player_post_career"],
-        "manager": ["manager_playing_career", "manager_tactics", "manager_honors", "manager_status", "manager_era"],
+        "player": ["player_position", "player_age", "player_honors"],
+        "manager": ["manager_playing_career", "manager_tactics", "manager_honors"],
         "owner": ["owner_profile", "owner_status"]
     }
     for group in final_groups.get(role, []):
-        for q in QUESTIONS_SCHEMA.get(group, []):
+        for q in questions_schema.get(group, []):
             if q not in asked_set:
                 return q
-
-    # Fallback: any unasked question
-    all_questions = []
-    for v in QUESTIONS_SCHEMA.values():
-        if isinstance(v, list):
-            all_questions.extend(v)
-    for q in all_questions:
-        if q not in asked_set:
-            return q
 
     return None
 
 
-def score_character(user_answers, character_data):
-    expected = character_data.get("answers", {})
-    score = 0.0
-    total_weight = 0
-
-    for q, user_ans in user_answers:
-        if q not in expected:
+def filter_candidates(answers_list, all_characters):
+    answers_dict = dict(answers_list)
+    candidates = []
+    for name, data in all_characters.items():
+        if not isinstance(data, dict):
             continue
-        char_ans = expected[q]
-
-        if user_ans == "no":
-            continue
-
-        weight = 1.0
-        total_weight += weight
-
-        if user_ans == char_ans:
-            score += weight
-        elif user_ans == "i don't know" or char_ans == "i don't know":
-            score += weight * 0.5
-
-    if total_weight == 0:
-        return 0.0
-    return score / total_weight
+        match = True
+        for q, ans in answers_list:
+            if ans == "yes" and data.get("answers", {}).get(q) != "yes":
+                match = False
+                break
+        if match:
+            candidates.append((name, data))
+    return candidates
 
 
+# -----------------------------
+# Routes
+# -----------------------------
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -222,86 +161,110 @@ def index():
 def start():
     session.clear()
     session["answers"] = []
+    session["wrong_guesses"] = 0
     return redirect(url_for("question"))
 
 
 @app.route("/question", methods=["GET", "POST"])
 def question():
+    answers = session.get("answers", [])
     if request.method == "POST":
         raw_ans = request.form.get("answer", "")
         ans = normalize_answer(raw_ans)
-        q = session.get("current_question")
-        if q:
-            session["answers"].append((q, ans))
-            session.modified = True
+        current_q = session.get("current_question")
+        if current_q:
+            answers.append((current_q, ans))
+            session["answers"] = answers
 
-    asked = set(q for q, _ in session.get("answers", []))
-    next_q = get_next_question(session.get("answers", []), asked)
+    base_chars = load_json_file(CHARACTERS_PATH, {})
+    user_know = load_json_file(KNOW_PATH, {})
+    all_chars = {**base_chars, **user_know}
+    questions_schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
 
-    # 🔥 CRITICAL FIX: Never jump to answer if no questions were asked yet
-    if not next_q and len(asked) == 0:
-        # Fallback to first role question if somehow schema is broken
-        fallback = QUESTIONS_SCHEMA.get("role", ["Is this person a football player?"])
-        next_q = fallback[0]
+    if not questions_schema.get("role"):
+        questions_schema["role"] = [
+            "Is this person a football player?",
+            "Is this person a football manager?",
+            "Is this person a football club owner or executive?"
+        ]
 
-    if not next_q:
+    asked = set(q for q, _ in answers)
+    next_q = get_next_question(answers, asked, questions_schema)
+
+    if not next_q or len(answers) >= 15:
         return redirect(url_for("answer"))
 
     session["current_question"] = next_q
-    progress = min(95, max(10, int(len(asked) * 3.8)))
+    progress = min(95, max(0, len([a for a in answers if a[1] == "yes"]) * 10))
     return render_template("question.html", question=next_q, progress=progress)
 
 
-@app.route("/answer")
+@app.route("/undo", methods=["POST"])
+def undo():
+    """Allow user to undo last answer."""
+    answers = session.get("answers", [])
+    if answers:
+        answers.pop()
+        session["answers"] = answers
+        session.modified = True
+    return redirect(url_for("question"))
+
+
+@app.route("/answer", methods=["GET", "POST"])
 def answer():
-    user_answers = session.get("answers", [])
-    if not user_answers:
-        return redirect(url_for("question"))  # Should not happen, but safe
+    answers = session.get("answers", [])
+    wrong_guesses = session.get("wrong_guesses", 0)
 
-    scores = {}
-    for name, data in ALL_CHARACTERS.items():
-        if not isinstance(data, dict):
-            continue
-        s = score_character(user_answers, data)
-        if s > 0.1:
-            scores[name] = s
+    if request.method == "POST":
+        action = request.form.get("action")
+        if action == "correct":
+            return redirect(url_for("index"))
+        elif action == "wrong":
+            wrong_guesses += 1
+            session["wrong_guesses"] = wrong_guesses
+            if wrong_guesses >= 5:
+                return redirect(url_for("learn"))
+            else:
+                return redirect(url_for("question"))
 
-    if scores:
-        guess = max(scores, key=scores.get)
-        confidence = min(95, max(20, int(scores[guess] * 100)))
-        img = ALL_CHARACTERS[guess].get("image_url", "/static/images/default.png")
-        return render_template("answer.html", guess=guess, confidence=confidence,
-                               image_url=img, ask_confirm=True)
-    else:
-        return render_template("answer.html", guess="A mysterious football figure...",
-                               confidence=0, image_url="/static/images/unknown.png",
-                               ask_confirm=False)
+    base_chars = load_json_file(CHARACTERS_PATH, {})
+    user_know = load_json_file(KNOW_PATH, {})
+    all_chars = {**base_chars, **user_know}
+
+    candidates = filter_candidates(answers, all_chars)
+    if not candidates:
+        return render_template("answer.html", guess="I couldn't find anyone matching your answers!")
+
+    best_name, best_data = candidates[0]
+    best_score = 0
+    for name, data in candidates:
+        score = sum(1 for q, a in answers if a == "yes" and data.get("answers", {}).get(q) == "yes")
+        if score > best_score:
+            best_score = score
+            best_name, best_data = name, data
+
+    img = best_data.get("image_url", "/static/images/default.png")
+    return render_template("answer.html", guess=best_name, image_url=img)
 
 
 @app.route("/learn", methods=["GET", "POST"])
 def learn():
     if request.method == "POST":
-        name = request.form.get("correct_answer", "").strip()
-        if not name:
-            return render_template("learn.html", error="Name is required.")
-        USER_KNOW[name] = {
-            "answers": dict(session.get("answers", [])),
-            "image_url": "/static/images/default.png"
-        }
-        save_user_know()
-        ALL_CHARACTERS[name] = USER_KNOW[name]
-        return render_template("answer.html", done=True, message=f"Thanks! I learned about {name}.")
+        name = request.form.get("name", "").strip()
+        if name:
+            user_know = load_json_file(KNOW_PATH, {})
+            user_know[name] = {
+                "answers": dict(session.get("answers", [])),
+                "image_url": "/static/images/default.png"
+            }
+            save_json_file(KNOW_PATH, user_know)
+            return render_template("learn.html", success=True, name=name)
     return render_template("learn.html")
 
 
-@app.route("/undo", methods=["POST"])
-def undo():
-    answers = session.get("answers", [])
-    if answers:
-        session["answers"] = answers[:-1]
-        session.modified = True
-    return redirect(url_for("question"))
-
-
+# -----------------------------
+# Run server
+# -----------------------------
 if __name__ == "__main__":
+    print("✅ Football Mind Reader running on http://127.0.0.1:5000")
     app.run(debug=True, host="0.0.0.0", port=5000)

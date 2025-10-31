@@ -1,44 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mind Reader - Answer</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
-    .result { font-size: 22px; margin-top: 20px; }
-    input { padding: 10px; width: 60%; margin-top: 20px; }
-    button { padding: 10px 20px; margin-top: 10px; }
-    background-color { green}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Mind Reader - Result</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #001f3f, #0074D9);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            max-width: 400px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FFD700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        button {
+            background: #FFD700;
+            color: #000;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background: #ffcc00;
+            transform: scale(1.05);
+        }
+
+        button[value="wrong"] {
+            background: #ff4444;
+            color: white;
+        }
+
+        button[value="wrong"]:hover {
+            background: #ff2222;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            button {
+                font-size: 0.95em;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>I think I know the answer!</h1>
-  <p class="result">My guess: <b>{{ guess }}</b></p>
-  <p>Confidence: {{ confidence }}%</p>
 
-  <form method="post">
-    <p>Was I wrong? Teach me the right answer:</p>
-    <input type="text" name="real_answer" placeholder="Enter correct answer here" required>
-    <button type="submit">Save</button>
-  </form>
+    <div class="container">
+        <h2>⚽ Is this your player?</h2>
+        <img src="{{ image_url }}" alt="Player Image">
+        <h1>{{ guess }}</h1>
 
-  <br>
-   <form action="{{ url_for('start') }}" method="post" style="margin-top:10px;">
-    <button type="submit">Play Again</button>
-  </form>
-  <!-- In answer.html -->
-{% if not done %}
-  <img src="{{ image_url }}" alt="{{ guess }}" width="150" height="150" style="object-fit: cover; border-radius: 8px;">
-  <h2>🤔 I think it's <u>{{ guess }}</u>!</h2>
-  <p>Confidence: <strong>{{ confidence }}%</strong></p>
+        <form method="post">
+            <button type="submit" name="action" value="correct">✅ Yes, that's correct!</button>
+            <button type="submit" name="action" value="wrong">❌ No, guess again</button>
+        </form>
+    </div>
 
-  {% if ask_confirm %}
-    <form method="POST">
-      <button type="submit" name="feedback" value="yes">✅ Yes! You got it!</button>
-      <button type="submit" name="feedback" value="no">❌ No, it's someone else</button>
-    </form>
-  {% endif %}
-{% else %}
-  <h2>{{ message }}</h2>
-{% endif %}
+    <div class="footer">
+        <p>Football Mind Reader © 2025</p>
+    </div>
+
 </body>
 </html>

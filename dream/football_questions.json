@@ -6,8 +6,6 @@
   ],
   "player_status": [
     "Is this player currently active?",
-    "Is this player retired?",
-    "Is this player banned from football?",
     "Is this player deceased?"
   ],
   "player_status_special": [

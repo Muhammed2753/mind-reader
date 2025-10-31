@@ -1,39 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mind Reader - Question</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
-    .buttons { margin-top: 20px; }
-    button { margin: 10px; padding: 15px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; border: none; }
-    .yes { background-color: #4CAF50; color: white; }
-    .no { background-color: #f44336; color: white; }
-    .sometimes { background-color: #ffa500; color: white; }
-    .not-really { background-color: #9c27b0; color: white; }
-    .unknown { background-color: #607d8b; color: white; }
-    .undo { background-color: #000; color: white; margin-top: 20px; }
-    .progress { margin-top: 20px; font-size: 18px; }
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #283e51, #485563);
+      color: white;
+      margin: 0;
+      padding: 30px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 25px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: white;
+      min-width: 120px;
+      transition: transform 0.2s, opacity 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .yes { background-color: #4CAF50; }
+    .no { background-color: #f44336; }
+    .sometimes { background-color: #ffa500; }
+    .not-really { background-color: #9c27b0; }
+    .unknown { background-color: #607d8b; }
+
+    .undo {
+      background-color: #000;
+      margin-top: 15px;
+      width: 60%;
+      max-width: 250px;
+    }
+
+    .progress {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      h2 { font-size: 1.4rem; }
+      button { width: 80%; font-size: 0.95rem; }
+    }
   </style>
 </head>
 <body>
   <h2>{{ question }}</h2>
 
-  <div class="buttons">
-    <form method="post">
+  <form method="post">
+    <div class="buttons">
       <button name="answer" value="yes" class="yes">Yes</button>
       <button name="answer" value="no" class="no">No</button>
       <button name="answer" value="sometimes" class="sometimes">Sometimes</button>
       <button name="answer" value="not really" class="not-really">Not Really</button>
       <button name="answer" value="i don't know" class="unknown">I Don't Know</button>
-    </form>
-  </div>
-
-  <form action="{{ url_for('undo') }}" method="post">
-    <button class="undo">Undo Last</button>
+    </div>
   </form>
 
-   {% if progress %}
-    <p>Confidence so far: {{ progress }}%</p>
+  <form action="{{ url_for('undo') }}" method="post">
+    <button class="undo">↩️ Undo Last</button>
+  </form>
+
+  {% if progress %}
+  <p class="progress">Confidence so far: {{ progress }}%</p>
   {% endif %}
 </body>
 </html>

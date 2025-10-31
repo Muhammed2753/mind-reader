@@ -1,13 +1,69 @@
-<!doctype html>
-<html>
-<head><meta charset="utf-8"><title>Teach Me</title></head>
-<body>
-  <h2>I couldn't guess it 😔 — help me learn</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Reader - Teach Me</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #1f4037, #99f2c8);
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
 
-  {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+    h2 { font-size: 1.8rem; margin-bottom: 20px; }
+
+    input {
+      padding: 12px 15px;
+      border: none;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 300px;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover { transform: scale(1.05); }
+
+    p { color: #ffdddd; }
+
+    @media (max-width: 600px) {
+      h2 { font-size: 1.4rem; }
+      input, button { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+  <h2>I couldn’t guess 😔 — help me learn!</h2>
+
+  {% if error %}
+  <p>{{ error }}</p>
+  {% endif %}
 
   <form method="post">
-    <label>What were you thinking of? <input name="correct_answer" required></label><br><br>
+    <label>
+      What were you thinking of?<br>
+      <input name="correct_answer" placeholder="Enter name..." required>
+    </label><br>
     <button type="submit">Teach</button>
   </form>
 </body>
