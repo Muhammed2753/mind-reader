@@ -300,7 +300,6 @@ def learn():
             return redirect(url_for("index"))
     return render_template("learn.html")
 
-#gdrf g v
 # -----------------------------
 # MAIN
 # -----------------------------
