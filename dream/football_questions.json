@@ -144,7 +144,6 @@
     "Was this player born in China?",
     "Was this player born in Iran?",
     "Was this player born in Saudi Arabia?",
-    "Was this player born in Australia?",
     "Was this player born in Iraq?",
     "Was this player born in United Arab Emirates?",
     "Was this player born in Qatar?",
@@ -804,7 +803,6 @@
     "Does this player play as a right defender?",
     "Does this player play as a right wing back?",
     "Does this player play as a left wing back?",
-    "Does this player play as a midfielder?",
     "Does this player play as a left midfielder?",
     "Does this player play as a right midfielder?",
     "Does this player play as an center midfielder?",
@@ -813,8 +811,6 @@
     "Does this player play as a striker?",
     "Does this player play as a left winger?",
     "Does this player play as a right winger?",
-    "Does this player play as a forward?",
-    "Does this player play as a forward?",
     "Does this player play as a center forward?"
   ],
   "player_age": [
@@ -921,7 +917,6 @@
     "Was this manager born in China?",
     "Was this manager born in Iran?",
     "Was this manager born in Saudi Arabia",
-    "Was this manager born in Australia",
     "Was this manager born in United Arab Emirates",
     "Was this manager born in Qatar",
     "Was this manager born in Iraq",
@@ -966,8 +961,7 @@
     "Has this manager managed in J-League (Japan)?",
     "Has this manager managed in K-League (South Korea)?",
     "Has this manager managed in Chinese Super League?",
-    "Has this manager managed in Saudi Pro League?",
-    "Has this manager managed in Australian A-League?"
+    "Has this manager managed in Saudi Pro League?"
   ],
   "manager_league_north_america": [
     "Has this manager managed in MLS (USA/Canada)?",
@@ -1683,7 +1677,6 @@
     "Is this manager in charge of the China national team?",
     "Is this manager in charge of the Iran national team?",
     "Is this manager in charge of the Saudi Arabia national team?",
-    "Is this manager in charge of the Australia national team?",
     "Is this manager in charge of the Iraq national team?",
     "Is this manager in charge of the United Arab Emirates national team?",
     "Is this manager in charge of the Qatar national team?",

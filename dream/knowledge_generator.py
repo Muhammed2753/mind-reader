@@ -1,203 +1,309 @@
-# app.py
-import os
 import json
-import random
+import os
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 app.secret_key = "football_mind_reader_2025"
 
-CHARACTERS_PATH = "football_characters.json"
-QUESTIONS_SCHEMA_PATH = "football_questions.json"
-KNOW_PATH = "knowledge_db.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CHARACTERS_PATH = os.path.join(BASE_DIR, "football_characters.json")
+QUESTIONS_SCHEMA_PATH = os.path.join(BASE_DIR, "football_questions.json")
+KNOW_PATH = os.path.join(BASE_DIR, "knowledge_db.json")
 
-# ----------------------------
-# CONFIDENCE WEIGHTS
-# ----------------------------
-CONFIDENCE_WEIGHTS = {
-    "yes": 1.0,
-    "sometimes": 0.1,
-    "i don't know": 0.02,
-    "no": 0.0
-}
-
-# ----------------------------
-# LOAD QUESTIONS SCHEMA
-# ----------------------------
-if os.path.exists(QUESTIONS_SCHEMA_PATH):
-    try:
-        with open(QUESTIONS_SCHEMA_PATH, "r", encoding="utf-8") as f:
-            QUESTIONS_SCHEMA = json.load(f)
-    except:
-        QUESTIONS_SCHEMA = {"global": [], "player": [], "manager": [], "owner": []}
-else:
-    QUESTIONS_SCHEMA = {"global": [], "player": [], "manager": [], "owner": []}
-
-# ----------------------------
-# SETUP IMAGES
-# ----------------------------
-os.makedirs("static/images", exist_ok=True)
+# Ensure image folder exists
+os.makedirs(os.path.join(BASE_DIR, "static", "images"), exist_ok=True)
 for img in ["default.png", "unknown.png"]:
-    path = os.path.join("static", "images", img)
-    if not os.path.exists(path):
-        with open(path, "w") as f:
+    img_path = os.path.join(BASE_DIR, "static", "images", img)
+    if not os.path.exists(img_path):
+        with open(img_path, "w") as f:
             f.write("")
 
-# ----------------------------
-# LOAD CHARACTERS
-# ----------------------------
+
+# -----------------------------
+# Utility Functions
+# -----------------------------
 def load_json_file(path, default):
     if not os.path.exists(path):
         return default
     try:
         with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            return data if isinstance(data, dict) else default
+            return json.load(f)
     except:
         return default
 
-BASE_CHARACTERS = load_json_file(CHARACTERS_PATH, {})
-USER_KNOW = load_json_file(KNOW_PATH, {})
-ALL_CHARACTERS = {**BASE_CHARACTERS, **USER_KNOW}
 
-def save_user_know():
-    with open(KNOW_PATH, "w", encoding="utf-8") as f:
-        json.dump(USER_KNOW, f, indent=2, ensure_ascii=False)
+def save_json_file(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
 
 def normalize_answer(raw):
-    if not raw: return "i don't know"
-    s = raw.strip().lower()
-    if s in ("idk", "i don't know", "dont know"): return "i don't know"
-    if s in ("yes", "y", "yeah"): return "yes"
-    if s in ("no", "n", "nope"): return "no"
-    if s in ("sometimes", "maybe"): return "sometimes"
-    return s
+    s = raw.strip().lower() if raw else ""
+    if s in ("idk", "i don't know", "dont know", "unknown"):
+        return "i don't know"
+    if s in ("yes", "y", "yeah", "yep", "sure"):
+        return "yes"
+    if s in ("no", "n", "nope", "nah"):
+        return "no"
+    if s in ("maybe", "sometimes", "not sure"):
+        return "sometimes"
+    return "i don't know"
 
-def determine_category(answers_dict):
-    if answers_dict.get("Is this person a football player?") == "yes":
-        return ("player",)
-    elif answers_dict.get("Is this person a football manager?") == "yes":
-        return ("manager",)
-    elif answers_dict.get("Is this person a football club owner?") == "yes":
-        return ("owner",)
-    return ("unknown",)
 
-def get_next_question(session_answers, asked_set):
-    answers_dict = dict(session_answers)
-    
-    # Ask global questions first
-    for q in QUESTIONS_SCHEMA.get("global", []):
-        if q not in asked_set:
-            return q
+def normalize_continent_name(continent_str):
+    return continent_str.strip().lower().replace(" ", "_").replace("-", "_")
 
-    # Then role-specific
-    cat = determine_category(answers_dict)
-    if cat[0] in QUESTIONS_SCHEMA:
-        pool = [q for q in QUESTIONS_SCHEMA[cat[0]] if q not in asked_set]
-        if pool:
-            return random.choice(pool)
-    
-    # Fallback: any unasked question
-    all_q = []
-    for v in QUESTIONS_SCHEMA.values():
-        if isinstance(v, list):
-            all_q.extend(v)
-    available = [q for q in all_q if q not in asked_set]
-    return random.choice(available) if available else None
 
-# ----------------------------
+# -----------------------------
+# SMART QUESTION LOGIC
+# -----------------------------
+def get_next_question(answers_list, asked_set, schema):
+    answers = dict(answers_list)
+
+    # ---------- ROLE ----------
+    role = None
+    if answers.get("Is this person a football player?") == "yes":
+        role = "player"
+    elif answers.get("Is this person a football manager?") == "yes":
+        role = "manager"
+    elif answers.get("Is this person a football club owner or executive?") == "yes":
+        role = "owner"
+
+    if not role:
+        for q in schema.get("role", []):
+            if q not in asked_set:
+                return q
+        return None
+
+    # ---------- CONTINENT ----------
+    continent = None
+    for q in schema.get(f"{role}_continent", []):
+        if answers.get(q) == "yes":
+            raw_cont = q.split("from ", 1)[1].rstrip("?")
+            continent = normalize_continent_name(raw_cont)
+            break
+
+    if not continent:
+        for q in schema.get(f"{role}_continent", []):
+            if q not in asked_set:
+                return q
+        return None
+
+    # ---------- LEAGUE (CONTINENT BY CONTINENT ORDER) ----------
+    continents_order = [
+        "europe", "africa", "south_america", "north_america", "asia", "oceania"
+    ]
+
+    # If user said yes in any league, skip remaining leagues and move on
+    league_yes = any(
+        answers.get(q) == "yes"
+        for cont in continents_order
+        for q in schema.get(f"{role}_league_{cont}", [])
+    )
+
+    if not league_yes:
+        for cont in continents_order:
+            league_key = f"{role}_league_{cont}"
+            for q in schema.get(league_key, []):
+                if q not in asked_set:
+                    return q
+    # If any league got a "yes", move straight to clubs.
+
+    # ---------- CLUB ----------
+    club_key = None
+    for cont in continents_order:
+        for q in schema.get(f"{role}_league_{cont}", []):
+            if answers.get(q) == "yes":
+                if "Premier League" in q:
+                    club_key = f"{role}_club_premier_league"
+                elif "La Liga" in q:
+                    club_key = f"{role}_club_laliga"
+                elif "Serie A" in q:
+                    club_key = f"{role}_club_serie_a"
+                elif "Bundesliga" in q:
+                    club_key = f"{role}_club_bundesliga"
+                elif "Ligue 1" in q:
+                    club_key = f"{role}_club_ligue_1"
+                elif "Eredivisie" in q:
+                    club_key = f"{role}_club_eredivisie"
+                elif "MLS" in q:
+                    club_key = f"{role}_club_mls"
+                elif "Liga MX" in q:
+                    club_key = f"{role}_club_liga_mx"
+                elif "Brazil" in q or "Brasileirão" in q:
+                    club_key = f"{role}_club_brasileirao"
+                elif "Ghana" in q:
+                    club_key = f"{role}_club_ghana_premier_league"
+                elif "Algeria" in q:
+                    club_key = f"{role}_club_algerian_ligue_1"
+                elif "Morocco" in q or "Botola" in q:
+                    club_key = f"{role}_club_botola_pro_morocco"
+                elif "Kenya" in q:
+                    club_key = f"{role}_club_kenyan_premier_league"
+                break
+        if club_key:
+            break
+
+    if club_key:
+        for q in schema.get(club_key, []):
+            if q not in asked_set:
+                return q
+
+    # ---------- POSITION / TRAITS ----------
+    final_groups = {
+        "player": ["player_position", "player_age", "player_status", "player_honors", "player_post_career"],
+        "manager": ["manager_playing_career", "manager_tactics", "manager_honors", "manager_status", "manager_era"],
+        "owner": ["owner_profile", "owner_status"]
+    }
+
+    for group in final_groups.get(role, []):
+        for q in schema.get(group, []):
+            if q not in asked_set:
+                return q
+
+    return None
+
+
+# -----------------------------
+# CANDIDATE FILTER
+# -----------------------------
+def filter_candidates(answers_list, all_chars):
+    candidates = []
+    for name, data in all_chars.items():
+        if not isinstance(data, dict):
+            continue
+        char_ans = data.get("answers", {})
+        match = True
+        for q, a in answers_list:
+            if a == "yes" and char_ans.get(q) != "yes":
+                match = False
+                break
+            elif a == "no" and char_ans.get(q) == "yes":
+                match = False
+                break
+        if match:
+            candidates.append((name, data))
+    return candidates
+
+
+# -----------------------------
 # ROUTES
-# ----------------------------
+# -----------------------------
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 @app.route("/start", methods=["POST"])
 def start():
     session.clear()
     session["answers"] = []
-    session["weighted_confidence"] = 0.0
+    session["wrong_guesses"] = 0
     return redirect(url_for("question"))
+
 
 @app.route("/question", methods=["GET", "POST"])
 def question():
+    answers = session.get("answers", [])
     if request.method == "POST":
-        raw_ans = request.form.get("answer", "")
-        ans = normalize_answer(raw_ans)
-        q = session.get("current_question")
-        if q:
-            session["answers"].append((q, ans))
-            weight = CONFIDENCE_WEIGHTS.get(ans, 0.0)
-            session["weighted_confidence"] = session.get("weighted_confidence", 0.0) + weight
-            session.modified = True
+        ans = normalize_answer(request.form.get("answer", ""))
+        current_q = session.get("current_question")
+        if current_q:
+            answers.append((current_q, ans))
+            session["answers"] = answers
 
-    asked = set(q for q, _ in session.get("answers", []))
-    next_q = get_next_question(session.get("answers", []), asked)
-    if not next_q:
+    schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
+    base_chars = load_json_file(CHARACTERS_PATH, {})
+    user_chars = load_json_file(KNOW_PATH, {})
+    all_chars = {**base_chars, **user_chars}
+
+    if "role" not in schema:
+        schema["role"] = [
+            "Is this person a football player?",
+            "Is this person a football manager?",
+            "Is this person a football club owner or executive?"
+        ]
+
+    asked = {q for q, _ in answers}
+    next_q = get_next_question(answers, asked, schema)
+
+    if not next_q or len(answers) >= 20:
         return redirect(url_for("answer"))
 
     session["current_question"] = next_q
-    progress = min(100, int(session.get("weighted_confidence", 0.0) * 12.5))
+    yes_count = len([a for _, a in answers if a == "yes"])
+    progress = min(95, yes_count * 10)
     return render_template("question.html", question=next_q, progress=progress)
+
+
+@app.route("/undo", methods=["POST"])
+def undo():
+    answers = session.get("answers", [])
+    if answers:
+        answers.pop()
+        session["answers"] = answers
+        session.modified = True
+    return redirect(url_for("question"))
+
 
 @app.route("/answer", methods=["GET", "POST"])
 def answer():
+    answers = session.get("answers", [])
+    wrong = session.get("wrong_guesses", 0)
+
+    base_chars = load_json_file(CHARACTERS_PATH, {})
+    user_chars = load_json_file(KNOW_PATH, {})
+    all_chars = {**base_chars, **user_chars}
+    candidates = filter_candidates(answers, all_chars)
+    has_yes = any(a == "yes" for _, a in answers)
+
     if request.method == "POST":
-        if request.form.get("feedback") == "yes":
-            return render_template("answer.html", done=True, message="I read your mind! ⚽🧠")
-        else:
-            return redirect(url_for("learn"))
+        action = request.form.get("action")
+        if action == "correct":
+            return render_template("answer.html", guess="🎉 Correct! I read your mind!", show_success=True, play_again=True)
+        elif action == "wrong":
+            wrong += 1
+            session["wrong_guesses"] = wrong
+            schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
+            asked = {q for q, _ in answers}
+            next_q = get_next_question(answers, asked, schema)
+            if wrong >= 5 or not next_q:
+                return redirect(url_for("learn"))
+            else:
+                return redirect(url_for("question"))
 
-    # Score characters
-    scores = {}
-    for name, data in ALL_CHARACTERS.items():
-        if not isinstance(data, dict):
-            continue
-        s = 0
-        expected = data.get("answers", {})
-        for q, user_ans in session.get("answers", []):
-            if q in expected and expected[q] == user_ans:
-                s += 1
-        if s > 0:
-            scores[name] = s
-
-    if scores:
-        guess = max(scores, key=scores.get)
-        img = ALL_CHARACTERS[guess].get("image_url", "/static/images/default.png")
-        conf = min(95, 30 + scores[guess] * 10)
-    else:
-        return render_template("answer.html", 
-            guess="A football legend!",
-            confidence=0,
+    if not has_yes or not candidates:
+        return render_template(
+            "answer.html",
+            guess="😅 I couldn't find anyone matching your answers!",
             image_url="/static/images/unknown.png",
-            ask_confirm=False
+            show_final=True,
+            play_again=True
         )
 
-    return render_template("answer.html", guess=guess, confidence=conf, image_url=img, ask_confirm=True)
+    name, data = candidates[0]
+    img = data.get("image_url", "/static/images/default.png")
+    return render_template("answer.html", guess=name, image_url=img, play_again=True)
+
 
 @app.route("/learn", methods=["GET", "POST"])
 def learn():
     if request.method == "POST":
-        name = request.form.get("correct_answer", "").strip()
-        if not name:
-            return render_template("learn.html", error="Name required.")
-        USER_KNOW[name] = {
-            "answers": dict(session.get("answers", [])),
-            "image_url": "/static/images/default.png"
-        }
-        save_user_know()
-        return render_template("answer.html", done=True, message=f"Thanks! I learned about {name}.")
+        name = request.form.get("name", "").strip()
+        if name:
+            user_chars = load_json_file(KNOW_PATH, {})
+            user_chars[name] = {
+                "answers": dict(session.get("answers", [])),
+                "image_url": "/static/images/default.png"
+            }
+            save_json_file(KNOW_PATH, user_chars)
+            return redirect(url_for("index"))
     return render_template("learn.html")
 
-@app.route("/undo", methods=["POST"])
-def undo():
-    if session.get("answers"):
-        last_q, last_ans = session["answers"].pop()
-        weight = CONFIDENCE_WEIGHTS.get(last_ans, 0.0)
-        current = session.get("weighted_confidence", 0.0)
-        session["weighted_confidence"] = max(0.0, current - weight)
-        session.modified = True
-    return redirect(url_for("question"))
 
+# -----------------------------
+# MAIN
+# -----------------------------
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000) 
+    print("✅ Football Mind Reader running on http://127.0.0.1:5000")
+    app.run(debug=True, host="0.0.0.0", port=5000)

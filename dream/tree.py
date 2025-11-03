@@ -1,5 +1,5 @@
-import json
 import os
+import json
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
@@ -19,9 +19,6 @@ for img in ["default.png", "unknown.png"]:
             f.write("")
 
 
-# -----------------------------
-# Utility functions
-# -----------------------------
 def load_json_file(path, default):
     if not os.path.exists(path):
         return default
@@ -32,9 +29,10 @@ def load_json_file(path, default):
         return default
 
 
-def save_json_file(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+def save_user_know():
+    user_know = load_json_file(KNOW_PATH, {})
+    with open(KNOW_PATH, "w", encoding="utf-8") as f:
+        json.dump(user_know, f, indent=2, ensure_ascii=False)
 
 
 def normalize_answer(raw):
@@ -50,62 +48,52 @@ def normalize_answer(raw):
     return "i don't know"
 
 
-def normalize_continent_name(continent_str):
-    """Convert 'South America' → 'south_america' to match JSON keys."""
-    return continent_str.strip().lower().replace(" ", "_").replace("-", "_")
-
-
-# -----------------------------
-# Question flow logic (SMART)
-# -----------------------------
 def get_next_question(answers_list, asked_set, questions_schema):
     answers_dict = dict(answers_list)
-
-    # ---------------- ROLE ----------------
+    
+    # Role
     role = None
-    if answers_dict.get("Is this person a football player?") == "yes":
-        role = "player"
-    elif answers_dict.get("Is this person a football manager?") == "yes":
-        role = "manager"
-    elif answers_dict.get("Is this person a football club owner or executive?") == "yes":
-        role = "owner"
-
+    for q in questions_schema.get("role", []):
+        if answers_dict.get(q) == "yes":
+            role = "player" if "player" in q else "manager" if "manager" in q else "owner"
+            break
     if not role:
         for q in questions_schema.get("role", []):
             if q not in asked_set:
                 return q
         return None
 
-    # ---------------- CONTINENT ----------------
+    # Continent
     continent = None
     for q in questions_schema.get(f"{role}_continent", []):
         if answers_dict.get(q) == "yes":
-            # 🔥 FIX: Use normalized continent name for all subsequent keys
-            raw_cont = q.split("from ", 1)[1].rstrip("?")
-            continent = normalize_continent_name(raw_cont)
+            continent = q.split("from ")[1].rstrip("?").lower()
             break
-
     if not continent:
         for q in questions_schema.get(f"{role}_continent", []):
             if q not in asked_set:
                 return q
         return None
 
-    # ---------------- COUNTRY ----------------
+    # Country
     country_key = f"{role}_country_born_{continent}" if role == "manager" else f"{role}_country_{continent}"
-    for q in questions_schema.get(country_key, []):
-        if q not in asked_set:
-            return q
+    country_questions = questions_schema.get(country_key, [])
+    if not any(answers_dict.get(q) == "yes" for q in country_questions):
+        for q in country_questions:
+            if q not in asked_set:
+                return q
 
-    # ---------------- LEAGUE ----------------
+    # League
     league_key = f"{role}_league_{continent}"
-    for q in questions_schema.get(league_key, []):
-        if q not in asked_set:
-            return q
+    league_questions = questions_schema.get(league_key, [])
+    if not any(answers_dict.get(q) == "yes" for q in league_questions):
+        for q in league_questions:
+            if q not in asked_set:
+                return q
 
-    # ---------------- CLUB ----------------
-    club_key = None
-    for q in questions_schema.get(league_key, []):
+    # Club
+    league = None
+    for q in league_questions:
         if answers_dict.get(q) == "yes":
             if "Premier League" in q:
                 club_key = f"{role}_club_premier_league"
@@ -121,30 +109,28 @@ def get_next_question(answers_list, asked_set, questions_schema):
                 club_key = f"{role}_club_mls"
             elif "Liga MX" in q:
                 club_key = f"{role}_club_liga_mx"
-            elif "J-League" in q:
-                club_key = f"{role}_club_j_league"
-            elif "Brasileirão" in q or "Brazil" in q:
-                club_key = f"{role}_club_brasileirao"
-            elif "Ghana" in q:
+            elif "Ghana Premier League" in q:
                 club_key = f"{role}_club_ghana_premier_league"
-            elif "Algerian" in q:
+            elif "Algerian Ligue" in q:
                 club_key = f"{role}_club_algerian_ligue_1"
-            elif "Botola" in q:
+            elif "Botola Pro" in q:
                 club_key = f"{role}_club_botola_pro_morocco"
+            else:
+                club_key = None
+            if club_key:
+                club_questions = questions_schema.get(club_key, [])
+                if not any(answers_dict.get(q2) == "yes" for q2 in club_questions):
+                    for q2 in club_questions:
+                        if q2 not in asked_set:
+                            return q2
             break
 
-    if club_key:
-        for q in questions_schema.get(club_key, []):
-            if q not in asked_set:
-                return q
-
-    # 🔥 ONLY NOW ask final attributes (position, age, honors, etc.)
+    # Final attributes
     final_groups = {
-        "player": ["player_position", "player_age", "player_status", "player_honors", "player_post_career"],
-        "manager": ["manager_playing_career", "manager_tactics", "manager_honors", "manager_status", "manager_era"],
+        "player": ["player_position", "player_age", "player_honors"],
+        "manager": ["manager_playing_career", "manager_tactics", "manager_honors"],
         "owner": ["owner_profile", "owner_status"]
     }
-
     for group in final_groups.get(role, []):
         for q in questions_schema.get(group, []):
             if q not in asked_set:
@@ -153,33 +139,22 @@ def get_next_question(answers_list, asked_set, questions_schema):
     return None
 
 
-# -----------------------------
-# Candidate filtering (EXACT MATCH ONLY)
-# -----------------------------
 def filter_candidates(answers_list, all_characters):
+    answers_dict = dict(answers_list)
     candidates = []
     for name, data in all_characters.items():
         if not isinstance(data, dict):
             continue
-        char_answers = data.get("answers", {})
         match = True
         for q, ans in answers_list:
-            if ans == "yes":
-                if char_answers.get(q) != "yes":
-                    match = False
-                    break
-            elif ans == "no":
-                if char_answers.get(q) == "yes":
-                    match = False
-                    break
+            if ans == "yes" and data.get("answers", {}).get(q) != "yes":
+                match = False
+                break
         if match:
             candidates.append((name, data))
     return candidates
 
 
-# -----------------------------
-# Routes (UNCHANGED)
-# -----------------------------
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -204,11 +179,11 @@ def question():
             answers.append((current_q, ans))
             session["answers"] = answers
 
+    # Load fresh data on every request (avoids global state issues)
     base_chars = load_json_file(CHARACTERS_PATH, {})
     user_know = load_json_file(KNOW_PATH, {})
     all_chars = {**base_chars, **user_know}
     questions_schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
-
     if not questions_schema.get("role"):
         questions_schema["role"] = [
             "Is this person a football player?",
@@ -219,7 +194,7 @@ def question():
     asked = set(q for q, _ in answers)
     next_q = get_next_question(answers, asked, questions_schema)
 
-    if not next_q or len(answers) >= 15:
+    if not next_q or len(answers) >= 12:
         return redirect(url_for("answer"))
 
     session["current_question"] = next_q
@@ -227,67 +202,42 @@ def question():
     return render_template("question.html", question=next_q, progress=progress)
 
 
-@app.route("/undo", methods=["POST"])
-def undo():
-    answers = session.get("answers", [])
-    if answers:
-        answers.pop()
-        session["answers"] = answers
-        session.modified = True
-    return redirect(url_for("question"))
-
-
 @app.route("/answer", methods=["GET", "POST"])
 def answer():
     answers = session.get("answers", [])
     wrong_guesses = session.get("wrong_guesses", 0)
 
-    base_chars = load_json_file(CHARACTERS_PATH, {})
-    user_know = load_json_file(KNOW_PATH, {})
-    all_chars = {**base_chars, **user_know}
-
-    has_yes = any(a == "yes" for _, a in answers)
-    candidates = filter_candidates(answers, all_chars)
-
     if request.method == "POST":
         action = request.form.get("action")
         if action == "correct":
-            return render_template(
-                "answer.html",
-                guess="🎉 Yes! I read your mind!",
-                show_success=True,
-                play_again=True
-            )
+            return redirect(url_for("index"))
         elif action == "wrong":
             wrong_guesses += 1
             session["wrong_guesses"] = wrong_guesses
-
-            questions_schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
-            asked = set(q for q, _ in answers)
-            next_q = get_next_question(answers, asked, questions_schema)
-
-            if wrong_guesses >= 5 or not next_q:
+            if wrong_guesses >= 5:
                 return redirect(url_for("learn"))
             else:
                 return redirect(url_for("question"))
 
-    if not has_yes or not candidates:
-        return render_template(
-            "answer.html",
-            guess="😅 I couldn't find anyone matching your answers!",
-            image_url="/static/images/unknown.png",
-            show_final=True,
-            play_again=True
-        )
+    base_chars = load_json_file(CHARACTERS_PATH, {})
+    user_know = load_json_file(KNOW_PATH, {})
+    all_chars = {**base_chars, **user_know}
 
-    name, data = candidates[0]
-    img = data.get("image_url", "/static/images/default.png")
-    return render_template(
-        "answer.html",
-        guess=name,
-        image_url=img,
-        play_again=True
-    )
+    candidates = filter_candidates(answers, all_chars)
+    if not candidates:
+        return render_template("answer.html", guess="I couldn't find anyone matching your answers!")
+
+    best_name, best_data = candidates[0], candidates[0][1]
+    if len(candidates) > 1:
+        best_score = 0
+        for name, data in candidates:
+            score = sum(1 for q, a in answers if a == "yes" and data.get("answers", {}).get(q) == "yes")
+            if score > best_score:
+                best_score = score
+                best_name, best_data = name, data
+
+    img = best_data.get("image_url", "/static/images/default.png")
+    return render_template("answer.html", guess=best_name, image_url=img)
 
 
 @app.route("/learn", methods=["GET", "POST"])
@@ -300,14 +250,11 @@ def learn():
                 "answers": dict(session.get("answers", [])),
                 "image_url": "/static/images/default.png"
             }
-            save_json_file(KNOW_PATH, user_know)
-            return redirect(url_for("index"))
+            with open(KNOW_PATH, "w", encoding="utf-8") as f:
+                json.dump(user_know, f, indent=2, ensure_ascii=False)
+            return render_template("learn.html", success=True, name=name)
     return render_template("learn.html")
 
 
-# -----------------------------
-# Run server
-# -----------------------------
 if __name__ == "__main__":
-    print("✅ Football Mind Reader running on http://127.0.0.1:5000")
     app.run(debug=True, host="0.0.0.0", port=5000)
