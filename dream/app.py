@@ -5,6 +5,9 @@ from flask import Flask, render_template, request, redirect, url_for, session
 app = Flask(__name__)
 app.secret_key = "football_mind_reader_2025"
 
+# -----------------------------
+# File Paths
+# -----------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CHARACTERS_PATH = os.path.join(BASE_DIR, "football_characters.json")
 QUESTIONS_SCHEMA_PATH = os.path.join(BASE_DIR, "football_questions.json")
@@ -39,7 +42,7 @@ def save_json_file(path, data):
 
 def normalize_answer(raw):
     s = raw.strip().lower() if raw else ""
-    if s in ("idk", "i don't know", "dont know", "don't know", "unknown"):
+    if s in ("idk", "i don't know", "dont know", "unknown"):
         return "i don't know"
     if s in ("yes", "y", "yeah", "yep", "sure"):
         return "yes"
@@ -51,38 +54,47 @@ def normalize_answer(raw):
 
 
 def normalize_continent_name(continent_str):
-    """Convert 'South America' → 'south_america' to match JSON keys."""
     return continent_str.strip().lower().replace(" ", "_").replace("-", "_")
 
 
+def normalize_key(text):
+    """Normalize question keys for matching"""
+    return text.strip().lower().replace(" ", "_").replace("?", "")
+
+
 # -----------------------------
-# Question flow logic (SMART)
+# Question Flow Logic
 # -----------------------------
 def get_next_question(answers_list, asked_set, questions_schema):
     answers_dict = dict(answers_list)
 
-    # ---------------- ROLE ----------------
+    # --- ROLE ---
     role = None
-    if answers_dict.get("Is this person a football player?") == "yes":
-        role = "player"
-    elif answers_dict.get("Is this person a football manager?") == "yes":
-        role = "manager"
-    elif answers_dict.get("Is this person a football club owner or executive?") == "yes":
-        role = "owner"
+    for q in questions_schema.get("role", []):
+        if answers_dict.get(q) == "yes":
+            if "player" in q.lower():
+                role = "player"
+            elif "manager" in q.lower():
+                role = "manager"
+            elif "owner" in q.lower():
+                role = "owner"
+            break
 
+    # ✅ Immediate role lock-in
     if not role:
         for q in questions_schema.get("role", []):
             if q not in asked_set:
                 return q
         return None
+    else:
+        asked_set.update(questions_schema.get("role", []))
 
-    # ---------------- CONTINENT ----------------
+    # --- CONTINENT ---
     continent = None
     for q in questions_schema.get(f"{role}_continent", []):
-        if answers_dict.get(q) == "yes":
-            # 🔥 FIX: Use normalized continent name for all subsequent keys
-            raw_cont = q.split("from ", 1)[1].rstrip("?")
-            continent = normalize_continent_name(raw_cont)
+        if answers_dict.get(q) == "yes" and "from " in q:
+            raw = q.split("from ", 1)[1].rstrip("?")
+            continent = normalize_continent_name(raw)
             break
 
     if not continent:
@@ -91,62 +103,164 @@ def get_next_question(answers_list, asked_set, questions_schema):
                 return q
         return None
 
-    # ---------------- COUNTRY ----------------
+    # --- COUNTRY ---
     country_key = f"{role}_country_born_{continent}" if role == "manager" else f"{role}_country_{continent}"
-    for q in questions_schema.get(country_key, []):
-        if q not in asked_set:
-            return q
+    country_questions = questions_schema.get(country_key, [])
+    if country_questions:
+        if any(answers_dict.get(q) == "yes" for q in country_questions):
+            asked_set.update(country_questions)
+        else:
+            for q in country_questions:
+                if q not in asked_set:
+                    return q
 
-    # ---------------- LEAGUE ----------------
-    league_key = f"{role}_league_{continent}"
-    for q in questions_schema.get(league_key, []):
-        if q not in asked_set:
-            return q
+    # --- LEAGUE (auto-skip on yes) ---
+    league_keys = [k for k in questions_schema if k.startswith(f"{role}_league_")]
+    league_keys.sort(key=lambda x: 0 if x.endswith(continent) else 1)
 
-    # ---------------- CLUB ----------------
-    club_key = None
-    for q in questions_schema.get(league_key, []):
-        if answers_dict.get(q) == "yes":
-            if "Premier League" in q:
-                club_key = f"{role}_club_premier_league"
-            elif "La Liga" in q:
-                club_key = f"{role}_club_laliga"
-            elif "Serie A" in q:
-                club_key = f"{role}_club_serie_a"
-            elif "Bundesliga" in q:
-                club_key = f"{role}_club_bundesliga"
-            elif "Ligue 1" in q:
-                club_key = f"{role}_club_ligue_1"
-            elif "MLS" in q:
-                club_key = f"{role}_club_mls"
-            elif "Liga MX" in q:
-                club_key = f"{role}_club_liga_mx"
-            elif "J-League" in q:
-                club_key = f"{role}_club_j_league"
-            elif "Brasileirão" in q or "Brazil" in q:
-                club_key = f"{role}_club_brasileirao"
-            elif "Ghana" in q:
-                club_key = f"{role}_club_ghana_premier_league"
-            elif "Algerian" in q:
-                club_key = f"{role}_club_algerian_ligue_1"
-            elif "Botola" in q:
-                club_key = f"{role}_club_botola_pro_morocco"
+    league_found = False
+    for league_key in league_keys:
+        league_questions = questions_schema.get(league_key, [])
+        if not league_questions:
+            continue
+        if any(answers_dict.get(q) == "yes" for q in league_questions):
+            league_found = True
             break
-
-    if club_key:
-        for q in questions_schema.get(club_key, []):
+        for q in league_questions:
             if q not in asked_set:
                 return q
 
-    # 🔥 ONLY NOW ask final attributes (position, age, honors, etc.)
-    final_groups = {
-        "player": ["player_position", "player_age", "player_status", "player_honors", "player_post_career"],
-        "manager": ["manager_playing_career", "manager_tactics", "manager_honors", "manager_status", "manager_era"],
-        "owner": ["owner_profile", "owner_status"]
-    }
+    if league_found:
+        for league_key in league_keys:
+            asked_set.update(questions_schema.get(league_key, []))
 
-    for group in final_groups.get(role, []):
-        for q in questions_schema.get(group, []):
+    # --- CLUB (auto-skip on yes) ---
+    # --- CLUB (cross-continent & full mapping support) ---
+    club_key = None
+    chosen_league = None
+
+    # Search through all leagues, not just continent-based ones
+    all_league_groups = [k for k in questions_schema if k.startswith(f"{role}_league_")]
+    for league_group in all_league_groups:
+        for q in questions_schema.get(league_group, []):
+            if answers_dict.get(q) == "yes":
+                chosen_league = q.lower()
+                break
+        if chosen_league:
+            break
+
+    if chosen_league:
+        mapping = {
+            # --- EUROPE ---
+            "premier league": "premier_league",
+            "championship": "championship",
+            "la liga": "laliga",
+            "serie a": "serie_a",
+            "bundesliga": "bundesliga",
+            "ligue 1": "ligue_1",
+            "eredivisie": "eredivisie",
+            "primeira liga": "primeira_liga",
+            "belgian pro league": "belgian_pro_league",
+            "super lig": "turkish_super_lig",
+            "russian premier league": "russian_premier_league",
+            "scottish premiership": "scottish_premiership",
+            "swiss super league": "swiss_super_league",
+            "ukrainian premier league": "ukrainian_premier_league",
+            "greek super league": "greek_super_league",
+            "cypriot first division": "cypriot_first_division",
+            "norwegian eliteserien": "eliteserien",
+            "swedish allsvenskan": "allsvenskan",
+            "danish superliga": "danish_superliga",
+            "romanian liga i": "liga_i",
+            "polish ekstraklasa": "ekstraklasa",
+            "czech first league": "czech_first_league",
+
+            # --- AFRICA ---
+            "egyptian premier league": "egyptian_premier_league",
+            "npfl": "npfl",
+            "south african premier division": "psl",
+            "botola pro": "botola_pro",
+            "tunisian ligue 1": "tunisian_ligue_1",
+            "ghana premier league": "ghana_premier_league",
+            "caf champions league": "caf_champions_league",
+            "caf confederation cup": "caf_confederation_cup",
+
+            # --- ASIA / MIDDLE EAST ---
+            "saudi pro league": "saudi_pro_league",
+            "qatar stars league": "qatar_stars_league",
+            "uae pro league": "uae_pro_league",
+            "j1 league": "j1_league",
+            "k league": "k_league",
+            "indian super league": "indian_super_league",
+            "chinese super league": "chinese_super_league",
+            "iran pro league": "iran_pro_league",
+
+            # --- AMERICA ---
+            "mls": "mls",
+            "liga mx": "liga_mx",
+            "brasileirão": "brasileirao",
+            "argentine primera division": "argentine_primera_division",
+            "uruguayan primera division": "uruguayan_primera_division",
+            "chilean primera division": "chilean_primera_division",
+            "colombian primera a": "colombian_primera_a",
+
+            # --- OCEANIA / OTHER ---
+            "a-league": "a_league",
+        }
+
+        for key, val in mapping.items():
+            if key in chosen_league:
+                club_key = f"{role}_club_{val}"
+                break
+
+    if club_key:
+        club_questions = questions_schema.get(club_key, [])
+        if club_questions:
+            confirmed = any(answers_dict.get(q) == "yes" for q in club_questions)
+            all_asked = all(q in asked_set for q in club_questions)
+            if not (confirmed or all_asked):
+                for q in club_questions:
+                    if q not in asked_set:
+                        return q
+
+    if club_key:
+        club_questions = questions_schema.get(club_key, [])
+        if club_questions:
+            if any(answers_dict.get(q) == "yes" for q in club_questions):
+                asked_set.update(club_questions)
+            else:
+                for q in club_questions:
+                    if q not in asked_set:
+                        return q
+
+    # --- FINAL PHASE: Always ask critical questions ---
+    is_goalkeeper = any(
+        answers_dict.get(q) == "yes"
+        for q in questions_schema.get("player_position", [])
+        if "goalkeeper" in q.lower() or "gk" in q.lower()
+    )
+
+    # Critical groups that MUST be asked (even if club is known)
+    critical_groups = ["player_position", "player_age", "player_status"]
+    if role == "player":
+        honors_group = "player_honors_goalkeeper" if is_goalkeeper else "player_honors_outfield"
+        critical_groups.append(honors_group)
+
+    for group in critical_groups:
+        group_questions = questions_schema.get(group, [])
+        for q in group_questions:
+            if q not in asked_set:
+                return q
+
+    # Other groups (non-critical)
+    other_groups = {
+        "player": ["player_post_career"],
+        "manager": ["manager_playing_career", "manager_tactics", "manager_honors", "manager_status", "manager_era"],
+        "owner": ["owner_profile", "owner_status"],
+    }
+    for group in other_groups.get(role, []):
+        group_questions = questions_schema.get(group, [])
+        for q in group_questions:
             if q not in asked_set:
                 return q
 
@@ -154,31 +268,83 @@ def get_next_question(answers_list, asked_set, questions_schema):
 
 
 # -----------------------------
-# Candidate filtering (EXACT MATCH ONLY)
+# Candidate Filtering
 # -----------------------------
 def filter_candidates(answers_list, all_characters):
-    candidates = []
+    """
+    Implements Akinator-like logic:
+    1. HARD ELIMINATION: Remove anyone contradicting a 'yes'/'no' answer
+    2. SCORE survivors: How many answers they matched
+    3. RETURN top 10 by score
+    """
+    if not answers_list:
+        # No answers yet → return top 10
+        return [(name, data, 0) for name, data in list(all_characters.items())[:10]]
+
+    # Normalize user answers for comparison
+    user_answers_norm = {
+        normalize_key(q): ans
+        for q, ans in answers_list
+        if ans in ("yes", "no")
+    }
+
+    survivors = []
     for name, data in all_characters.items():
         if not isinstance(data, dict):
             continue
         char_answers = data.get("answers", {})
-        match = True
-        for q, ans in answers_list:
-            if ans == "yes":
-                if char_answers.get(q) != "yes":
-                    match = False
+        
+        valid = True
+        # Check each user answer against character's answers
+        for norm_q, user_ans in user_answers_norm.items():
+            # Find matching question in character's answers
+            matched = False
+            for char_q, char_ans in char_answers.items():
+                if normalize_key(char_q) == norm_q:
+                    if char_ans != user_ans:
+                        valid = False  # Contradiction found
+                        matched = True
+                        break
+                    matched = True
                     break
-            elif ans == "no":
-                if char_answers.get(q) == "yes":
-                    match = False
-                    break
-        if match:
-            candidates.append((name, data))
-    return candidates
+            if not valid:
+                break
+            # If no matching question found, that's okay (neutral)
+        
+        if valid:
+            survivors.append((name, data))
+
+    if not survivors:
+        print("--- NO SURVIVORS AFTER ELIMINATION ---")
+        # Fallback: return top 10 with 0% confidence
+        return [(name, data, 0) for name, data in list(all_characters.items())[:10]]
+
+    # Score survivors based on how many answers they matched
+    scored = []
+    total_yes_no = len([1 for q, a in answers_list if a in ("yes", "no")])
+    for name, data in survivors:
+        char_answers = data.get("answers", {})
+        matches = 0
+        for q, user_ans in answers_list:
+            if user_ans in ("yes", "no"):
+                norm_q = normalize_key(q)
+                # Find matching question in character's answers
+                for char_q, char_ans in char_answers.items():
+                    if normalize_key(char_q) == norm_q:
+                        if char_ans == user_ans:
+                            matches += 1
+                        break
+        
+        confidence = (matches / total_yes_no * 100) if total_yes_no > 0 else 0
+        scored.append((name, data, round(confidence, 2)))
+
+    # Sort by confidence descending
+    scored.sort(key=lambda x: x[2], reverse=True)
+    return scored[:10]
 
 
 # -----------------------------
-# Routes (UNCHANGED)
+# Flask Routes
 # -----------------------------
 @app.route("/")
 def index():
@@ -197,8 +363,7 @@ def start():
 def question():
     answers = session.get("answers", [])
     if request.method == "POST":
-        raw_ans = request.form.get("answer", "")
-        ans = normalize_answer(raw_ans)
+        ans = normalize_answer(request.form.get("answer", ""))
         current_q = session.get("current_question")
         if current_q:
             answers.append((current_q, ans))
@@ -216,14 +381,13 @@ def question():
             "Is this person a football club owner or executive?"
         ]
 
-    asked = set(q for q, _ in answers)
+    asked = {q for q, _ in answers}
     next_q = get_next_question(answers, asked, questions_schema)
-
-    if not next_q or len(answers) >= 15:
+    if not next_q:
         return redirect(url_for("answer"))
 
     session["current_question"] = next_q
-    progress = min(95, max(0, len([a for a in answers if a[1] == "yes"]) * 10))
+    progress = min(95, len([a for a in answers if a[1] == "yes"]) * 10)
     return render_template("question.html", question=next_q, progress=progress)
 
 
@@ -233,7 +397,6 @@ def undo():
     if answers:
         answers.pop()
         session["answers"] = answers
-        session.modified = True
     return redirect(url_for("question"))
 
 
@@ -241,53 +404,44 @@ def undo():
 def answer():
     answers = session.get("answers", [])
     wrong_guesses = session.get("wrong_guesses", 0)
-
     base_chars = load_json_file(CHARACTERS_PATH, {})
     user_know = load_json_file(KNOW_PATH, {})
     all_chars = {**base_chars, **user_know}
+    
+    print("\n🔍 USER ANSWERS:")
+    for q, ans in answers:
+        print(f"  • {q} → {ans}")
 
-    has_yes = any(a == "yes" for _, a in answers)
     candidates = filter_candidates(answers, all_chars)
+    print("\n--- CANDIDATE SCORES ---")
+    for n, _, c in candidates:
+        print(f"{n}: {c:.2f}%")
+        print("--------------------------")
+
+    if not candidates:
+        return render_template("answer.html", guess="😅 I couldn't find anyone matching your answers!",
+                               image_url="/static/images/unknown.png", play_again=True)
+
+    best_name, best_data, confidence = candidates[0]
+    img = best_data.get("image_url", "/static/images/default.png")
+
+    # Lowered threshold to 10
+    if confidence < 10:
+        return render_template("answer.html", guess="🤔 I'm not confident enough to guess.",
+                               image_url="/static/images/unknown.png", low_confidence=True, play_again=True)
 
     if request.method == "POST":
-        action = request.form.get("action")
-        if action == "correct":
-            return render_template(
-                "answer.html",
-                guess="🎉 Yes! I read your mind!",
-                show_success=True,
-                play_again=True
-            )
-        elif action == "wrong":
+        if request.form.get("action") == "correct":
+            return render_template("answer.html", guess=f"🎉 Yes! It was {best_name}!",
+                                   show_success=True, play_again=True)
+        elif request.form.get("action") == "wrong":
             wrong_guesses += 1
             session["wrong_guesses"] = wrong_guesses
-
-            questions_schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
-            asked = set(q for q, _ in answers)
-            next_q = get_next_question(answers, asked, questions_schema)
-
-            if wrong_guesses >= 5 or not next_q:
+            if wrong_guesses >= 5:
                 return redirect(url_for("learn"))
-            else:
-                return redirect(url_for("question"))
+            return redirect(url_for("question"))
 
-    if not has_yes or not candidates:
-        return render_template(
-            "answer.html",
-            guess="😅 I couldn't find anyone matching your answers!",
-            image_url="/static/images/unknown.png",
-            show_final=True,
-            play_again=True
-        )
-
-    name, data = candidates[0]
-    img = data.get("image_url", "/static/images/default.png")
-    return render_template(
-        "answer.html",
-        guess=name,
-        image_url=img,
-        play_again=True
-    )
+    return render_template("answer.html", guess=best_name, image_url=img, play_again=True, confidence=confidence)
 
 
 @app.route("/learn", methods=["GET", "POST"])
@@ -305,9 +459,6 @@ def learn():
     return render_template("learn.html")
 
 
-# -----------------------------
-# Run server
-# -----------------------------
 if __name__ == "__main__":
     print("✅ Football Mind Reader running on http://127.0.0.1:5000")
     app.run(debug=True, host="0.0.0.0", port=5000)

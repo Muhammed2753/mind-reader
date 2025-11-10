@@ -186,7 +186,7 @@
     "Is this player playing in ISL?"
   ],
   "player_league_south_america": [
-    "Is this player playing in Serie A(Ligue du Brazil)?",
+    "Is this player playing in brasileirao(Ligue du Brazil)?",
     "Is this player playing in Primera Division(Argentina)?",
     "Is this player playing in Categorian Primera A?",
     "Is this player playing in Uruguayan Primera Division?"
@@ -201,7 +201,7 @@
     "Is this player playing in Kenyan Premier League?",
     "Is this player playing in Ghana Premier League?"
   ],
-  "player_club_premier_League": [
+  "player_club_premier_league": [
     "Is this player playing for Manchester United?",
     "Is this player playing for Liverpool?",
     "Is this player playing for Manchester City?",
@@ -797,23 +797,23 @@
     "Is this player playing for Accra Great Olympics"
   ],
   "player_position": [
-    "Does this player play as a goalkeeper?",
-    "Does this player play as a center defender?",
-    "Does this player play as a left defender?",
-    "Does this player play as a right defender?",
-    "Does this player play as a right wing back?",
-    "Does this player play as a left wing back?",
-    "Does this player play as a left midfielder?",
-    "Does this player play as a right midfielder?",
-    "Does this player play as an center midfielder?",
-    "Does this player play as an attacking midfielder?",
-    "Does this player play as a defensive midfielder?",
-    "Does this player play as a striker?",
-    "Does this player play as a left winger?",
-    "Does this player play as a right winger?",
-    "Does this player play as a center forward?"
+    "Is this player natural position a goalkeeper?",
+    "Is this player natural position a center defender?",
+    "Is this player natural position a left defender?",
+    "Is this player natural position a right defender?",
+    "Is this player natural position a right wing back?",
+    "Is this player natural position a left wing back?",
+    "Is this player natural position a left midfielder?",
+    "Is this player natural position a right midfielder?",
+    "Is this player natural position a center midfielder?",
+    "Is this player natural position an attacking midfielder?",
+    "Is this player natural position a defensive midfielder?",
+    "Is this player natural position a striker?",
+    "Is this player natural position a left winger?",
+    "Is this player natural position a right winger?",
+    "Is this player natural position a center forward?"
   ],
-  "player_age": [
+   "player_age": [
     "Is this player under 18 years old?",
     "Is this player under 23 years old?",
     "Is this player between 23 and 35 years old?",
@@ -851,10 +851,24 @@
   "Has this player won the Champions League with more than one club?",
   "Has this player scored 5+ goals in a single Champions League match?"
 ],
-  "player_post_career": [
-    "Is this former player now a football manager?"
+  "player_honors_goalkeeper": [
+    "Has this player won the Yashin Trophy?",
+    "Has this player won the UEFA Champions League?",
+    "Has this player won the FIFA World Cup?",
+    "Has this player won the Copa América?",
+    "Has this player won the African Cup of Nations?",
+    "Has this player won the Premier League?",
+    "Has this player won La Liga?",
+    "Has this player won Serie A?",
+    "Has this player won the Bundesliga?",
+    "Has this player won Ligue 1?"
   ],
-
+  "player_post_career": [
+    "Has this player become a coach?",
+    "Has this player become a pundit?",
+    "Has this player gone into politics?",
+    "Has this player retired to private life?"
+  ],
   "manager_continent": [
     "Is this manager from Europe?",
     "Is this manager from South America?",

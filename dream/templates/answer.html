@@ -51,10 +51,14 @@
             margin-bottom: 20px;
         }
 
-        form {
+        .button-container {
             display: flex;
             flex-direction: column;
             gap: 12px;
+        }
+
+        .button-container form {
+            margin: 0; /* Remove default margin from nested forms */
         }
 
         button {
@@ -82,6 +86,15 @@
 
         button[value="wrong"]:hover {
             background: #ff2222;
+        }
+
+        .play-again {
+            background: #32CD32; /* Green color for play again */
+            color: white;
+        }
+
+        .play-again:hover {
+            background: #22bb22;
         }
 
         .footer {
@@ -114,12 +127,22 @@
         <img src="{{ image_url }}" alt="Player Image">
         <h1>{{ guess }}</h1>
 
-        <form method="post">
-            <button type="submit" name="action" value="correct">✅ Yes, that's correct!</button>
-            <button type="submit" name="action" value="wrong">❌ No, guess again</button>
-            <button type="submit" class="play-again">🔁 Play Again</button>
-        
-        </form>
+        <div class="button-container">
+            <!-- Form for "Yes, Correct" -->
+            <form method="post">
+                <button type="submit" name="action" value="correct">✅ Yes, that's correct!</button>
+            </form>
+
+            <!-- Form for "No, Guess Again" -->
+            <form method="post">
+                <button type="submit" name="action" value="wrong">❌ No, guess again</button>
+            </form>
+
+            <!-- Form for "Play Again" -->
+            <form method="post" action="{{ url_for('start') }}">
+                <button type="submit" class="play-again">🔁 Play Again</button>
+            </form>
+        </div>
     </div>
 
     <div class="footer">

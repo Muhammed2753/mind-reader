@@ -1,23 +1,48 @@
 import json
-import os
 
-# Load both files
-with open("football_characters.json", "r", encoding="utf-8") as f:
-    characters = json.load(f)
+# Path to your file
+FILE_PATH = "football_characters.json"
 
-# Load existing knowledge (if any)
-if os.path.exists("knowledge_db.json"):
-    with open("knowledge_db.json", "r", encoding="utf-8") as f:
-        knowledge = json.load(f)
-else:
-    knowledge = {}
+# Load the data
+with open(FILE_PATH, "r", encoding="utf-8") as f:
+    data = json.load(f)
 
-# Merge all characters into knowledge (overwrite if exists)
-for name, data in characters.items():
-    knowledge[name] = data
+fixed_count = 0
+total_players = len(data)
 
-# Save back to knowledge_db.json
-with open("knowledge_db.json", "w", encoding="utf-8") as f:
-    json.dump(knowledge, f, indent=2, ensure_ascii=False)
+# Traverse each player
+for name, info in data.items():
+    if not isinstance(info, dict) or "answers" not in info:
+        continue
 
-print(f"✅ Merged {len(characters)} players into knowledge_db.json")
+    answers = info["answers"]
+
+    # Check if both keys exist
+    double_key = "Is this player currently active??"
+    single_key = "Is this player currently active?"
+
+    if double_key in answers:
+        # If both exist, remove the double-key version
+        if single_key in answers:
+            del answers[double_key]
+            fixed_count += 1
+        else:
+            # If only double-key exists, rename it to single-key
+            answers[single_key] = answers.pop(double_key)
+            fixed_count += 1
+
+    # Optional: Ensure single_key exists and is either "yes" or "no"
+    if single_key in answers:
+        if answers[single_key] not in ("yes", "no"):
+            # Optional cleanup: set to "yes" if invalid
+            answers[single_key] = "yes"
+
+print(f"✅ Fixed {fixed_count}/{total_players} players")
+print(f"✔️ Removed all 'Is this player currently active??' entries")
+print(f"✔️ Ensured 'Is this player currently active?' is present and valid")
+
+# Save back to file
+with open(FILE_PATH, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"💾 Saved cleaned data to {FILE_PATH}")
