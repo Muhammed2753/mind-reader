@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Muhfal</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .achievement-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+        .achievement-card.locked {
+            opacity: 0.5;
+            filter: grayscale(100%);
+        }
+        .achievement-icon {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .achievement-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .achievement-desc {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .achievement-reward {
+            text-align: center;
+            font-size: 12px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .back-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-btn">← Back to Home</a>
+        
+        <div class="header">
+            <h1>🏆 Achievements</h1>
+            <p id="progress">0 / 10 Unlocked</p>
+        </div>
+
+        <div class="achievements-grid" id="achievements"></div>
+    </div>
+
+    <script>
+        const achievementIcons = {
+            first_win: '🎉',
+            speed_demon: '⚡',
+            perfect_game: '💎',
+            streak_5: '🔥',
+            streak_10: '🌟',
+            premier_expert: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+            laliga_expert: '🇪🇸',
+            century: '💯',
+            knowledge_master: '🧠',
+            daily_champion: '📅'
+        };
+
+        fetch('/api/achievements')
+            .then(r => r.json())
+            .then(data => {
+                const container = document.getElementById('achievements');
+                const unlocked = data.achievements || [];
+                
+                const achievements = {
+                    first_win: {name: 'First Victory', desc: 'Win your first game', xp: 50, coins: 10},
+                    speed_demon: {name: 'Speed Demon', desc: 'Win in under 10 questions', xp: 100, coins: 25},
+                    perfect_game: {name: 'Perfect Game', desc: 'Win without using hints', xp: 150, coins: 50},
+                    streak_5: {name: '5 Win Streak', desc: 'Win 5 games in a row', xp: 200, coins: 75},
+                    streak_10: {name: '10 Win Streak', desc: 'Win 10 games in a row', xp: 500, coins: 200},
+                    premier_expert: {name: 'Premier League Expert', desc: 'Guess 20 Premier League players', xp: 150, coins: 50},
+                    laliga_expert: {name: 'La Liga Expert', desc: 'Guess 20 La Liga players', xp: 150, coins: 50},
+                    century: {name: 'Century', desc: 'Win 100 games', xp: 1000, coins: 500},
+                    knowledge_master: {name: 'Knowledge Master', desc: 'Add 10 players to database', xp: 300, coins: 100},
+                    daily_champion: {name: 'Daily Champion', desc: 'Complete 7 daily challenges', xp: 250, coins: 100}
+                };
+
+                Object.keys(achievements).forEach(key => {
+                    const ach = achievements[key];
+                    const isUnlocked = unlocked.includes(key);
+                    
+                    container.innerHTML += `
+                        <div class="achievement-card ${isUnlocked ? '' : 'locked'}">
+                            <div class="achievement-icon">${achievementIcons[key]}</div>
+                            <div class="achievement-name">${ach.name}</div>
+                            <div class="achievement-desc">${ach.desc}</div>
+                            <div class="achievement-reward">+${ach.xp} XP | +${ach.coins} Coins</div>
+                        </div>
+                    `;
+                });
+
+                document.getElementById('progress').textContent = `${unlocked.length} / 10 Unlocked`;
+            });
+    </script>
+</body>
+</html>

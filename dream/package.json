@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "build": "^0.1.4",
+    "expo": "~55.0.26",
+    "expo-dev-client": "~55.0.35"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.10",
+    "typescript": "~5.9.2"
+  }
+}

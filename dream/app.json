@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "dream",
+    "slug": "dream",
+    "version": "1.0.0",
+    "scheme": "dream",
+    "android": {
+      "package": "com.zeedain14.dream"
+    },
+    "ios": {
+      "bundleIdentifier": "com.zeedain14.dream"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

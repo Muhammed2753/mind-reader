@@ -6,25 +6,283 @@ from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 from flask_cors import CORS
 from better_profanity import Profanity
-from hints import HintSystem
-from achievements import AchievementTracker, ACHIEVEMENTS
-from daily_challenge import DailyChallenge
-from leaderboard import Leaderboard
-from api_routes import api
-from game_stats import GameStats
+
+# -----------------------------
+# File Paths
+# -----------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CHARACTERS_PATH = os.path.join(BASE_DIR, "football_characters.json")
+QUESTIONS_SCHEMA_PATH = os.path.join(BASE_DIR, "football_questions.json")
+KNOW_PATH = os.path.join(BASE_DIR, "knowledge_db.json")
 
 profanity_checker = Profanity()
 app = Flask(__name__)
 app.secret_key = "Muhfal"
-CORS(app)  # Enable CORS for mobile app
-app.register_blueprint(api)
+CORS(app)
 
-# Initialize systems
-hint_system = HintSystem()
-leaderboard = Leaderboard()
-game_stats = GameStats()
+# Ensure static/images exists
+os.makedirs(os.path.join(BASE_DIR, "static", "images"), exist_ok=True)
+for img in ["default.png", "unknown.png"]:
+    path = os.path.join(BASE_DIR, "static", "images", img)
+    if not os.path.exists(path):
+        with open(path, "w") as f:
+            f.write("")
 
-# Define Big Teams globally
+# -----------------------------
+# Utility functions
+# -----------------------------
+def load_json_file(path, default):
+    if not os.path.exists(path):
+        return default
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Error loading {path}: {e}")
+        return default
+
+def save_json_file(path, data):
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving {path}: {e}")
+
+def normalize_answer(raw):
+    s = raw.strip().lower() if raw else ""
+    if s in ("idk", "i don't know", "dont know", "unknown"):
+        return "i don't know"
+    if s in ("yes", "y", "yeah", "yep", "sure"):
+        return "yes"
+    if s in ("no", "n", "nope", "nah"):
+        return "no"
+    if s in ("sometimes", "maybe", "occasionally", "not really"):
+        return "sometimes"
+    return "i don't know"
+
+def normalize_key(q):
+    return re.sub(r"[^\w]", "", q.lower().strip())
+
+def normalize_continent_name(continent_str):
+    return continent_str.strip().lower().replace(" ", "_").replace("-", "_")
+
+PROFANITY_WORDS = {
+    "fuck", "shit", "bitch", "asshole", "dick", "piss", "cunt", "slut",
+    "whore", "nigga", "nigger", "fag", "faggot", "cock", "twat", "crap",
+    "arse", "bollocks", "wanker", "prick", "douche", "motherfucker",
+    "bastard", "damn", "hell", "sucker", "retard", "idiot", "mad", "moron"
+}
+
+def contains_profanity(text):
+    if not text:
+        return False
+    clean = re.sub(r"[^\w\s]", "", text.lower())
+    words = set(clean.split())
+    return bool(words & PROFANITY_WORDS)
+
+QUESTION_TO_NAMES = {}
+_JSON_CACHE = {}
+_CACHE_TIMESTAMPS = {}
+_INDEX_BUILT_TIMESTAMPS = None
+
+def build_question_index(all_characters):
+    global QUESTION_TO_NAMES, _INDEX_BUILT_TIMESTAMPS
+    QUESTION_TO_NAMES = {}
+    for name, data in all_characters.items():
+        for q, ans in data.get("answers", {}).items():
+            if ans == "yes":
+                norm_q = normalize_key(q)
+                if norm_q not in QUESTION_TO_NAMES:
+                    QUESTION_TO_NAMES[norm_q] = set()
+                QUESTION_TO_NAMES[norm_q].add(name)
+    char_mtime = _CACHE_TIMESTAMPS.get(CHARACTERS_PATH)
+    know_mtime = _CACHE_TIMESTAMPS.get(KNOW_PATH)
+    _INDEX_BUILT_TIMESTAMPS = (char_mtime, know_mtime)
+
+# -----------------------------
+# Load data ONCE at startup
+# -----------------------------
+BASE_CHARS = load_json_file(CHARACTERS_PATH, {})
+USER_KNOW = load_json_file(KNOW_PATH, {})
+ALL_CHARS = {**BASE_CHARS, **USER_KNOW}
+build_question_index(ALL_CHARS)  # Build index once
+
+def extract_age_group(answers_dict):
+    if answers_dict.get("Is this player under 18 years old?") == "yes":
+        return "under_18"
+    elif answers_dict.get("Is this player between 18 and 23 years old?") == "yes":
+        return "18_23"
+    elif answers_dict.get("Is this player between 23 and 35 years old?") == "yes":
+        return "23_35"
+    elif answers_dict.get("Is this player over 35 years old?") == "yes":
+        return "over_35"
+    else:
+        return "unknown"
+
+def infer_missing_metadata(answers_dict, questions_schema):
+    enriched = answers_dict.copy()
+    country_to_continent = {
+        "england": "europe", "spain": "europe", "italy": "europe",
+        "germany": "europe", "france": "europe", "brazil": "south_america",
+        "argentina": "south_america", "usa": "north_america", "canada": "north_america",
+        "saudi arabia": "asia", "japan": "asia", "south korea": "asia",
+        "egypt": "africa", "senegal": "africa", "nigeria": "africa",
+        "australia": "oceania"
+    }
+
+    role = "player"
+    if any("manager" in q.lower() for q in answers_dict if answers_dict[q] == "yes"):
+        role = "manager"
+    elif any("owner" in q.lower() for q in answers_dict if answers_dict[q] == "yes"):
+        role = "owner"
+
+    for q, ans in answers_dict.items():
+        if ans == "yes" and "born in" in q:
+            match = re.search(r"born in ([a-zA-Z\s]+)\?", q)
+            if match:
+                country = normalize_continent_name(match.group(1))
+                continent = country_to_continent.get(country, "unknown")
+                enriched[f"Is this {role} birthplace in {continent.title()}?"] = "yes"
+                break
+
+    for q, ans in answers_dict.items():
+        if ans == "yes" and "playing in" in q:
+            match = re.search(r"playing in ([a-zA-Z\s]+)\?", q)
+            if match:
+                country = normalize_continent_name(match.group(1))
+                continent = country_to_continent.get(country, "unknown")
+                enriched[f"Is this {role} playing in {continent.title()}?"] = "yes"
+                league_map = {
+                    "england": "Is this player playing in the Premier League?",
+                    "spain": "Is this player playing in La Liga?",
+                    "italy": "Is this player playing in Serie A?",
+                    "germany": "Is this player playing in the Bundesliga?",
+                    "france": "Is this player playing in Ligue 1?",
+                    "saudi arabia": "Is this player playing in the Saudi Pro League?",
+                    "usa": "Is this player playing in MLS?"
+                }
+                if country in league_map:
+                    enriched[league_map[country]] = "yes"
+                break
+    return enriched
+
+def filter_candidates(answers_list, all_characters):
+    if not answers_list:
+        return [(name, data, 0) for name, data in list(all_characters.items())[:50]]
+
+    user_age_group = extract_age_group(dict(answers_list))
+    answers_dict = dict(answers_list)
+    remaining = list(all_characters.items())
+
+    # SAFE STATUS FILTERING: Only eliminate on direct contradiction
+    new_remaining = []
+    for name, data in remaining:
+        char_answers = data.get("answers", {})
+        eliminated = False
+
+        # Player status
+        if answers_dict.get("Is this player currently active?") == "yes":
+            if char_answers.get("Has this player retired?") == "yes" or \
+               char_answers.get("Is this player deceased?") == "yes":
+                eliminated = True
+        elif answers_dict.get("Has this player retired?") == "yes":
+            if char_answers.get("Is this player currently active?") == "yes":
+                eliminated = True
+        elif answers_dict.get("Is this player deceased?") == "yes":
+            if char_answers.get("Is this player currently active?") == "yes" or \
+               char_answers.get("Has this player retired?") == "yes":
+                eliminated = True
+
+        # Manager status
+        if answers_dict.get("Is this manager currently active?") == "yes":
+            if char_answers.get("Has this manager retired?") == "yes" or \
+               char_answers.get("Is this manager deceased?") == "yes":
+                eliminated = True
+        elif answers_dict.get("Has this manager retired?") == "yes":
+            if char_answers.get("Is this manager currently active?") == "yes":
+                eliminated = True
+        elif answers_dict.get("Is this manager deceased?") == "yes":
+            if char_answers.get("Is this manager currently active?") == "yes" or \
+               char_answers.get("Has this manager retired?") == "yes":
+                eliminated = True
+
+        # Owner status
+        if answers_dict.get("Is this owner currently active?") == "yes":
+            if char_answers.get("Has this owner stepped down?") == "yes" or \
+               char_answers.get("Is this owner deceased?") == "yes":
+                eliminated = True
+        elif answers_dict.get("Has this owner stepped down?") == "yes":
+            if char_answers.get("Is this owner currently active?") == "yes":
+                eliminated = True
+        elif answers_dict.get("Is this owner deceased?") == "yes":
+            if char_answers.get("Is this owner currently active?") == "yes" or \
+               char_answers.get("Has this owner stepped down?") == "yes":
+                eliminated = True
+
+        if not eliminated:
+            new_remaining.append((name, data))
+
+    remaining = new_remaining
+    if not remaining:
+        return []
+
+    # Answer-by-answer filtering
+    for question, user_answer in answers_list:
+        norm_q = normalize_key(question)
+        new_remaining = []
+        for name, data in remaining:
+            char_age = data.get("age_group", "unknown")
+            if user_age_group != "unknown" and char_age != "unknown" and char_age != user_age_group:
+                continue
+
+            char_answers = data.get("answers", {})
+            matched = False
+            keep = False
+            for cq, ca in char_answers.items():
+                if normalize_key(cq) == norm_q:
+                    matched = True
+                    if ca == "yes":
+                        keep = (user_answer == "yes")
+                    elif ca == "no":
+                        keep = (user_answer == "no")
+                    break
+            if not matched:
+                keep = (user_answer != "yes")
+            if keep:
+                new_remaining.append((name, data))
+        remaining = new_remaining
+        if not remaining:
+            return []
+
+    # Scoring
+    yes_count = sum(1 for _, a in answers_list if a == "yes")
+    scored = []
+    for name, data in remaining:
+        score = sum(
+            1 for q, ua in answers_list
+            if ua == "yes"
+            for cq, ca in data.get("answers", {}).items()
+            if normalize_key(cq) == normalize_key(q) and ca == "yes"
+        )
+        conf = (score / max(1, yes_count)) * 100 if yes_count > 0 else 50
+        scored.append((name, data, round(conf, 1)))
+    scored.sort(key=lambda x: x[2], reverse=True)
+    return scored[:50]
+
+def get_active_questions(questions_schema, all_characters, answers_list, role, question_group_key):
+    base_questions = questions_schema.get(question_group_key, [])
+    if not base_questions:
+        return []
+    candidates = filter_candidates(answers_list, all_characters)
+    candidate_names = {name for name, _, _ in candidates}
+    active_questions = []
+    for q in base_questions:
+        norm_q = normalize_key(q)
+        names_with_q = QUESTION_TO_NAMES.get(norm_q, set())
+        if names_with_q & candidate_names:
+            active_questions.append(q)
+    return active_questions
+
 BIG_TEAMS = {
     "player_club_premier_league": [
         "Is this player playing for Manchester United?",
@@ -138,278 +396,6 @@ BIG_TEAMS = {
     ]
 }
 
-# -----------------------------
-# File Paths
-# -----------------------------
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CHARACTERS_PATH = os.path.join(BASE_DIR, "football_characters.json")
-QUESTIONS_SCHEMA_PATH = os.path.join(BASE_DIR, "football_questions.json")
-KNOW_PATH = os.path.join(BASE_DIR, "knowledge_db.json")
-
-# Ensure static/images exists
-os.makedirs(os.path.join(BASE_DIR, "static", "images"), exist_ok=True)
-for img in ["default.png", "unknown.png"]:
-    path = os.path.join(BASE_DIR, "static", "images", img)
-    if not os.path.exists(path):
-        with open(path, "w") as f:
-            f.write("")
-
-# -----------------------------
-# Cache for JSON files
-# -----------------------------
-_JSON_CACHE = {}
-_CACHE_TIMESTAMPS = {}
-
-def load_json_file(path, default):
-    if not os.path.exists(path):
-        return default
-    try:
-        mtime = os.path.getmtime(path)
-        if path in _JSON_CACHE and _CACHE_TIMESTAMPS.get(path) == mtime:
-            return _JSON_CACHE[path]
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        _JSON_CACHE[path] = data
-        _CACHE_TIMESTAMPS[path] = mtime
-        return data
-    except Exception as e:
-        print(f"Error loading {path}: {e}")
-        return default
-
-def save_json_file(path, data):
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-    except Exception as e:
-        print(f"Error saving {path}: {e}")
-
-def normalize_answer(raw):
-    s = raw.strip().lower() if raw else ""
-    if s in ("idk", "i don't know", "dont know", "unknown"):
-        return "i don't know"
-    if s in ("yes", "y", "yeah", "yep", "sure"):
-        return "yes"
-    if s in ("no", "n", "nope", "nah"):
-        return "no"
-    if s in ("sometimes", "maybe", "occasionally", "not really"):
-        return "sometimes"
-    return "i don't know"
-
-def normalize_key(q):
-    return re.sub(r"[^\w]", "", q.lower().strip())
-
-def normalize_continent_name(continent_str):
-    return continent_str.strip().lower().replace(" ", "_").replace("-", "_")
-# Global in-memory index (rebuild when KNOW_PATH or CHARACTERS_PATH changes)
-QUESTION_TO_NAMES = {}
-# -----------------------------
-# Profanity Filter
-# -----------------------------
-PROFANITY_WORDS = {
-    "fuck", "shit", "bitch", "asshole", "dick", "piss", "cunt", "slut",
-    "whore", "nigga", "nigger", "fag", "faggot", "cock", "twat", "crap",
-    "arse", "bollocks", "wanker", "prick", "douche", "motherfucker",
-    "bastard", "damn", "hell", "sucker", "retard", "idiot", "mad", "moron"
-}
-
-def contains_profanity(text):
-    if not text:
-        return False
-    # Normalize: lowercase + remove punctuation
-    clean = re.sub(r"[^\w\s]", "", text.lower())
-    words = set(clean.split())
-    return bool(words & PROFANITY_WORDS)
-def build_question_index(all_characters):
-    global QUESTION_TO_NAMES
-    QUESTION_TO_NAMES = {}
-    for name, data in all_characters.items():
-        for q, ans in data.get("answers", {}).items():
-            if ans == "yes":
-                norm_q = normalize_key(q)
-                if norm_q not in QUESTION_TO_NAMES:
-                    QUESTION_TO_NAMES[norm_q] = set()
-                QUESTION_TO_NAMES[norm_q].add(name)
-def extract_age_group(answers_dict):
-    if answers_dict.get("Is this player under 18 years old?") == "yes":
-        return "under_18"
-    elif answers_dict.get("Is this player between 18 and 23 years old?") == "yes":
-        return "18_23"
-    elif answers_dict.get("Is this player between 23 and 35 years old?") == "yes":
-        return "23_35"
-    elif answers_dict.get("Is this player over 35 years old?") == "yes":
-        return "over_35"
-    else:
-        return "unknown"
-
-def infer_missing_metadata(answers_dict, questions_schema):
-    enriched = answers_dict.copy()
-    if answers_dict.get("Is this player under 18 years old?") == "yes":
-        enriched["age_group"] = "under_18"
-    elif answers_dict.get("Is this player between 18 and 23 years old?") == "yes":
-        enriched["age_group"] = "18_23"
-    elif answers_dict.get("Is this player between 23 and 35 years old?") == "yes":
-        enriched["age_group"] = "23_35"
-    elif answers_dict.get("Is this player over 35 years old?") == "yes":
-        enriched["age_group"] = "over_35"
-    country_to_continent = {
-        "england": "europe", "spain": "europe", "italy": "europe",
-        "germany": "europe", "france": "europe", "brazil": "south_america",
-        "argentina": "south_america", "usa": "north_america", "canada": "north_america",
-        "saudi arabia": "asia", "japan": "asia", "south korea": "asia",
-        "egypt": "africa", "senegal": "africa", "nigeria": "africa",
-        "australia": "oceania"
-    }
-
-    role = "player"
-    if any("manager" in q.lower() for q in answers_dict if answers_dict[q] == "yes"):
-        role = "manager"
-    elif any("owner" in q.lower() for q in answers_dict if answers_dict[q] == "yes"):
-        role = "owner"
-
-    for q, ans in answers_dict.items():
-        if ans == "yes" and "born in" in q:
-            match = re.search(r"born in ([a-zA-Z\s]+)\?", q)
-            if match:
-                country = normalize_continent_name(match.group(1))
-                continent = country_to_continent.get(country, "unknown")
-                enriched[f"Is this {role} birthplace in {continent.title()}?"] = "yes"
-                break
-
-    for q, ans in answers_dict.items():
-        if ans == "yes" and "playing in" in q:
-            match = re.search(r"playing in ([a-zA-Z\s]+)\?", q)
-            if match:
-                country = normalize_continent_name(match.group(1))
-                continent = country_to_continent.get(country, "unknown")
-                enriched[f"Is this {role} playing in {continent.title()}?"] = "yes"
-                league_map = {
-                    "england": "Is this player playing in the Premier League?",
-                    "spain": "Is this player playing in La Liga?",
-                    "italy": "Is this player playing in Serie A?",
-                    "germany": "Is this player playing in the Bundesliga?",
-                    "france": "Is this player playing in Ligue 1?",
-                    "saudi arabia": "Is this player playing in the Saudi Pro League?",
-                    "usa": "Is this player playing in MLS?"
-                }
-                if country in league_map:
-                    enriched[league_map[country]] = "yes"
-                break
-    return enriched
-
-def filter_candidates(answers_list, all_characters):
-    if not answers_list:
-        return [(name, data, 0) for name, data in list(all_characters.items())[:50]]
-
-    user_age_group = None
-    if answers_list:
-        user_age_group = extract_age_group(dict(answers_list))
-
-    answers_dict = dict(answers_list)
-    remaining = list(all_characters.items())
-    for name, data in remaining[:]:
-        char_answers = data.get("answers", {})
-        eliminated = False
-
-        # PLAYER STATUS
-        if answers_dict.get("Is this player currently active?") == "yes":
-            if char_answers.get("Is this player currently active?") != "yes":
-                eliminated = True
-        if answers_dict.get("Is this player retired?") == "yes":
-            if char_answers.get("Is this player currently active?") == "yes":
-                eliminated = True
-        if answers_dict.get("Is this player deceased?") == "yes":
-            if char_answers.get("Is this player currently active?") == "yes" or char_answers.get("Is this player retired?") == "yes":
-                eliminated = True
-        if answers_dict.get("Has this player become a pundit or media personality?") == "yes":
-            # Pundits are usually retired, but may not be deceased
-            if char_answers.get("Is this player currently active?") == "yes":
-                eliminated = True
-
-        # MANAGER STATUS
-        if answers_dict.get("Is this manager currently active?") == "yes":
-            if char_answers.get("Is this manager currently active?") != "yes":
-                eliminated = True
-        if answers_dict.get("Has this manager retired?") == "yes":
-            if char_answers.get("Is this manager currently active?") == "yes":
-                eliminated = True
-        if answers_dict.get("Is this manager deceased?") == "yes":
-            if char_answers.get("Is this manager currently active?") == "yes" or char_answers.get("Has this manager retired?") == "yes":
-                eliminated = True
-        if answers_dict.get("Has this manager become a pundit or TV analyst?") == "yes":
-            if char_answers.get("Is this manager currently active?") == "yes":
-                eliminated = True
-
-        # OWNER STATUS
-        if answers_dict.get("Is this owner currently active?") == "yes":
-            if char_answers.get("Is this owner currently active?") != "yes":
-                eliminated = True
-        if answers_dict.get("Has this owner stepped down?") == "yes":
-            if char_answers.get("Is this owner currently active?") == "yes":
-                eliminated = True
-        if answers_dict.get("Is this owner deceased?") == "yes":
-            if char_answers.get("Is this owner currently active?") == "yes" or char_answers.get("Has this owner stepped down?") == "yes":
-                eliminated = True
-
-        if eliminated:
-            remaining.remove((name, data))
-
-    for question, user_answer in answers_list:
-        norm_q = normalize_key(question)
-        new_remaining = []
-        for name, data in remaining:
-            if user_age_group and user_age_group != "unknown":
-                char_age = data.get("age_group", "unknown")
-                if char_age != "unknown" and char_age != user_age_group:
-                    continue
-
-            char_answers = data.get("answers", {})
-            matched = False
-            keep = False
-            for cq, ca in char_answers.items():
-                if normalize_key(cq) == norm_q:
-                    matched = True
-                    keep = (ca == "yes" and user_answer == "yes") or (ca == "no" and user_answer == "no")
-                    break
-            if not matched:
-                keep = (user_answer != "yes")
-            if keep:
-                new_remaining.append((name, data))
-        remaining = new_remaining
-        if not remaining:
-            return []
-
-    yes_count = sum(1 for _, a in answers_list if a == "yes")
-    scored = []
-    for name, data in remaining:
-        score = 0
-        for q, ua in answers_list:
-            if ua == "yes":
-                norm_q = normalize_key(q)
-                for cq, ca in data.get("answers", {}).items():
-                    if normalize_key(cq) == norm_q and ca == "yes":
-                        score += 1
-                        break
-        conf = (score / max(1, yes_count)) * 100 if yes_count > 0 else 50
-        scored.append((name, data, round(conf, 1)))
-    scored.sort(key=lambda x: x[2], reverse=True)
-    return scored[:50]
-def get_active_questions(questions_schema, all_characters, answers_list, role, question_group_key):
-    base_questions = questions_schema.get(question_group_key, [])
-    if not base_questions:
-        return []
-
-    candidate_names = {name for name, _, _ in filter_candidates(answers_list, all_characters)}
-    if not candidate_names:
-        return []
-
-    active_questions = []
-    for q in base_questions:
-        norm_q = normalize_key(q)
-        names_with_q = QUESTION_TO_NAMES.get(norm_q, set())
-        if names_with_q & candidate_names:
-            active_questions.append(q)
-
-    return active_questions
 def get_next_question(answers_list, asked_set, questions_schema, all_characters):
     answers_dict = dict(answers_list)
 
@@ -569,252 +555,97 @@ def get_next_question(answers_list, asked_set, questions_schema, all_characters)
 
     # --- 5. ACTIVE PATH ---
     if status == "active":
-        if role == "manager":
-            # === MANAGER-SPECIFIC FLOW ===
+        # Origin continent
+        origin_continent = None
+        origin_continent_key = f"{role}_continent"
+        active_origin_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, origin_continent_key)
+        for q in active_origin_cont_qs:
+            if answers_dict.get(q) == "yes":
+                match = re.search(r"(?:birthplace in|from)\s+([a-zA-Z\s]+)\?", q, re.IGNORECASE)
+                if match:
+                    origin_continent = normalize_continent_name(match.group(1))
+                    break
+        if not origin_continent:
+            unasked = [q for q in active_origin_cont_qs if q not in answers_dict]
+            if unasked:
+                return random.choice(unasked)
+            return {"type": "dead_end", "message": "No valid origin continent."}
 
-            # 1. Birth Continent
-            birth_continent = None
-            birth_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, "manager_birth_continent")
-            for q in birth_cont_qs:
+        # Origin country
+        origin_country_key = f"{role}_country_born_{origin_continent}" if role == "manager" else f"{role}_country_{origin_continent}"
+        active_origin_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, origin_country_key)
+        if active_origin_country_qs:
+            if not any(answers_dict.get(q) == "yes" for q in active_origin_country_qs):
+                for q in active_origin_country_qs:
+                    if q not in answers_dict:
+                        return q
+
+        # Work continent
+        work_continent = None
+        work_continent_key = f"{role}_league_continent"
+        active_work_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_continent_key)
+        for q in active_work_cont_qs:
+            if answers_dict.get(q) == "yes":
+                match = re.search(rf"is this {role} (?:playing|managing|associated)(?: with a club)? in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
+                if match:
+                    work_continent = normalize_continent_name(match.group(1))
+                    break
+        if not work_continent:
+            unasked = [q for q in active_work_cont_qs if q not in answers_dict]
+            if unasked:
+                return random.choice(unasked)
+            return {"type": "dead_end", "message": "Work continent not found."}
+
+        # Work country
+        work_country = None
+        work_country_key = f"{role}_league_country_{work_continent}"
+        active_work_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_country_key)
+        if active_work_country_qs:
+            for q in active_work_country_qs:
                 if answers_dict.get(q) == "yes":
-                    match = re.search(r"birthplace in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
+                    match = re.search(rf"is this {role} (?:playing|managing|associated) in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
                     if match:
-                        birth_continent = normalize_continent_name(match.group(1))
+                        work_country = normalize_continent_name(match.group(1))
                         break
-            if not birth_continent:
-                unasked = [q for q in birth_cont_qs if q not in answers_dict]
-                if unasked:
-                    return random.choice(unasked)
-
-            # 2. Birth Country
-            if birth_continent:
-                birth_country_key = f"manager_birth_country_{birth_continent}"
-                birth_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, birth_country_key)
-                for q in birth_country_qs:
-                    if answers_dict.get(q) == "yes":
-                        break
-                else:
-                    unasked = [q for q in birth_country_qs if q not in answers_dict]
-                    if unasked:
-                        return random.choice(unasked)
-
-            # 3. Club vs National Team?
-            role_type_qs = questions_schema.get("manager_role_type", [])
-            if not any(answers_dict.get(q) == "yes" for q in role_type_qs):
-                unasked = [q for q in role_type_qs if q not in answers_dict]
-                if unasked:
-                    return random.choice(unasked)
-
-            # 4a. National Team Path
-            if answers_dict.get("Is this manager currently managing a national team?") == "yes":
-                nat_continent = None
-                nat_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, "manager_national_team_continent")
-                for q in nat_cont_qs:
-                    if answers_dict.get(q) == "yes":
-                        match = re.search(r"managing a national team from ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                        if match:
-                            nat_continent = normalize_continent_name(match.group(1))
-                            break
-                if not nat_continent:
-                    unasked = [q for q in nat_cont_qs if q not in answers_dict]
-                    if unasked:
-                        return random.choice(unasked)
-                
-                # National Team Country
-                if nat_continent:
-                    nat_country_key = f"manager_national_team_country_{nat_continent}"
-                    nat_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, nat_country_key)
-                    for q in nat_country_qs:
-                        if answers_dict.get(q) == "yes":
-                            break
-                    else:
-                        unasked = [q for q in nat_country_qs if q not in answers_dict]
-                        if unasked:
-                            return random.choice(unasked)
-
-            # 4b. Club Manager Path
-            elif answers_dict.get("Is this manager currently managing a club team?") == "yes":
-                # Work continent
-                work_continent = None
-                work_continent_key = "manager_league_continent"
-                active_work_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_continent_key)
-                for q in active_work_cont_qs:
-                    if answers_dict.get(q) == "yes":
-                        match = re.search(r"is this manager managing in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                        if match:
-                            work_continent = normalize_continent_name(match.group(1))
-                            break
-                if not work_continent:
-                    unasked = [q for q in active_work_cont_qs if q not in answers_dict]
-                    if unasked:
-                        return random.choice(unasked)
-
-                # Work country
-                if work_continent:
-                    work_country_key = f"manager_league_country_{work_continent}"
-                    active_work_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_country_key)
-                    for q in active_work_country_qs:
-                        if answers_dict.get(q) == "yes":
-                            match = re.search(r"is this manager managing in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                            if match:
-                                work_country = normalize_continent_name(match.group(1))
-                                break
-                    else:
-                        unasked = [q for q in active_work_country_qs if q not in answers_dict]
-                        if unasked:
-                            return random.choice(unasked)
-
-                    # League
-                    country_to_league = {
-                        "england": "premier_league", "spain": "la_liga", "italy": "serie_a",
-                        "germany": "bundesliga", "france": "ligue_1", "saudi arabia": "saudi_pro_league",
-                        "usa": "mls", "brazil": "brasileirao", "argentina": "liga_profesional"
-                    }
-                    league_code = country_to_league.get(work_country)
-                    if league_code:
-                        league_key = f"manager_league_{league_code}"
-                        active_league_qs = get_active_questions(questions_schema, all_characters, answers_list, role, league_key)
-                        if not any(answers_dict.get(q) == "yes" for q in active_league_qs):
-                            unasked = [q for q in active_league_qs if q not in answers_dict]
-                            if unasked:
-                                return random.choice(unasked)
-
-                        # Club
-                        club_key = f"manager_club_{league_code}"
-                        active_club_qs = get_active_questions(questions_schema, all_characters, answers_list, role, club_key)
-                        if active_club_qs:
-                            if not any(answers_dict.get(q) == "yes" for q in active_club_qs):
-                                big_teams = BIG_TEAMS.get(club_key, [])
-                                for q in big_teams:
-                                    if q in active_club_qs and q not in answers_dict:
-                                        return q
-                                for q in active_club_qs:
-                                    if q not in answers_dict:
-                                        return q
-
-        elif role == "player":
-            # === PLAYER FLOW (unchanged) ===
-            origin_continent = None
-            origin_continent_key = "player_continent"
-            active_origin_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, origin_continent_key)
-            for q in active_origin_cont_qs:
-                if answers_dict.get(q) == "yes":
-                    match = re.search(r"(?:birthplace in|from)\s+([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                    if match:
-                        origin_continent = normalize_continent_name(match.group(1))
-                        break
-            if not origin_continent:
-                unasked = [q for q in active_origin_cont_qs if q not in answers_dict]
-                if unasked:
-                    return random.choice(unasked)
-                return {"type": "dead_end", "message": "No valid origin continent."}
-
-            # Origin country
-            origin_country_key = f"player_country_{origin_continent}"
-            active_origin_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, origin_country_key)
-            if active_origin_country_qs:
-                if not any(answers_dict.get(q) == "yes" for q in active_origin_country_qs):
-                    for q in active_origin_country_qs:
-                        if q not in answers_dict:
-                            return q
-
-            # Work continent
-            work_continent = None
-            work_continent_key = "player_league_continent"
-            active_work_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_continent_key)
-            for q in active_work_cont_qs:
-                if answers_dict.get(q) == "yes":
-                    match = re.search(rf"is this {role} playing in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                    if match:
-                        work_continent = normalize_continent_name(match.group(1))
-                        break
-            if not work_continent:
-                unasked = [q for q in active_work_cont_qs if q not in answers_dict]
-                if unasked:
-                    return random.choice(unasked)
-                return {"type": "dead_end", "message": "Work continent not found."}
-
-            # Work country
-            work_country = None
-            work_country_key = f"player_league_country_{work_continent}"
-            active_work_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_country_key)
-            if active_work_country_qs:
+            if not work_country:
                 for q in active_work_country_qs:
-                    if answers_dict.get(q) == "yes":
-                        match = re.search(rf"is this {role} playing in ([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                        if match:
-                            work_country = normalize_continent_name(match.group(1))
-                            break
-                if not work_country:
-                    for q in active_work_country_qs:
-                        if q not in answers_dict:
-                            return q
-                    return {"type": "dead_end", "message": f"No {role} in any country in this continent."}
+                    if q not in answers_dict:
+                        return q
+                return {"type": "dead_end", "message": f"No {role} in any country in this continent."}
 
-            # League
-            if work_country:
-                country_to_league = {
-                    "england": "premier_league", "spain": "la_liga", "italy": "serie_a",
-                    "germany": "bundesliga", "france": "ligue_1", "saudi arabia": "saudi_pro_league",
-                    "usa": "mls", "brazil": "brasileirao", "argentina": "liga_profesional"
-                }
-                league_code = country_to_league.get(work_country)
-                if league_code:
-                    league_key = f"player_league_{league_code}"
-                    active_league_qs = get_active_questions(questions_schema, all_characters, answers_list, role, league_key)
-                    if not any(answers_dict.get(q) == "yes" for q in active_league_qs):
-                        unasked = [q for q in active_league_qs if q not in answers_dict]
-                        if unasked:
-                            return random.choice(unasked)
-
-            # Club
+        # League
+        if work_country:
+            country_to_league = {
+                "england": "premier_league", "spain": "la_liga", "italy": "serie_a",
+                "germany": "bundesliga", "france": "ligue_1", "saudi arabia": "saudi_pro_league",
+                "usa": "mls", "brazil": "brasileirao", "argentina": "liga_profesional"
+            }
+            league_code = country_to_league.get(work_country)
             if league_code:
-                club_key = f"player_club_{league_code}"
-                active_club_qs = get_active_questions(questions_schema, all_characters, answers_list, role, club_key)
-                if active_club_qs:
-                    if not any(answers_dict.get(q) == "yes" for q in active_club_qs):
-                        big_teams = BIG_TEAMS.get(club_key, [])
-                        for q in big_teams:
-                            if q in active_club_qs and q not in answers_dict:
-                                return q
-                        for q in active_club_qs:
-                            if q not in answers_dict:
-                                return q
+                league_key = f"{role}_league_{league_code}"
+                active_league_qs = get_active_questions(questions_schema, all_characters, answers_list, role, league_key)
+                if not any(answers_dict.get(q) == "yes" for q in active_league_qs):
+                    unasked = [q for q in active_league_qs if q not in answers_dict]
+                    if unasked:
+                        return random.choice(unasked)
 
-        elif role == "owner":
-            # === OWNER FLOW (unchanged minimal) ===
-            origin_continent = None
-            origin_continent_key = "owner_continent"
-            active_origin_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, origin_continent_key)
-            for q in active_origin_cont_qs:
-                if answers_dict.get(q) == "yes":
-                    match = re.search(r"(?:birthplace in|from)\s+([a-zA-Z\s]+)\?", q, re.IGNORECASE)
-                    if match:
-                        origin_continent = normalize_continent_name(match.group(1))
-                        break
-            if not origin_continent:
-                unasked = [q for q in active_origin_cont_qs if q not in answers_dict]
-                if unasked:
-                    return random.choice(unasked)
-
-            origin_country_key = f"owner_country_{origin_continent}"
-            active_origin_country_qs = get_active_questions(questions_schema, all_characters, answers_list, role, origin_country_key)
-            if active_origin_country_qs:
-                if not any(answers_dict.get(q) == "yes" for q in active_origin_country_qs):
-                    for q in active_origin_country_qs:
-                        if q not in answers_dict:
+        # Club
+        if league_code:
+            club_key = f"{role}_club_{league_code}"
+            active_club_qs = get_active_questions(questions_schema, all_characters, answers_list, role, club_key)
+            if active_club_qs:
+                if not any(answers_dict.get(q) == "yes" for q in active_club_qs):
+                    big_teams = BIG_TEAMS.get(club_key, [])
+                    for q in big_teams:
+                        if q in active_club_qs and q not in answers_dict:
                             return q
-
-            work_continent_key = "owner_league_continent"
-            active_work_cont_qs = get_active_questions(questions_schema, all_characters, answers_list, role, work_continent_key)
-            if active_work_cont_qs:
-                if not any(answers_dict.get(q) == "yes" for q in active_work_cont_qs):
-                    for q in active_work_cont_qs:
+                    for q in active_club_qs:
                         if q not in answers_dict:
                             return q
 
     # --- 6. ATTRIBUTES (for all statuses) ---
     if role == "player":
+        # Position filtering logic (as in your code)
         candidates = filter_candidates(answers_list, all_characters)
         current_positions = set()
         for _, data, _ in candidates:
@@ -847,6 +678,7 @@ def get_next_question(answers_list, asked_set, questions_schema, all_characters)
                 if unasked:
                     return random.choice(unasked)
 
+        # Other player attributes
         other_player_groups = []
         is_gk = "goalkeeper" in current_positions
         other_player_groups.extend(["player_status", "player_age"])
@@ -880,15 +712,28 @@ def get_next_question(answers_list, asked_set, questions_schema, all_characters)
                     if unasked:
                         return random.choice(unasked)
 
-    return None    # -----------------------------
+    return None
+
+# -----------------------------
 # Flask Routes
 # -----------------------------
+
 @app.route("/")
 def index():
-    return render_template("index.html")
- 
-@app.route("/start", methods=["POST"])
+    from game_stats import GameStats
+    stats = GameStats().get_stats()
+    return render_template("index.html", streak=stats.get("current_streak", 0))
+
+@app.route("/start", methods=["GET", "POST"])
 def start():
+    if request.method == "GET":
+        session.clear()
+        session["answers"] = []
+        session["wrong_guesses"] = 0
+        session["difficulty"] = "medium"
+        session["game_start_time"] = str(datetime.now())
+        return redirect(url_for("question"))
+    
     difficulty = request.form.get("difficulty", "medium")
     session.clear()
     session["answers"] = []
@@ -907,14 +752,12 @@ def question():
             answers.append((current_q, ans))
             session["answers"] = answers
 
-    base_chars = load_json_file(CHARACTERS_PATH, {})
-    user_know = load_json_file(KNOW_PATH, {})
-    all_chars = {**base_chars, **user_know}
-    
-    global QUESTION_TO_NAMES
-    if not QUESTION_TO_NAMES:
+    all_chars = ALL_CHARS
+    global QUESTION_TO_NAMES, _INDEX_BUILT_TIMESTAMPS
+    char_mtime = _CACHE_TIMESTAMPS.get(CHARACTERS_PATH)
+    know_mtime = _CACHE_TIMESTAMPS.get(KNOW_PATH)
+    if (not QUESTION_TO_NAMES) or (_INDEX_BUILT_TIMESTAMPS != (char_mtime, know_mtime)):
         build_question_index(all_chars)
-    
     questions_schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
     if "role" not in questions_schema:
         questions_schema["role"] = [
@@ -927,9 +770,26 @@ def question():
     next_q = get_next_question(answers, set(), questions_schema, all_chars)
 
     if not candidates:
-        return render_template("answer.html", guess="I don't know this person.", image_url="/static/images/default.png", play_again=True, is_no_match=True)
+        from game_stats import GameStats
+        game_stats = GameStats()
+        game_stats.record_loss(len(answers))
+        return render_template(
+            "answer.html",
+            guess="I couldn't guess it! Teach me who you were thinking of.",
+            player_name="",
+            image_url="/static/images/default.png",
+            play_again=True,
+            is_no_match=True
+        )
     if isinstance(next_q, dict) and next_q.get("type") == "dead_end":
-        return render_template("answer.html", guess=next_q["message"], image_url="/static/images/default.png", play_again=True, is_no_match=True)
+        return render_template(
+            "answer.html",
+            guess=next_q["message"],
+            player_name="",
+            image_url="/static/images/default.png",
+            play_again=True,
+            is_no_match=True
+        )
 
     if (not next_q and len(answers) >= 4) or len(answers) >= 150 or len(candidates) == 1:
         return redirect(url_for("answer"))
@@ -957,14 +817,13 @@ def undo():
         answers.pop()
         session["answers"] = answers
         
-        # ✅ CORRECT: Only 2 arguments per pop()
         session.pop("auto_jump", None)
         session.pop("final_guess_mode", None)
         session.pop("excluded_names", None)
         session.pop("previous_question", None)
         session.pop("previous_answer", None)
         
-        session["wrong_guesses"] = 0  # reset to avoid premature "learn"
+        session["wrong_guesses"] = 0
     return redirect(url_for("question"))
 
 @app.route("/answer", methods=["GET", "POST"])
@@ -975,18 +834,38 @@ def answer():
     all_chars = {**base_chars, **user_know}
     candidates = filter_candidates(answers, all_chars)
     if not candidates:
+        from game_stats import GameStats
+        game_stats = GameStats()
         game_stats.record_loss(len(answers))
-        return render_template("answer.html", guess="I give up — I don't know!", image_url="/static/images/default.png", play_again=True, is_no_match=True)
+        return render_template(
+            "answer.html",
+            guess="I give up — I don't know!",
+            player_name="",
+            image_url="/static/images/default.png",
+            play_again=True,
+            is_no_match=True
+        )
     best_name, best_data, confidence = candidates[0]
     img = best_data.get("image_url", "/static/images/default.png")
     if request.method == "POST":
         action = request.form.get("action")
         if action == "correct":
+            from game_stats import GameStats
             start_time = datetime.fromisoformat(session.get("game_start_time", str(datetime.now())))
             time_taken = (datetime.now() - start_time).seconds
+            game_stats = GameStats()
             game_stats.record_win(len(answers), best_name, time_taken)
             stats = game_stats.get_stats()
-            return render_template("answer.html", guess=f"Yes! It's {best_name}!", show_success=True, play_again=True, player_name=best_name, image_url=img, questions_count=len(answers), stats=stats)
+            return render_template(
+                "answer.html",
+                guess=f"Yes! It's {best_name}!",
+                player_name=best_name,
+                image_url=img,
+                show_success=True,
+                play_again=True,
+                questions_count=len(answers),
+                stats=stats
+            )
         elif action == "wrong":
             session["wrong_guesses"] = session.get("wrong_guesses", 0) + 1
             if session["wrong_guesses"] >= 3:
@@ -995,6 +874,7 @@ def answer():
     return render_template(
         "answer.html",
         guess=best_name,
+        player_name=best_name,
         image_url=img,
         confidence=round(confidence, 1),
         candidates=candidates[:5],
@@ -1011,13 +891,27 @@ def learn():
         age_group = request.form.get("age_group", "unknown")
 
         if not name:
-            return render_template("learn.html", error="Name is required.")
-        
+            return render_template(
+                "learn.html",
+                error="⚠️ Name is required."
+            )
         if not description:
-            return render_template("learn.html", error="Description is required.")
-        
-        if contains_profanity(name) or contains_profanity(description):
-            return render_template("learn.html", error="Invalid input: Please avoid inappropriate language.")
+            return render_template(
+                "learn.html",
+                error="📝 Description is required. Please provide a brief description of the character."
+            )
+        if (profanity_checker.contains_profanity(name) or 
+            profanity_checker.contains_profanity(description)):
+            return render_template(
+                "learn.html",
+                error="🚫 Invalid input: Please avoid inappropriate language."
+            )
+        if (contains_profanity(name) or 
+            contains_profanity(description)):
+            return render_template(
+                "learn.html",
+                error="🚫 Invalid input: Please avoid inappropriate language."
+            )
 
         user_know = load_json_file(KNOW_PATH, {})
         questions_schema = load_json_file(QUESTIONS_SCHEMA_PATH, {})
@@ -1036,16 +930,99 @@ def learn():
         return redirect(url_for("index"))
 
     return render_template("learn.html")
+
+# -----------------------------
+# Fallback API Routes
+# -----------------------------
+
+@app.route("/api/leaderboard/<board_type>")
+def api_leaderboard(board_type):
+    from leaderboard import Leaderboard
+    lb = Leaderboard()
+    if board_type == "global":
+        return jsonify(lb.get_global())
+    elif board_type == "weekly":
+        return jsonify(lb.get_weekly())
+    return jsonify({"error": "Invalid type"}), 400
+
+@app.route("/achievements")
+def achievements():
+    try:
+        from achievements import AchievementTracker
+        from game_stats import GameStats
+        stats = GameStats().get_stats()
+        tracker = AchievementTracker()
+        unlocked = tracker.check_achievements(stats)
+        return render_template("achievements.html", achievements=unlocked, stats=stats)
+    except Exception as e:
+        return render_template("achievements.html", achievements=[], stats={}, error=str(e))
+
+@app.route("/api/achievements")
+def api_achievements():
+    try:
+        from achievements import AchievementTracker
+        from game_stats import GameStats
+        stats = GameStats().get_stats()
+        tracker = AchievementTracker()
+        unlocked = tracker.check_achievements(stats)
+        return jsonify({"achievements": unlocked, "stats": stats})
+    except Exception as e:
+        return jsonify({"error": str(e), "achievements": []})
+
+@app.route("/daily")
+def daily_challenge():
+    try:
+        from daily_challenge import DailyChallenge
+        dc = DailyChallenge()
+        challenge = dc.get_challenge_status()
+        return render_template("daily.html", challenge=challenge)
+    except Exception as e:
+        return render_template("daily.html", challenge={"error": str(e)})
+
+@app.route("/leaderboard")
+def leaderboard_page():
+    try:
+        from leaderboard import Leaderboard
+        lb = Leaderboard()
+        global_scores = lb.get_global()
+        weekly_scores = lb.get_weekly()
+        return render_template("leaderboard.html", global_scores=global_scores, weekly_scores=weekly_scores)
+    except Exception as e:
+        return render_template("leaderboard.html", global_scores=[], weekly_scores=[], error=str(e))
+
+@app.route("/analytics")
+def analytics_dashboard():
+    try:
+        from analytics import GameAnalytics
+        analytics = GameAnalytics()
+        report = analytics.generate_insights_report()
+        return render_template("analytics.html", report=report)
+    except Exception as e:
+        return render_template("analytics.html", report={}, error=str(e))
+
+@app.route("/api/analytics")
+def api_analytics():
+    try:
+        from analytics import GameAnalytics
+        analytics = GameAnalytics()
+        report = analytics.generate_insights_report()
+        return jsonify(report)
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+@app.route("/api/daily")
+def api_daily():
+    try:
+        from daily_challenge import DailyChallenge
+        dc = DailyChallenge()
+        challenge_status = dc.get_challenge_status()
+        return jsonify(challenge_status)
+    except Exception as e:
+        return jsonify({"error": str(e), "player": "Lionel Messi", "completed": False})
+
 if __name__ == "__main__":
     import socket
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
-    print(f"✅ Muhfal running on:")
-    print(f"   Local: http://localhost:5000")
-    print(f"   Network: http://{local_ip}:5000")
-    print(f"   Access from phone: http://{local_ip}:5000")
-    app.run(debug=True, host="0.0.0.0", port=5000)
-
-@app.route("/stats")
-def stats():
-    return jsonify(game_stats.get_stats())
+    print("✅ Muhfal running on http://0.0.0.0:5000")
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

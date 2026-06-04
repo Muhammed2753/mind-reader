@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge - Muhfal</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .challenge-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        .challenge-info {
+            background: linear-gradient(135deg, #f093fb20, #f5576c20);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .challenge-info h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .challenge-info p {
+            color: #666;
+            font-size: 16px;
+        }
+        .btn {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(245, 87, 108, 0.4);
+        }
+        .back-btn {
+            background: #f0f0f0;
+            color: #333;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .status.completed {
+            background: #4CAF5020;
+            color: #4CAF50;
+        }
+        .status.pending {
+            background: #FF980020;
+            color: #FF9800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-btn">← Back</a>
+        
+        <div class="card">
+            <div class="header">
+                <h1>📅 Daily Challenge</h1>
+                <div class="date" id="date"></div>
+            </div>
+
+            <div class="challenge-icon">🎯</div>
+
+            <div class="challenge-info">
+                <h2>Today's Mystery Player</h2>
+                <p>Guess the special player of the day!</p>
+                <p><strong>Bonus Rewards:</strong> +100 XP | +50 Coins</p>
+            </div>
+
+            <div id="status"></div>
+
+            <form method="POST" action="/start">
+                <input type="hidden" name="mode" value="daily">
+                <button type="submit" class="btn">🎮 Start Challenge</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const today = new Date();
+        document.getElementById('date').textContent = today.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        fetch('/api/daily')
+            .then(r => r.json())
+            .then(data => {
+                const statusDiv = document.getElementById('status');
+                if (data.completed) {
+                    statusDiv.className = 'status completed';
+                    statusDiv.textContent = '✅ Challenge Completed!';
+                } else {
+                    statusDiv.className = 'status pending';
+                    statusDiv.textContent = '⏳ Challenge Available';
+                }
+            });
+    </script>
+</body>
+</html>

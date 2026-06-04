@@ -1,0 +1,24 @@
+{
+  "name": "Muhfal - Football Akinator",
+  "short_name": "Muhfal",
+  "description": "Guess football players, managers, and owners!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#5bc0be",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["games", "sports", "entertainment"],
+  "lang": "en"
+}

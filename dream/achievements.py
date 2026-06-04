@@ -1,27 +1,71 @@
+import json
+import os
+from datetime import datetime
+
+# Export ACHIEVEMENTS constant
 ACHIEVEMENTS = {
-    "first_win": {"name": "First Victory", "desc": "Win your first game", "xp": 50, "coins": 10},
-    "speed_demon": {"name": "Speed Demon", "desc": "Win in under 10 questions", "xp": 100, "coins": 25},
-    "perfect_game": {"name": "Perfect Game", "desc": "Win without using hints", "xp": 150, "coins": 50},
-    "streak_5": {"name": "5 Win Streak", "desc": "Win 5 games in a row", "xp": 200, "coins": 75},
-    "streak_10": {"name": "10 Win Streak", "desc": "Win 10 games in a row", "xp": 500, "coins": 200},
-    "premier_expert": {"name": "Premier League Expert", "desc": "Guess 20 Premier League players", "xp": 150, "coins": 50},
-    "laliga_expert": {"name": "La Liga Expert", "desc": "Guess 20 La Liga players", "xp": 150, "coins": 50},
-    "century": {"name": "Century", "desc": "Win 100 games", "xp": 1000, "coins": 500},
-    "knowledge_master": {"name": "Knowledge Master", "desc": "Add 10 players to database", "xp": 300, "coins": 100},
-    "daily_champion": {"name": "Daily Champion", "desc": "Complete 7 daily challenges", "xp": 250, "coins": 100}
+    "first_win": {"name": "First Victory", "description": "Win your first game", "icon": "🏆"},
+    "streak_5": {"name": "Streak Master", "description": "Win 5 games in a row", "icon": "🔥"},
+    "streak_10": {"name": "Unstoppable", "description": "Win 10 games in a row", "icon": "⚡"},
+    "quick_win": {"name": "Mind Reader", "description": "Win in under 10 questions", "icon": "🧠"},
+    "veteran": {"name": "Veteran Player", "description": "Play 50 games", "icon": "🎖️"},
+    "perfect_week": {"name": "Perfect Week", "description": "Win 7 games this week", "icon": "💎"}
 }
 
 class AchievementTracker:
+    def __init__(self):
+        self.achievements_file = "achievements.json"
+        self.all_achievements = ACHIEVEMENTS
+    
+    def get_unlocked_achievements(self):
+        if not os.path.exists(self.achievements_file):
+            return []
+        try:
+            with open(self.achievements_file, "r") as f:
+                return json.load(f)
+        except:
+            return []
+    
+    def unlock_achievement(self, achievement_id):
+        unlocked = self.get_unlocked_achievements()
+        if achievement_id not in unlocked:
+            unlocked.append(achievement_id)
+            try:
+                with open(self.achievements_file, "w") as f:
+                    json.dump(unlocked, f)
+            except:
+                pass
+        return self.all_achievements.get(achievement_id)
+    
     def check_achievements(self, stats):
-        unlocked = []
+        new_achievements = []
         
-        if stats.get("games_won", 0) == 1:
-            unlocked.append("first_win")
-        if stats.get("current_streak", 0) == 5:
-            unlocked.append("streak_5")
-        if stats.get("current_streak", 0) == 10:
-            unlocked.append("streak_10")
-        if stats.get("games_won", 0) == 100:
-            unlocked.append("century")
+        # First win
+        if stats.get("games_won", 0) >= 1:
+            achievement = self.unlock_achievement("first_win")
+            if achievement:
+                new_achievements.append(achievement)
         
-        return unlocked
+        # Streak achievements
+        current_streak = stats.get("current_streak", 0)
+        if current_streak >= 5:
+            achievement = self.unlock_achievement("streak_5")
+            if achievement:
+                new_achievements.append(achievement)
+        
+        if current_streak >= 10:
+            achievement = self.unlock_achievement("streak_10")
+            if achievement:
+                new_achievements.append(achievement)
+        
+        # Veteran player
+        if stats.get("games_played", 0) >= 50:
+            achievement = self.unlock_achievement("veteran")
+            if achievement:
+                new_achievements.append(achievement)
+        
+        # Get all unlocked achievements with details
+        unlocked_ids = self.get_unlocked_achievements()
+        all_unlocked = [self.all_achievements[aid] for aid in unlocked_ids if aid in self.all_achievements]
+        
+        return all_unlocked

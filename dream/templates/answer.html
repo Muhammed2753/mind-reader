@@ -256,21 +256,47 @@
     </div>
     
     <script>
+        // utility copy helper that works even in non-secure contexts
+        function copyToClipboard(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                return navigator.clipboard.writeText(text);
+            } else {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                document.body.appendChild(ta);
+                ta.focus();
+                ta.select();
+                try { document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(ta);
+                return Promise.resolve();
+            }
+        }
+
         function shareResult() {
-            const playerName = "{{ player_name }}";
-            const questions = {{ questions_count }};
+            const playerName = {{ player_name|default('')|tojson }};
+            const questions = {{ questions_count|default(0) }};
             const text = `🎯 I guessed ${playerName} in just ${questions} questions on Muhfal! Can you beat my score? ⚽🧠`;
-            
+
             if (navigator.share) {
                 navigator.share({
                     title: 'Muhfal - Football Akinator',
                     text: text,
                     url: window.location.origin
-                }).catch(() => {});
+                }).catch(err => {
+                    console.log('share failed, falling back', err);
+                    copyToClipboard(text + ' ' + window.location.origin).then(() => {
+                        alert('✅ Result copied to clipboard!');
+                    }).catch(() => {
+                        prompt('Copy this text to share:', text + ' ' + window.location.origin);
+                    });
+                });
             } else {
-                // Fallback: Copy to clipboard
-                navigator.clipboard.writeText(text + ' ' + window.location.origin).then(() => {
+                // Fallback: copy and alert or prompt
+                copyToClipboard(text + ' ' + window.location.origin).then(() => {
                     alert('✅ Result copied to clipboard! Share it with your friends!');
+                }).catch(() => {
+                    prompt('Copy this text to share:', text + ' ' + window.location.origin);
                 });
             }
         }
