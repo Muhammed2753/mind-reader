@@ -1,0 +1,66 @@
+2026-01-20 13:05:45,350 - INFO - Processing characters file: C:\Users\AJAI MUHAMMED\Desktop\dream\dream\football_characters.json
+2026-01-20 13:05:45,450 - INFO - Loaded 2463 existing characters
+2026-01-20 13:05:45,456 - INFO - Rafael Leão already exists, skipping
+2026-01-20 13:05:45,459 - INFO - Lautaro Martínez already exists, skipping
+2026-01-20 13:05:45,466 - INFO - Paulo Dybala already exists, skipping
+2026-01-20 13:05:45,470 - INFO - No new players added. Summary: Added 0, Skipped 3, Errors 0
+2026-01-20 13:39:30,840 - INFO - Processing characters file: C:\Users\AJAI MUHAMMED\Desktop\dream\dream\football_characters.json
+2026-01-20 13:39:31,125 - INFO - Loaded 2463 existing characters
+2026-01-20 13:39:31,154 - INFO - Rafael Leão already exists, skipping
+2026-01-20 13:39:31,155 - INFO - Lautaro Martínez already exists, skipping
+2026-01-20 13:39:31,250 - INFO - Paulo Dybala already exists, skipping
+2026-01-20 13:39:31,310 - INFO - No new players added. Summary: Added 0, Skipped 3, Errors 0
+2026-01-20 13:45:11,987 - INFO - Processing characters file: C:\Users\AJAI MUHAMMED\Desktop\dream\dream\football_characters.json
+2026-01-20 13:45:12,043 - INFO - Loaded 2463 existing characters
+2026-01-20 13:45:12,044 - INFO - Rafael Leão already exists, skipping
+2026-01-20 13:45:12,045 - INFO - Added Theo Hernández
+2026-01-20 13:45:12,045 - INFO - Added Matteo Gabbia
+2026-01-20 13:45:12,046 - INFO - Lautaro Martínez already exists, skipping
+2026-01-20 13:45:12,046 - INFO - Added Alessandro Bastoni
+2026-01-20 13:45:12,047 - INFO - Added Nicolò Barella
+2026-01-20 13:45:12,048 - INFO - Added Dusan Vlahovic
+2026-01-20 13:45:12,048 - INFO - Added Federico Chiesa
+2026-01-20 13:45:12,052 - INFO - Added Kenan Yildiz
+2026-01-20 13:45:12,053 - INFO - Paulo Dybala already exists, skipping
+2026-01-20 13:45:12,057 - INFO - Added Lorenzo Pellegrini
+2026-01-20 13:45:12,058 - INFO - Added Niccolò Pisilli
+2026-01-20 13:45:12,059 - INFO - Added Khvicha Kvaratskhelia
+2026-01-20 13:45:12,059 - INFO - Added Giovanni Simeone
+2026-01-20 13:45:12,060 - INFO - Added Giacomo Raspadori
+2026-01-20 13:45:12,060 - INFO - Added Ademola Lookman
+2026-01-20 13:45:12,062 - INFO - Added Giorgio Scalvini
+2026-01-20 13:45:12,063 - INFO - Added Mattia Zaccagni
+2026-01-20 13:45:12,066 - INFO - Added Tijjani Noslin
+2026-01-20 13:45:12,067 - INFO - Added Moise Kean
+2026-01-20 13:45:12,068 - INFO - Added Michael Kayode
+2026-01-20 13:45:12,068 - INFO - Added Riccardo Orsolini
+2026-01-20 13:45:12,069 - INFO - Added Giovanni Fabbian
+2026-01-20 13:45:12,088 - INFO - Created backup at football_characters.json.backup
+2026-01-20 13:45:12,732 - INFO - Successfully saved 2483 characters to football_characters.json
+2026-01-20 13:45:12,835 - INFO - Summary: Added 20, Skipped 3, Errors 0
+2026-01-20 13:45:22,487 - INFO - Processing characters file: C:\Users\AJAI MUHAMMED\Desktop\dream\dream\football_characters.json
+2026-01-20 13:45:22,664 - INFO - Loaded 2483 existing characters
+2026-01-20 13:45:22,682 - INFO - Rafael Leão already exists, skipping
+2026-01-20 13:45:22,696 - INFO - Theo Hernández already exists, skipping
+2026-01-20 13:45:22,745 - INFO - Matteo Gabbia already exists, skipping
+2026-01-20 13:45:22,761 - INFO - Lautaro Martínez already exists, skipping
+2026-01-20 13:45:22,782 - INFO - Alessandro Bastoni already exists, skipping
+2026-01-20 13:45:22,798 - INFO - Nicolò Barella already exists, skipping
+2026-01-20 13:45:22,818 - INFO - Dusan Vlahovic already exists, skipping
+2026-01-20 13:45:22,833 - INFO - Federico Chiesa already exists, skipping
+2026-01-20 13:45:22,850 - INFO - Kenan Yildiz already exists, skipping
+2026-01-20 13:45:22,860 - INFO - Paulo Dybala already exists, skipping
+2026-01-20 13:45:22,897 - INFO - Lorenzo Pellegrini already exists, skipping
+2026-01-20 13:45:22,910 - INFO - Niccolò Pisilli already exists, skipping
+2026-01-20 13:45:22,919 - INFO - Khvicha Kvaratskhelia already exists, skipping
+2026-01-20 13:45:22,928 - INFO - Giovanni Simeone already exists, skipping
+2026-01-20 13:45:22,952 - INFO - Giacomo Raspadori already exists, skipping
+2026-01-20 13:45:22,968 - INFO - Ademola Lookman already exists, skipping
+2026-01-20 13:45:22,991 - INFO - Giorgio Scalvini already exists, skipping
+2026-01-20 13:45:22,997 - INFO - Mattia Zaccagni already exists, skipping
+2026-01-20 13:45:23,019 - INFO - Tijjani Noslin already exists, skipping
+2026-01-20 13:45:23,029 - INFO - Moise Kean already exists, skipping
+2026-01-20 13:45:23,033 - INFO - Michael Kayode already exists, skipping
+2026-01-20 13:45:23,059 - INFO - Riccardo Orsolini already exists, skipping
+2026-01-20 13:45:23,067 - INFO - Giovanni Fabbian already exists, skipping
+2026-01-20 13:45:23,085 - INFO - No new players added. Summary: Added 0, Skipped 23, Errors 0

@@ -1,0 +1,76 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Muhfal</title>
+    <style>
+        body {
+            background: #1a202c;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .result-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 500px;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            border: 4px solid #4fd1c5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f56565;
+            font-size: 48px;
+        }
+        h2 {
+            color: #f56565;
+            margin-top: 1rem;
+        }
+        p {
+            color: #4a5568;
+            margin: 0.5rem 0;
+        }
+        .btn {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-teach {
+            background: #4fd1c5;
+            color: white;
+        }
+        .btn-try {
+            background: #4a5568;
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="result-card">
+        <div class="icon">❓</div>
+        <h2>{{ message }}</h2>
+        <p>{{ submessage }}</p>
+        <a href="/teach" class="btn btn-teach">🧠 Teach Me This Person</a>
+        <a href="/start" class="btn btn-try">🔄 Try Again</a>
+    </div>
+</body>
+</html>

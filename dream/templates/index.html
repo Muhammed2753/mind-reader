@@ -1,64 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mind Reader - Start</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhfal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+    /* 🌈 Background Gradient */
     body {
-      font-family: Times new roman, Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+        background: linear-gradient(135deg, #0b132b, #1c2541, #3a506b, #5bc0be);
+        background-size: 400% 400%;
+        animation: gradientShift 10s ease infinite;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* ❌ Remove overflow: hidden */
+        font-family: "Poppins", sans-serif;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    /* 🌀 Floating Football Animation */
+    .football {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg");
+        background-size: cover;
+        opacity: 0.25;
+        animation: floatBall 20s linear infinite;
+        z-index: 1;
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 90%;
-      margin-bottom: 40px;
+    @keyframes floatBall {
+        0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 0;
+        }
+        20% {
+            opacity: 0.3;
+        }
+        100% {
+            transform: translateY(-10vh) rotate(360deg);
+            opacity: 0;
+        }
     }
 
-    button {
-      background-color: #4CAF50;
-      border: none;
-      padding: 15px 40px;
-      border-radius: 10px;
-      color: white;
-      font-size: 1.2rem;
-      font-family: Times new roman;
-      cursor: pointer;
-      transition: transform 0.2s, background 0.3s;
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
-    button:hover {
-      background-color: #45a049;
-      transform: scale(1.05);
+    .container {
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+        z-index: 2;
+        padding: 0; /* Removed redundant padding */
     }
 
+    .card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        backdrop-filter: blur(8px);
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 60px;
+        margin-bottom: 15px;
+        animation: rotate 3s infinite;
+        display: block;
+    }
+
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .home-content h1 {
+        color: #1c2541;
+        font-size: 28px;
+        margin-bottom: 12px;
+        font-weight: 700;
+    }
+
+    .home-content p {
+        color: #3a506b;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .feature-item {
+        background: linear-gradient(135deg, #5bc0be20, #3a506b20);
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(91, 192, 190, 0.3);
+    }
+
+    .feature-icon {
+        font-size: 28px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .feature-item p {
+        color: #3a506b;
+        font-size: 14px;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .btn-start {
+        background: linear-gradient(135deg, #5bc0be 0%, #3a506b 100%);
+        color: white;
+        padding: 14px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        max-width: 280px;
+        font-weight: 700;
+        box-shadow: 0 4px 15px rgba(91, 192, 190, 0.4);
+    }
+
+    .btn-start:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(91, 192, 190, 0.6);
+    }
+
+    .difficulty-selector {
+        margin-bottom: 20px;
+    }
+
+    .difficulty-select {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #5bc0be;
+        border-radius: 10px;
+        font-size: 16px;
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .difficulty-select:hover {
+        border-color: #3a506b;
+        box-shadow: 0 2px 8px rgba(91, 192, 190, 0.3);
+    }
+
+    /* 📱 Mobile Responsive */
     @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      p { font-size: 1rem; }
-      button { width: 80%; font-size: 1rem; }
+        body {
+            align-items: flex-start; /* Allow content to start from top */
+            justify-content: flex-start;
+            padding: 15px;
+            min-height: 100vh;
+            /* Still no overflow: hidden! */
+        }
+
+        .logo {
+            font-size: 50px;
+        }
+
+        .home-content h1 {
+            font-size: 24px;
+        }
+
+        .features {
+            grid-template-columns: 1fr; /* Stack features on small screens */
+            gap: 12px;
+        }
+
+        .card {
+            padding: 25px 20px;
+        }
+
+        .btn-start {
+            max-width: 100%;
+            padding: 14px;
+        }
     }
-  </style>
+</style>
 </head>
 <body>
-  <h1>Welcome to Mind Reader ⚽</h1>
-  <p>Think of any Football Player, Manager, or Club Owner — I’ll try to guess it!</p>
-  <form action="{{ url_for('start') }}" method="post">
-    <button type="submit">Start Game</button>
-  </form>
+
+    <!-- ⚽ Floating Footballs -->
+    <div class="football" style="left:10%; animation-delay: 0s;"></div>
+    <div class="football" style="left:30%; animation-delay: 4s; width:40px; height:40px;"></div>
+    <div class="football" style="left:50%; animation-delay: 8s; width:60px; height:60px;"></div>
+    <div class="football" style="left:70%; animation-delay: 2s; width:55px; height:55px;"></div>
+    <div class="football" style="left:90%; animation-delay: 6s; width:45px; height:45px;"></div>
+
+    <!-- 🧠 Card Content -->
+    <div class="container">
+        <div class="card">
+            <div class="home-content">
+                <div class="logo">⚽</div>
+                <h1>Muhfal</h1>
+                <p>Think of any football player, manager, or club owner, and I'll try to guess who you're thinking of by asking you strategic questions!</p>
+                
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🎯</span>
+                        <p>Strategic Questions</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <p>Fast & Accurate</p>
+                    </div>
+                </div>
+                
+                <form method="POST" action="{{ url_for('start') }}">
+                    <div class="difficulty-selector">
+                        <label style="color: #3a506b; font-weight: 600; margin-bottom: 10px; display: block;">🎮 Select Difficulty:</label>
+                        <select name="difficulty" class="difficulty-select">
+                            <option value="easy">👶 Easy - Famous Players Only</option>
+                            <option value="medium" selected>👨 Medium - Current Players</option>
+                            <option value="hard">👴 Hard - Includes Retired</option>
+                            <option value="expert">🧙 Expert - All Players</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-start">🎮 Start Game</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
