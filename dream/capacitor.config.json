@@ -1,0 +1,12 @@
+﻿{
+  "appId": "com.zeedain14.muhfal",
+  "appName": "Muhfal",
+  "webDir": "www",
+  "server": {
+    "url": "https://mind-reader-cwhp.onrender.com",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

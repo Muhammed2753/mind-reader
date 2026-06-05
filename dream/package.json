@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/cli": "^7.6.6",
+    "@capacitor/core": "^8.4.0",
     "build": "^0.1.4",
     "expo": "~55.0.26",
     "expo-dev-client": "~55.0.35"
@@ -7,5 +10,15 @@
   "devDependencies": {
     "@types/react": "~19.2.10",
     "typescript": "~5.9.2"
-  }
+  },
+  "name": "dream",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

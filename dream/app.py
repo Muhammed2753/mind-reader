@@ -1,5 +1,6 @@
-import json
+﻿import json
 import os
+from pathlib import Path
 import re
 import random
 from datetime import datetime
@@ -839,7 +840,7 @@ def answer():
         game_stats.record_loss(len(answers))
         return render_template(
             "answer.html",
-            guess="I give up — I don't know!",
+            guess="I give up â€” I don't know!",
             player_name="",
             image_url="/static/images/default.png",
             play_again=True,
@@ -893,24 +894,24 @@ def learn():
         if not name:
             return render_template(
                 "learn.html",
-                error="⚠️ Name is required."
+                error="âš ï¸ Name is required."
             )
         if not description:
             return render_template(
                 "learn.html",
-                error="📝 Description is required. Please provide a brief description of the character."
+                error="ðŸ“ Description is required. Please provide a brief description of the character."
             )
         if (profanity_checker.contains_profanity(name) or 
             profanity_checker.contains_profanity(description)):
             return render_template(
                 "learn.html",
-                error="🚫 Invalid input: Please avoid inappropriate language."
+                error="ðŸš« Invalid input: Please avoid inappropriate language."
             )
         if (contains_profanity(name) or 
             contains_profanity(description)):
             return render_template(
                 "learn.html",
-                error="🚫 Invalid input: Please avoid inappropriate language."
+                error="ðŸš« Invalid input: Please avoid inappropriate language."
             )
 
         user_know = load_json_file(KNOW_PATH, {})
@@ -1020,9 +1021,14 @@ def api_daily():
     except Exception as e:
         return jsonify({"error": str(e), "player": "Lionel Messi", "completed": False})
 
-if __name__ == "__main__":
+@app.route('/api/stats')
+def api_stats():
+    stats_tracker = GameStats()
+    return jsonify(stats_tracker.get_stats())
+
+
     import socket
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
-    print("✅ Muhfal running on http://0.0.0.0:5000")
+    print("âœ… Muhfal running on http://0.0.0.0:5000")
     app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

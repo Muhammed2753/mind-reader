@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>Muhfal</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <style>
-    /* 🌈 Background Gradient */
+    /* ðŸŒˆ Background Gradient */
     body {
         background: linear-gradient(135deg, #0b132b, #1c2541, #3a506b, #5bc0be);
         background-size: 400% 400%;
@@ -16,13 +16,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* ❌ Remove overflow: hidden */
+        /* âŒ Remove overflow: hidden */
         font-family: "Poppins", sans-serif;
         padding: 20px;
         box-sizing: border-box;
     }
 
-    /* 🌀 Floating Football Animation */
+    /* ðŸŒ€ Floating Football Animation */
     .football {
         position: absolute;
         width: 50px;
@@ -233,7 +233,7 @@
         transform: translateY(-2px);
     }
 
-    /* 📱 Mobile Responsive */
+    /* ðŸ“± Mobile Responsive */
     @media (max-width: 600px) {
         body {
             align-items: flex-start; /* Allow content to start from top */
@@ -277,28 +277,28 @@
 </head>
 <body>
 
-    <!-- ⚽ Floating Footballs -->
+    <!-- âš½ Floating Footballs -->
     <div class="football" style="left:10%; animation-delay: 0s;"></div>
     <div class="football" style="left:30%; animation-delay: 4s; width:40px; height:40px;"></div>
     <div class="football" style="left:50%; animation-delay: 8s; width:60px; height:60px;"></div>
     <div class="football" style="left:70%; animation-delay: 2s; width:55px; height:55px;"></div>
     <div class="football" style="left:90%; animation-delay: 6s; width:45px; height:45px;"></div>
 
-    <!-- 🧠 Card Content -->
+    <!-- ðŸ§  Card Content -->
     <div class="container">
         <div class="card">
             <div class="home-content">
-                <div class="logo">⚽</div>
+                <div class="logo">âš½</div>
                 <h1>Muhfal</h1>
                 <p>Think of any football player, manager, or club owner, and I'll try to guess who you're thinking of by asking you strategic questions!</p>
                 
                 <div class="features">
                     <div class="feature-item">
-                        <span class="feature-icon">🎯</span>
+                        <span class="feature-icon">ðŸŽ¯</span>
                         <p>Strategic Questions</p>
                     </div>
                     <div class="feature-item">
-                        <span class="feature-icon">⚡</span>
+                        <span class="feature-icon">âš¡</span>
                         <p>Fast & Accurate</p>
                     </div>
                 </div>
@@ -307,22 +307,22 @@
                 <div id="stats-dashboard" class="stats-dashboard">
                     <div class="stats-grid">
                         <div class="stat-box">
-                            <span class="stat-icon">🏆</span>
+                            <span class="stat-icon">ðŸ†</span>
                             <div class="stat-value" id="wins">0</div>
                             <div class="stat-label">Wins</div>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-icon">🔥</span>
+                            <span class="stat-icon">ðŸ”¥</span>
                             <div class="stat-value" id="streak">0</div>
                             <div class="stat-label">Streak</div>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-icon">⭐</span>
+                            <span class="stat-icon">â­</span>
                             <div class="stat-value" id="level">1</div>
                             <div class="stat-label">Level</div>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-icon">🎮</span>
+                            <span class="stat-icon">ðŸŽ®</span>
                             <div class="stat-value" id="games">0</div>
                             <div class="stat-label">Games</div>
                         </div>
@@ -331,42 +331,47 @@
 
                 <!-- Quick Links -->
                 <div class="quick-links">
-                    <a href="/achievements" class="quick-link">🏆 Achievements</a>
-                    <a href="/daily" class="quick-link">📅 Daily Challenge</a>
-                    <a href="/leaderboard" class="quick-link">🥇 Leaderboard</a>
+                    <a href="/achievements" class="quick-link">ðŸ† Achievements</a>
+                    <a href="/daily" class="quick-link">ðŸ“… Daily Challenge</a>
+                    <a href="/leaderboard" class="quick-link">ðŸ¥‡ Leaderboard</a>
                 </div>
                 
                 <form method="POST" action="{{ url_for('start') }}">
                     <div class="difficulty-selector">
-                        <label style="color: #3a506b; font-weight: 600; margin-bottom: 10px; display: block;">🎮 Select Difficulty:</label>
+                        <label style="color: #3a506b; font-weight: 600; margin-bottom: 10px; display: block;">ðŸŽ® Select Difficulty:</label>
                         <select name="difficulty" class="difficulty-select">
-                            <option value="easy">👶 Easy - Famous Players Only</option>
-                            <option value="medium" selected>👨 Medium - Current Players</option>
-                            <option value="hard">👴 Hard - Includes Retired</option>
-                            <option value="expert">🧙 Expert - All Players</option>
+                            <option value="easy">ðŸ‘¶ Easy - Famous Players Only</option>
+                            <option value="medium" selected>ðŸ‘¨ Medium - Current Players</option>
+                            <option value="hard">ðŸ‘´ Hard - Includes Retired</option>
+                            <option value="expert">ðŸ§™ Expert - All Players</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn-start">🎮 Start Game</button>
+                    <button type="submit" class="btn-start">ðŸŽ® Start Game</button>
                 </form>
             </div>
         </div>
     </div>
 
     <script>
-        // Load stats on page load
-        fetch('/api/stats')
-            .then(r => r.json())
-            .then(data => {
-                document.getElementById('wins').textContent = data.games_won || 0;
-                document.getElementById('streak').textContent = data.current_streak || 0;
-                document.getElementById('level').textContent = data.level || 1;
-                document.getElementById('games').textContent = data.games_played || 0;
-            })
-            .catch(() => {
-                // If stats fail to load, show defaults
-                console.log('Stats not available');
-            });
-    </script>
+// Load stats on page load and refresh periodically
+function updateStats() {
+    fetch('/api/stats')
+    .then(r => r.json())
+    .then(data => {
+        const winsEl = document.getElementById('wins');
+        const streakEl = document.getElementById('streak');
+        const levelEl = document.getElementById('level');
+        const gamesEl = document.getElementById('games');
+        if(winsEl) winsEl.textContent = data.games_won || 0;
+        if(streakEl) streakEl.textContent = data.current_streak || 0;
+        if(levelEl) levelEl.textContent = data.level || 1;
+        if(gamesEl) gamesEl.textContent = data.games_played || 0;
+    })
+    .catch(err => console.log('Stats fetch error:', err));
+}
+document.addEventListener('DOMContentLoaded', updateStats);
+setInterval(updateStats, 5000);
+</script>
 
 </body>
 </html>
