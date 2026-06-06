@@ -1,8 +1,7 @@
 {
-  "total_games": 2,
-  "wins": 2,
-  "losses": 0,
+  "games_played": 2,
+  "games_won": 2,
   "current_streak": 2,
-  "max_streak": 2,
-  "last_played": "2026-02-23 23:27:17.689426"
+  "best_streak": 2,
+  "level": 1
 }
